@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.TxConfidenceTableTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:17" hostname="IO-2.local" time="0.128">
+  <properties/>
+  <testcase name="events" classname="org.bitcoinj.core.TxConfidenceTableTest" time="0.003"/>
+  <testcase name="invAndDownload" classname="org.bitcoinj.core.TxConfidenceTableTest" time="0.002"/>
+  <testcase name="testSeen" classname="org.bitcoinj.core.TxConfidenceTableTest" time="0.042"/>
+  <testcase name="pinHandlers" classname="org.bitcoinj.core.TxConfidenceTableTest" time="0.081"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:17 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:17 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:17 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:17 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+]]></system-err>
+</testsuite>

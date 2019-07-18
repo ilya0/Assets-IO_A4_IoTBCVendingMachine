@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" tests="8" skipped="8" failures="0" errors="0" timestamp="2019-03-25T22:24:02" hostname="IO-2.local" time="0.001">
+  <properties/>
+  <testcase name="testFirst100kBlocksWithCustomSchema" classname="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFirst100KBlocks" classname="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFinalizedBlocks" classname="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="missingHeightFromCoinbase" classname="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGetOpenTransactionOutputs" classname="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="skipScripts" classname="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGeneratedChain" classname="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testUTXOProviderWithWallet" classname="org.bitcoinj.core.PostgresFullPrunedBlockChainTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

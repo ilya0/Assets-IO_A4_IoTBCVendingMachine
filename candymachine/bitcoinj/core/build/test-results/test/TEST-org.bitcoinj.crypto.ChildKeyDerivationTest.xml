@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.crypto.ChildKeyDerivationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:02" hostname="IO-2.local" time="0.118">
+  <properties/>
+  <testcase name="testSerializationMainAndTestNetworks" classname="org.bitcoinj.crypto.ChildKeyDerivationTest" time="0.002"/>
+  <testcase name="pubOnlyDerivation" classname="org.bitcoinj.crypto.ChildKeyDerivationTest" time="0.006"/>
+  <testcase name="parentlessDeserialization" classname="org.bitcoinj.crypto.ChildKeyDerivationTest" time="0.008"/>
+  <testcase name="encryptedDerivation" classname="org.bitcoinj.crypto.ChildKeyDerivationTest" time="0.064"/>
+  <testcase name="serializeToTextAndBytes" classname="org.bitcoinj.crypto.ChildKeyDerivationTest" time="0.008"/>
+  <testcase name="inverseEqualsNormal" classname="org.bitcoinj.crypto.ChildKeyDerivationTest" time="0.003"/>
+  <testcase name="reserialization" classname="org.bitcoinj.crypto.ChildKeyDerivationTest" time="0.002"/>
+  <testcase name="testChildKeyDerivation" classname="org.bitcoinj.crypto.ChildKeyDerivationTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:02 12 KeyCrypterScrypt.deriveKey: Deriving key took 44.72 ms for 16384 scrypt iterations.
+15:24:02 12 Secp256k1Context.<clinit>: java.lang.UnsatisfiedLinkError: no secp256k1 in java.library.path: [/Users/GI68L7/Library/Java/Extensions, /Library/Java/Extensions, /Network/Library/Java/Extensions, /System/Library/Java/Extensions, /usr/lib/java, .]
+]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.utils.ExchangeRateTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:49" hostname="IO-2.local" time="0.006">
+  <properties/>
+  <testcase name="constructNegativeCoin" classname="org.bitcoinj.utils.ExchangeRateTest" time="0.001"/>
+  <testcase name="smallRate" classname="org.bitcoinj.utils.ExchangeRateTest" time="0.0"/>
+  <testcase name="normalRate" classname="org.bitcoinj.utils.ExchangeRateTest" time="0.001"/>
+  <testcase name="testJavaSerialization" classname="org.bitcoinj.utils.ExchangeRateTest" time="0.003"/>
+  <testcase name="constructMissingCurrencyCode" classname="org.bitcoinj.utils.ExchangeRateTest" time="0.0"/>
+  <testcase name="currencyCodeMismatch" classname="org.bitcoinj.utils.ExchangeRateTest" time="0.0"/>
+  <testcase name="bigRate" classname="org.bitcoinj.utils.ExchangeRateTest" time="0.001"/>
+  <testcase name="constructFiatCoin" classname="org.bitcoinj.utils.ExchangeRateTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

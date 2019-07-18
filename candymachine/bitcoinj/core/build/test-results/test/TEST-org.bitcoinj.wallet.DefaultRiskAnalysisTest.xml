@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.wallet.DefaultRiskAnalysisTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:52" hostname="IO-2.local" time="0.145">
+  <properties/>
+  <testcase name="canonicalSignature" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.012"/>
+  <testcase name="analysisCantBeUsedTwice" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.012"/>
+  <testcase name="nonStandardDust" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.011"/>
+  <testcase name="relativeLockTime" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.013"/>
+  <testcase name="standardOutputs" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.014"/>
+  <testcase name="transactionVersions" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.013"/>
+  <testcase name="nonShortestPossiblePushData" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.012"/>
+  <testcase name="canonicalSignatureLowS" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.012"/>
+  <testcase name="nonFinalDependency" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.012"/>
+  <testcase name="nonFinal" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.011"/>
+  <testcase name="optInFullRBF" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.011"/>
+  <testcase name="selfCreatedAreNotRisky" classname="org.bitcoinj.wallet.DefaultRiskAnalysisTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.947 ms
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.07 ms
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.919 ms
+15:24:52 12 DefaultRiskAnalysis.isStandard: TX considered non-standard due to output 0 violating rule DUST
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.62 ms
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 12.40 ms
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.21 ms
+15:24:52 12 DefaultRiskAnalysis.isStandard: TX considered non-standard due to unknown version number 3
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.65 ms
+15:24:52 12 DefaultRiskAnalysis.isStandard: TX considered non-standard due to input 0 violating rule SHORTEST_POSSIBLE_PUSHDATA
+15:24:52 12 DefaultRiskAnalysis.isStandard: TX considered non-standard due to output 0 violating rule SHORTEST_POSSIBLE_PUSHDATA
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.34 ms
+15:24:52 12 DefaultRiskAnalysis.isStandard: TX considered non-standard due to input 1 violating rule SIGNATURE_CANONICAL_ENCODING
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.43 ms
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.743 ms
+15:24:52 12 Transaction.setLockTime: You are setting the lock time on a transaction but none of the inputs have non-default sequence numbers. This will not do what you expect!
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.824 ms
+15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.27 ms
+]]></system-err>
+</testsuite>

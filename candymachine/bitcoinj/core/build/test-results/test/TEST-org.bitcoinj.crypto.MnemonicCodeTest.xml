@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.crypto.MnemonicCodeTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:23:51" hostname="IO-2.local" time="0.088">
+  <properties/>
+  <testcase name="testNullPassphrase" classname="org.bitcoinj.crypto.MnemonicCodeTest" time="0.06"/>
+  <testcase name="testBadChecksum" classname="org.bitcoinj.crypto.MnemonicCodeTest" time="0.003"/>
+  <testcase name="testBadWord" classname="org.bitcoinj.crypto.MnemonicCodeTest" time="0.004"/>
+  <testcase name="testEmptyEntropy" classname="org.bitcoinj.crypto.MnemonicCodeTest" time="0.003"/>
+  <testcase name="testEmptyMnemonic" classname="org.bitcoinj.crypto.MnemonicCodeTest" time="0.008"/>
+  <testcase name="testBadLength" classname="org.bitcoinj.crypto.MnemonicCodeTest" time="0.004"/>
+  <testcase name="testBadEntropyLength" classname="org.bitcoinj.crypto.MnemonicCodeTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

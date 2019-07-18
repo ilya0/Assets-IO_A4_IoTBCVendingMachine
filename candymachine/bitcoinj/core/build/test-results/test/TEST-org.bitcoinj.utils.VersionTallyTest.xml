@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.utils.VersionTallyTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:31" hostname="IO-2.local" time="0.006">
+  <properties/>
+  <testcase name="testVersionCounts" classname="org.bitcoinj.utils.VersionTallyTest" time="0.001"/>
+  <testcase name="testNullWhileEmpty" classname="org.bitcoinj.utils.VersionTallyTest" time="0.001"/>
+  <testcase name="testSize" classname="org.bitcoinj.utils.VersionTallyTest" time="0.0"/>
+  <testcase name="testInitialize" classname="org.bitcoinj.utils.VersionTallyTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+]]></system-err>
+</testsuite>

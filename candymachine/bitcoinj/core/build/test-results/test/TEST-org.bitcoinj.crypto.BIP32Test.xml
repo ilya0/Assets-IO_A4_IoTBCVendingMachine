@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.crypto.BIP32Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:23:52" hostname="IO-2.local" time="0.209">
+  <properties/>
+  <testcase name="testVector1" classname="org.bitcoinj.crypto.BIP32Test" time="0.177"/>
+  <testcase name="testVector2" classname="org.bitcoinj.crypto.BIP32Test" time="0.024"/>
+  <testcase name="testVector3" classname="org.bitcoinj.crypto.BIP32Test" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: =======  Test vector 0
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test1 m/0H
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test1 m/0H/1
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test1 m/0H/1/2H
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test1 m/0H/1/2H/2
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test1 m/0H/1/2H/2/1000000000
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: =======  Test vector 1
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test2 m/0
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test2 m/0/2147483647H
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test2 m/0/2147483647H/1
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test2 m/0/2147483647H/1/2147483646H
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test2 m/0/2147483647H/1/2147483646H/2
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: =======  Test vector 2
+Mar 25, 2019 3:23:52 PM org.bitcoinj.crypto.BIP32Test testVector
+INFO: Test3 m/0H
+]]></system-err>
+</testsuite>

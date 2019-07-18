@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.DumpedPrivateKeyTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:17" hostname="IO-2.local" time="0.007">
+  <properties/>
+  <testcase name="testJavaSerialization" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.001"/>
+  <testcase name="roundtripBase58_compressed" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.0"/>
+  <testcase name="roundtripBase58_invalidCompressed" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.0"/>
+  <testcase name="roundtripBase58_compressed_getKey" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.001"/>
+  <testcase name="cloning" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.001"/>
+  <testcase name="checkNetworkWrong" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.0"/>
+  <testcase name="roundtripBase58" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.0"/>
+  <testcase name="fromBase58_tooLong" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.0"/>
+  <testcase name="checkNetwork" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.001"/>
+  <testcase name="fromBase58_tooShort" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.0"/>
+  <testcase name="roundtripBase58_getKey" classname="org.bitcoinj.core.DumpedPrivateKeyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.wallet.DefaultCoinSelectorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:49" hostname="IO-2.local" time="0.087">
+  <properties/>
+  <testcase name="depthOrdering" classname="org.bitcoinj.wallet.DefaultCoinSelectorTest" time="0.025"/>
+  <testcase name="selectable" classname="org.bitcoinj.wallet.DefaultCoinSelectorTest" time="0.018"/>
+  <testcase name="identicalInputs" classname="org.bitcoinj.wallet.DefaultCoinSelectorTest" time="0.018"/>
+  <testcase name="coinAgeOrdering" classname="org.bitcoinj.wallet.DefaultCoinSelectorTest" time="0.026"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:49 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:49 12 MnemonicCode.toSeed: PBKDF2 took 13.22 ms
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: Took 215.1 μs
+15:24:49 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:49 12 Wallet.receive: Received tx for 1.00 BTC: f020af8b3d45736276ac7492e3589d82a6003b5c82cce3ba6ee70609099e80db [0] in block 6174545280066d522ee15c5f80b06c4fc5ac12e00719d99f0a526c4af2ed8352
+15:24:49 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=03b4b047223bddfb070bde3aa4ede7414c3d792e32c9bcdabf60d194101751c34b, chainCode=15a18fe07a5981cb212d614ed5fae698366ea3618194f57cebcd90ebc05c120f, path=M/0H/0/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: Took 268.0 μs
+15:24:49 12 Wallet.processTxFromBestChain:   tx f020af8b3d45736276ac7492e3589d82a6003b5c82cce3ba6ee70609099e80db ->unspent
+15:24:49 12 Wallet.receive: Balance is now: 1.00 BTC
+15:24:49 12 Wallet.receive: Received tx for 1.00 BTC: 3ceee6c87f1abc8ff21f8ace302cfefdc78336accb85258affbd898cbb85b385 [0] in block 76ec0be137c83013388a592c303b58e8ca80e7bec11d983615e7944de4020a28
+15:24:49 12 Wallet.processTxFromBestChain:   tx 3ceee6c87f1abc8ff21f8ace302cfefdc78336accb85258affbd898cbb85b385 ->unspent
+15:24:49 12 Wallet.receive: Balance is now: 2.00 BTC
+15:24:49 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:49 12 MnemonicCode.toSeed: PBKDF2 took 13.78 ms
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: Took 276.6 μs
+15:24:49 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:49 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:49 12 MnemonicCode.toSeed: PBKDF2 took 14.38 ms
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: Took 248.3 μs
+15:24:49 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:49 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:49 12 MnemonicCode.toSeed: PBKDF2 took 14.30 ms
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: Took 166.9 μs
+15:24:49 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:49 12 Wallet.receive: Received tx for 1.00 BTC: 6eb616f3a6a161e1928c66a22872b1e758931a89dba254ab73f43e8e3519cd50 [0] in block 79b694ab4c04c07ea99e32ed2e5a499c478c791d8e97d3b556d9a033c03ab753
+15:24:49 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=02a72721be2b0d7e62dd909e3684b135c56dd6f326c32be9805c4e6abe69d3e556, chainCode=4e8c6b21b493641f5d35c2f7fcab5ec0b7bc6e03d6ff7510481c6172b633f8b0, path=M/0H/0/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:49 12 DeterministicKeyChain.maybeLookAhead: Took 200.1 μs
+15:24:49 12 Wallet.processTxFromBestChain:   tx 6eb616f3a6a161e1928c66a22872b1e758931a89dba254ab73f43e8e3519cd50 ->unspent
+15:24:49 12 Wallet.receive: Balance is now: 1.00 BTC
+15:24:49 12 Wallet.receive: Received tx for 2.00 BTC: c7551e5ce954e82f775bb0ff0d4921783db9e79460a3d6bf6d7dc177ca34c738 [0] in block 0d6a190124808935721086c65a1d77e06b1ec2fa8474ce87d1a763567f174cb3
+15:24:49 12 Wallet.processTxFromBestChain:   tx c7551e5ce954e82f775bb0ff0d4921783db9e79460a3d6bf6d7dc177ca34c738 ->unspent
+15:24:49 12 Wallet.receive: Balance is now: 3.00 BTC
+15:24:49 12 Wallet.receive: Received tx for 0.01 BTC: 2fe3609e79dfdff10e91886d7612dcc714fe1559159235fc2eab126a03c88c46 [0] in block 7eb0a2f58d34012932fea15dfca1c881cf520f8eb76150cb4fd35216a7b4ac8f
+15:24:49 12 Wallet.processTxFromBestChain:   tx 2fe3609e79dfdff10e91886d7612dcc714fe1559159235fc2eab126a03c88c46 ->unspent
+15:24:49 12 Wallet.receive: Balance is now: 3.01 BTC
+]]></system-err>
+</testsuite>

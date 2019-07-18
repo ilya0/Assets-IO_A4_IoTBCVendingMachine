@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.wallet.BasicKeyChainTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:51" hostname="IO-2.local" time="0.411">
+  <properties/>
+  <testcase name="checkPasswordNoKeys" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.001"/>
+  <testcase name="cannotImportEncryptedKey" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.038"/>
+  <testcase name="getKey" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.0"/>
+  <testcase name="checkPasswordNotEncrypted" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.0"/>
+  <testcase name="cannotMixParams" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.038"/>
+  <testcase name="serializationEncrypted" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.078"/>
+  <testcase name="keysBeforeAndAfter" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.0"/>
+  <testcase name="bloom" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.0"/>
+  <testcase name="encryptDecrypt" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.184"/>
+  <testcase name="watching" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.0"/>
+  <testcase name="doubleEncryptFails" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.071"/>
+  <testcase name="removeKey" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.0"/>
+  <testcase name="serializationUnencrypted" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.0"/>
+  <testcase name="importKeys" classname="org.bitcoinj.wallet.BasicKeyChainTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 36.44 ms for 16384 scrypt iterations.
+15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 36.11 ms for 16384 scrypt iterations.
+15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 83.08 μs for 2 scrypt iterations.
+15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 36.74 ms for 16384 scrypt iterations.
+15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 38.81 ms for 16384 scrypt iterations.
+15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 36.70 ms for 16384 scrypt iterations.
+15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 35.64 ms for 16384 scrypt iterations.
+15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 35.48 ms for 16384 scrypt iterations.
+15:24:51 12 KeyCrypterScrypt.deriveKey: Deriving key took 36.01 ms for 16384 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 35.98 ms for 16384 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 34.63 ms for 16384 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 34.55 ms for 16384 scrypt iterations.
+]]></system-err>
+</testsuite>

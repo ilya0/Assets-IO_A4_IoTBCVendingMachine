@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.protocols.channels.PaymentChannelServerTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:25:02" hostname="IO-2.local" time="0.09">
+  <properties/>
+  <testcase name="shouldTruncateTooLargeTimeWindow[0: PaymentChannelServerTest(version 1)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.078"/>
+  <testcase name="shouldAcceptDefaultTimeWindow[0: PaymentChannelServerTest(version 1)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.001"/>
+  <testcase name="shouldTruncateTooSmallTimeWindow[0: PaymentChannelServerTest(version 1)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.001"/>
+  <testcase name="shouldNotAllowTimeWindowLessThan2h[0: PaymentChannelServerTest(version 1)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.001"/>
+  <testcase name="shouldAllowExactTimeWindow[0: PaymentChannelServerTest(version 1)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.002"/>
+  <testcase name="shouldNotAllowNegativeTimeWindow[0: PaymentChannelServerTest(version 1)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.001"/>
+  <testcase name="shouldTruncateTooLargeTimeWindow[1: PaymentChannelServerTest(version 2)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.001"/>
+  <testcase name="shouldAcceptDefaultTimeWindow[1: PaymentChannelServerTest(version 2)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.001"/>
+  <testcase name="shouldTruncateTooSmallTimeWindow[1: PaymentChannelServerTest(version 2)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.002"/>
+  <testcase name="shouldNotAllowTimeWindowLessThan2h[1: PaymentChannelServerTest(version 2)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.0"/>
+  <testcase name="shouldAllowExactTimeWindow[1: PaymentChannelServerTest(version 2)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.001"/>
+  <testcase name="shouldNotAllowNegativeTimeWindow[1: PaymentChannelServerTest(version 2)]" classname="org.bitcoinj.protocols.channels.PaymentChannelServerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:25:02 12 PaymentChannelServer.connectionOpen: New server channel active.
+15:25:02 12 PaymentChannelServer.receiveVersionMessage: Got initial version message, responding with VERSIONS and INITIATE: min value=1000000
+15:25:02 12 PaymentChannelServer.truncateTimeWindow: client requested time window 40001 s to long, offering 20000 s
+15:25:02 12 PaymentChannelServer.connectionOpen: New server channel active.
+15:25:02 12 PaymentChannelServer.receiveVersionMessage: Got initial version message, responding with VERSIONS and INITIATE: min value=1000000
+15:25:02 12 PaymentChannelServer.connectionOpen: New server channel active.
+15:25:02 12 PaymentChannelServer.receiveVersionMessage: Got initial version message, responding with VERSIONS and INITIATE: min value=1000000
+15:25:02 12 PaymentChannelServer.truncateTimeWindow: client requested time window 19999 s to short, offering 20000 s
+15:25:02 12 PaymentChannelServer.connectionOpen: New server channel active.
+15:25:02 12 PaymentChannelServer.receiveVersionMessage: Got initial version message, responding with VERSIONS and INITIATE: min value=1000000
+15:25:02 12 PaymentChannelServer.connectionOpen: New server channel active.
+15:25:02 12 PaymentChannelServer.receiveVersionMessage: Got initial version message, responding with VERSIONS and INITIATE: min value=1000000
+15:25:02 12 PaymentChannelServer.truncateTimeWindow: client requested time window 40001 s to long, offering 20000 s
+15:25:02 12 PaymentChannelServer.connectionOpen: New server channel active.
+15:25:02 12 PaymentChannelServer.receiveVersionMessage: Got initial version message, responding with VERSIONS and INITIATE: min value=1000000
+15:25:02 12 PaymentChannelServer.connectionOpen: New server channel active.
+15:25:02 12 PaymentChannelServer.receiveVersionMessage: Got initial version message, responding with VERSIONS and INITIATE: min value=1000000
+15:25:02 12 PaymentChannelServer.truncateTimeWindow: client requested time window 19999 s to short, offering 20000 s
+15:25:02 12 PaymentChannelServer.connectionOpen: New server channel active.
+15:25:02 12 PaymentChannelServer.receiveVersionMessage: Got initial version message, responding with VERSIONS and INITIATE: min value=1000000
+]]></system-err>
+</testsuite>

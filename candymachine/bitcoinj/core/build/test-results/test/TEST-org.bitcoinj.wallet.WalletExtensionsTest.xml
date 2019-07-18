@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.wallet.WalletExtensionsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:52" hostname="IO-2.local" time="0.014">
+  <properties/>
+  <testcase name="duplicateWalletExtensionTest" classname="org.bitcoinj.wallet.WalletExtensionsTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:52 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.39 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 164.2 μs
+15:24:52 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+]]></system-err>
+</testsuite>

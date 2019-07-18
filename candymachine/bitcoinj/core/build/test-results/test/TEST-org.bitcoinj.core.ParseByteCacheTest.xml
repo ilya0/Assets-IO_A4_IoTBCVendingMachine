@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.ParseByteCacheTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:31" hostname="IO-2.local" time="0.135">
+  <properties/>
+  <testcase name="testTransactionsNoRetain" classname="org.bitcoinj.core.ParseByteCacheTest" time="0.036"/>
+  <testcase name="validateSetup" classname="org.bitcoinj.core.ParseByteCacheTest" time="0.024"/>
+  <testcase name="testBlockAll" classname="org.bitcoinj.core.ParseByteCacheTest" time="0.04"/>
+  <testcase name="testTransactionsRetain" classname="org.bitcoinj.core.ParseByteCacheTest" time="0.035"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 17.60 ms
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 202.9 μs
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 281.8 μs
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 15.89 ms
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 218.7 μs
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 219.4 μs
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 13.72 ms
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 322.4 μs
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 335.7 μs
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 15.78 ms
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 307.5 μs
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 309.9 μs
+]]></system-err>
+</testsuite>

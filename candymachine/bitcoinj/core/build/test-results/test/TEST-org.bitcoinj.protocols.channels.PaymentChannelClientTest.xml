@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.protocols.channels.PaymentChannelClientTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:25:03" hostname="IO-2.local" time="0.019">
+  <properties/>
+  <testcase name="shouldSendClientVersionOnChannelOpen[0: PaymentChannelClientTest(org.bitcoinj.protocols.channels.PaymentChannelClientTest$1@5d0bc0d8)]" classname="org.bitcoinj.protocols.channels.PaymentChannelClientTest" time="0.014"/>
+  <testcase name="shouldSendTimeWindowInClientVersion[0: PaymentChannelClientTest(org.bitcoinj.protocols.channels.PaymentChannelClientTest$1@5d0bc0d8)]" classname="org.bitcoinj.protocols.channels.PaymentChannelClientTest" time="0.001"/>
+  <testcase name="shouldSendClientVersionOnChannelOpen[1: PaymentChannelClientTest(org.bitcoinj.protocols.channels.PaymentChannelClientTest$2@45f22db1)]" classname="org.bitcoinj.protocols.channels.PaymentChannelClientTest" time="0.001"/>
+  <testcase name="shouldSendTimeWindowInClientVersion[1: PaymentChannelClientTest(org.bitcoinj.protocols.channels.PaymentChannelClientTest$2@45f22db1)]" classname="org.bitcoinj.protocols.channels.PaymentChannelClientTest" time="0.001"/>
+  <testcase name="shouldSendClientVersionOnChannelOpen[2: PaymentChannelClientTest(org.bitcoinj.protocols.channels.PaymentChannelClientTest$3@492927d6)]" classname="org.bitcoinj.protocols.channels.PaymentChannelClientTest" time="0.0"/>
+  <testcase name="shouldSendTimeWindowInClientVersion[2: PaymentChannelClientTest(org.bitcoinj.protocols.channels.PaymentChannelClientTest$3@492927d6)]" classname="org.bitcoinj.protocols.channels.PaymentChannelClientTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:25:03 12 PaymentChannelClient.connectionOpen: Begun version handshake creating new channel
+15:25:03 12 PaymentChannelClient.connectionOpen: Begun version handshake creating new channel
+15:25:03 12 PaymentChannelClient.connectionOpen: Begun version handshake creating new channel
+15:25:03 12 PaymentChannelClient.connectionOpen: Begun version handshake creating new channel
+15:25:03 12 PaymentChannelClient.connectionOpen: Begun version handshake creating new channel
+15:25:03 12 PaymentChannelClient.connectionOpen: Begun version handshake creating new channel
+]]></system-err>
+</testsuite>

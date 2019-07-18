@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.LegacyAddressTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:27" hostname="IO-2.local" time="0.011">
+  <properties/>
+  <testcase name="comparisonGreaterThan" classname="org.bitcoinj.core.LegacyAddressTest" time="0.001"/>
+  <testcase name="getNetwork" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="testJavaSerialization" classname="org.bitcoinj.core.LegacyAddressTest" time="0.002"/>
+  <testcase name="p2shAddressCreationFromKeys" classname="org.bitcoinj.core.LegacyAddressTest" time="0.003"/>
+  <testcase name="p2shAddress" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="stringification" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="getAltNetwork" classname="org.bitcoinj.core.LegacyAddressTest" time="0.002"/>
+  <testcase name="decoding" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="cloning" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="comparisonCloneEqualTo" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="comparisonLessThan" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="roundtripBase58" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="errorPaths" classname="org.bitcoinj.core.LegacyAddressTest" time="0.0"/>
+  <testcase name="comparisonBytesVsString" classname="org.bitcoinj.core.LegacyAddressTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.protocols.payments.PaymentProtocolTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:25:02" hostname="IO-2.local" time="0.208">
+  <properties/>
+  <testcase name="testPaymentMessage" classname="org.bitcoinj.protocols.payments.PaymentProtocolTest" time="0.022"/>
+  <testcase name="testPaymentRequest" classname="org.bitcoinj.protocols.payments.PaymentProtocolTest" time="0.015"/>
+  <testcase name="testSignAndVerifyExpired" classname="org.bitcoinj.protocols.payments.PaymentProtocolTest" time="0.104"/>
+  <testcase name="testSignAndVerifyValid" classname="org.bitcoinj.protocols.payments.PaymentProtocolTest" time="0.061"/>
+  <testcase name="testPaymentAck" classname="org.bitcoinj.protocols.payments.PaymentProtocolTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

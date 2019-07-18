@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.crypto.MnemonicCodeVectorsTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:23:56" hostname="IO-2.local" time="0.568">
+  <properties/>
+  <testcase name="testMnemonicCode[Vector set 0 (entropy=00000000000000000000000000000000, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.119"/>
+  <testcase name="testMnemonicCode[Vector set 1 (entropy=7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.037"/>
+  <testcase name="testMnemonicCode[Vector set 2 (entropy=80808080808080808080808080808080, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.026"/>
+  <testcase name="testMnemonicCode[Vector set 3 (entropy=ffffffffffffffffffffffffffffffff, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.02"/>
+  <testcase name="testMnemonicCode[Vector set 4 (entropy=000000000000000000000000000000000000000000000000, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.018"/>
+  <testcase name="testMnemonicCode[Vector set 5 (entropy=7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.013"/>
+  <testcase name="testMnemonicCode[Vector set 6 (entropy=808080808080808080808080808080808080808080808080, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 7 (entropy=ffffffffffffffffffffffffffffffffffffffffffffffff, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.013"/>
+  <testcase name="testMnemonicCode[Vector set 8 (entropy=0000000000000000000000000000000000000000000000000000000000000000, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.016"/>
+  <testcase name="testMnemonicCode[Vector set 9 (entropy=7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.013"/>
+  <testcase name="testMnemonicCode[Vector set 10 (entropy=8080808080808080808080808080808080808080808080808080808080808080, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 11 (entropy=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 12 (entropy=9e885d952ad362caeb4efe34a8e91bd2, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 13 (entropy=6610b25967cdcca9d59875f5cb50b0ea75433311869e930b, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 14 (entropy=68a79eaca2324873eacc50cb9c6eca8cc68ea5d936f98787c60c7ebc74e6ce7c, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 15 (entropy=c0ba5a8e914111210f2bd131f3d5e08d, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.015"/>
+  <testcase name="testMnemonicCode[Vector set 16 (entropy=6d9be1ee6ebd27a258115aad99b7317b9c8d28b6d76431c3, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.014"/>
+  <testcase name="testMnemonicCode[Vector set 17 (entropy=9f6a2878b2520799a44ef18bc7df394e7061a224d2c33cd015b157d746869863, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.013"/>
+  <testcase name="testMnemonicCode[Vector set 18 (entropy=23db8160a31d3e0dca3688ed941adbf3, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.015"/>
+  <testcase name="testMnemonicCode[Vector set 19 (entropy=8197a4a47f0425faeaa69deebc05ca29c0a5b5cc76ceacc0, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 20 (entropy=066dca1a2bb7e8a1db2832148ce9933eea0f3ac9548d793112d9a95c9407efad, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.011"/>
+  <testcase name="testMnemonicCode[Vector set 21 (entropy=f30f8c1da665478f49b001d94c5fc452, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 22 (entropy=c10ec20dc3cd9f652c7fac2f1230f7a3c828389a14392f05, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.013"/>
+  <testcase name="testMnemonicCode[Vector set 23 (entropy=f585c11aec520db57dd353c69554b21a89b20fb0650966fa0a9d6f74fd989d8f, passphrase=TREZOR)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.015"/>
+  <testcase name="testMnemonicCode[Vector set 24 (entropy=00000000000000000000000000000000, passphrase=)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 25 (entropy=7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f, passphrase=)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 26 (entropy=80808080808080808080808080808080, passphrase=)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.013"/>
+  <testcase name="testMnemonicCode[Vector set 27 (entropy=ffffffffffffffffffffffffffffffff, passphrase=)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.013"/>
+  <testcase name="testMnemonicCode[Vector set 28 (entropy=f30f8c1da665478f49b001d94c5fc452, passphrase=)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.012"/>
+  <testcase name="testMnemonicCode[Vector set 29 (entropy=c10ec20dc3cd9f652c7fac2f1230f7a3c828389a14392f05, passphrase=)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.017"/>
+  <testcase name="testMnemonicCode[Vector set 30 (entropy=f585c11aec520db57dd353c69554b21a89b20fb0650966fa0a9d6f74fd989d8f, passphrase=)]" classname="org.bitcoinj.crypto.MnemonicCodeVectorsTest" time="0.014"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 104.1 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 34.13 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 22.19 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 17.16 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 16.27 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 11.01 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.34 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.83 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 14.17 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.14 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.03 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.36 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.15 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.26 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.53 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 12.96 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 11.63 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.56 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 12.81 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.56 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 9.722 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.52 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.20 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 12.05 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.66 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.17 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.86 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 11.29 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 10.57 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 14.98 ms
+Mar 25, 2019 3:23:56 PM org.bitcoinj.crypto.MnemonicCode toSeed
+INFO: PBKDF2 took 11.77 ms
+]]></system-err>
+</testsuite>

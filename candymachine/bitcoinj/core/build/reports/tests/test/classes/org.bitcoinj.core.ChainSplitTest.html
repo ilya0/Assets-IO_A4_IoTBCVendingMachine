@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.bitcoinj.core.ChainSplitTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.bitcoinj.core.ChainSplitTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.bitcoinj.core.html">org.bitcoinj.core</a> &gt; ChainSplitTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">11</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.292s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">coinbaseDeath</td>
+<td class="success">0.155s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">orderingInsideBlock</td>
+<td class="success">0.158s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDoubleSpendOnFork</td>
+<td class="success">0.073s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDoubleSpendOnForkPending</td>
+<td class="success">0.300s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testForking1</td>
+<td class="success">0.169s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testForking2</td>
+<td class="success">0.065s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testForking3</td>
+<td class="success">0.054s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testForking4</td>
+<td class="success">0.047s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testForking5</td>
+<td class="success">0.041s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testForking6</td>
+<td class="success">0.054s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">txConfidenceLevels</td>
+<td class="success">0.176s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>15:24:02 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:02 12 MnemonicCode.toSeed: PBKDF2 took 26.85 ms
+15:24:02 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:02 12 DeterministicKeyChain.maybeLookAhead: Took 1.505 ms
+15:24:02 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:02 12 DeterministicKeyChain.maybeLookAhead: Took 596.9 μs
+15:24:02 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:02 12 Wallet.receive: Received tx for 50.00 BTC: 98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e [1] in block 6c83aed79554c1054b3c80218d46db3ef17a08c137fa6b3979b9ea6c8bc2dacf
+15:24:02 12 Wallet.processTxFromBestChain:   tx 98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e -&gt;unspent
+15:24:02 12 Wallet.receive: Balance is now: 50.00 BTC
+15:24:02 15 Context.get: Performing thread fixup: you are accessing bitcoinj via a thread that has not had any context set on it.
+15:24:02 15 Context.get: This error has been corrected for, but doing this makes your app less robust.
+15:24:02 15 Context.get: You should use Context.propagate() or a ContextPropagatingThreadFactory.
+15:24:02 15 Context.get: Please refer to the user guide for more information about this.
+15:24:02 15 Context.get: Thread name is bitcoinj user thread.
+15:24:02 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 10.00 BTC and a fee of 0.00 BTC/kB
+15:24:02 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:02 12 DeterministicKeyChain.maybeLookAhead: Took 1.064 ms
+15:24:02 12 Wallet.completeTx:   with 40.00 BTC change
+15:24:02 12 Wallet.completeTx:   completed: Transaction{0c94dbf1907bac4b8beed073d2a25a0c2c8592f32a10ba74cf67da942075b78f
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100811638688ce1f26b8f2656af75dedd793f0556d3a94a1f998b080c7989011fde0220674a2d8d1ac5572b6d7cfc364669d93d11c89d302b832ab12af289d3af4a815f01] PUSHDATA(33)[02990fa0c1d663cd8bdd58d65b74c79330ff72acc9d824bd4566d5dc5926c850a5]  50.00 BTC
+        P2PKH addr:n3TGMb7BMtuWnwMfMaRUGuwCunNYgCdUEp  outpoint:98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e:0
+   out  DUP HASH160 PUSHDATA(20)[1f13d128ed68c0ac619a5128f089e9899ac0ee6d] EQUALVERIFY CHECKSIG  10.00 BTC
+        P2PKH addr:miMGyurtkCeEtrWRfDJyxCtpG5nT59nPEi
+   out  DUP HASH160 PUSHDATA(20)[bd663ce8abefc9b49ef5bc23a1cfff462f401b49] EQUALVERIFY CHECKSIG  40.00 BTC
+        P2PKH addr:mxnQUvdpMwfE1s7Bq6kffN6ZaYGy8Coozb
+   fee  0.00 BTC/kB, 0.00 BTC for 226 bytes
+}
+15:24:02 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 20.00 BTC and a fee of 0.00 BTC/kB
+15:24:02 12 Wallet.completeTx:   with 30.00 BTC change
+15:24:02 12 Wallet.completeTx:   completed: Transaction{7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100c0304aaae04258e0dcbb2b8eb2aee201ef6e399fc635831c17976ad09571522f0220530056f2e66890a92f7686ded37971fa5848c07dfc23b8be9e3f3fc73d072e2b01] PUSHDATA(33)[02990fa0c1d663cd8bdd58d65b74c79330ff72acc9d824bd4566d5dc5926c850a5]  50.00 BTC
+        P2PKH addr:n3TGMb7BMtuWnwMfMaRUGuwCunNYgCdUEp  outpoint:98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e:0
+   out  DUP HASH160 PUSHDATA(20)[19b09208c4677a5697cbf71624603d36a35b4463] EQUALVERIFY CHECKSIG  20.00 BTC
+        P2PKH addr:mhrniBMyr4mBpp6JoirCVKh7767cKUx4tV
+   out  DUP HASH160 PUSHDATA(20)[bd663ce8abefc9b49ef5bc23a1cfff462f401b49] EQUALVERIFY CHECKSIG  30.00 BTC
+        P2PKH addr:mxnQUvdpMwfE1s7Bq6kffN6ZaYGy8Coozb
+   fee  0.00 BTC/kB, 0.00 BTC for 226 bytes
+}
+15:24:02 12 Wallet.maybeCommitTx: commitTx of 0c94dbf1907bac4b8beed073d2a25a0c2c8592f32a10ba74cf67da942075b78f
+15:24:02 12 Wallet.updateForSpends:   marked 98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e:0 as spent by 0c94dbf1907bac4b8beed073d2a25a0c2c8592f32a10ba74cf67da942075b78f
+15:24:02 12 Wallet.maybeMovePool:   98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e prevtx &lt;-unspent -&gt;spent
+15:24:02 12 Wallet.maybeCommitTx: -&gt;pending: 0c94dbf1907bac4b8beed073d2a25a0c2c8592f32a10ba74cf67da942075b78f
+15:24:02 12 Wallet.maybeCommitTx: Estimated balance is now: 40.00 BTC
+15:24:02 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=0267580cfefba486f66a2a06df3c7156b1b3245c3ea1dbb40eb4886855ee76b843, chainCode=8daf6f84350769fcab1164faa676ac104152700a78cddbbb2012c63382ca8156, path=M/0H/1/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:02 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:02 12 DeterministicKeyChain.maybeLookAhead: Took 621.9 μs
+15:24:02 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 6c83aed79554c1054b3c80218d46db3ef17a08c137fa6b3979b9ea6c8bc2dacf, but it did not cause a reorganize:
+65f24259519562adf1ebdbfc13d1f039ce9a5af71b28ab6fddbdbe65584e39ee
+15:24:02 12 Wallet.receive: Received tx on a side chain for -20.00 BTC: 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6 [2] in block 65f24259519562adf1ebdbfc13d1f039ce9a5af71b28ab6fddbdbe65584e39ee
+15:24:02 12 Wallet.maybeCommitTx: commitTx of 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6
+15:24:02 12 Wallet.updateForSpends: Saw two pending transactions double spend each other
+15:24:02 12 Wallet.updateForSpends:   offending input is input 0
+15:24:02 12 Wallet.updateForSpends: 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6: 01000000010e214eca9b59f91ab28ee6fc411958874f7f19839bfd46ce25eace408565bb98000000006b483045022100c0304aaae04258e0dcbb2b8eb2aee201ef6e399fc635831c17976ad09571522f0220530056f2e66890a92f7686ded37971fa5848c07dfc23b8be9e3f3fc73d072e2b012102990fa0c1d663cd8bdd58d65b74c79330ff72acc9d824bd4566d5dc5926c850a5ffffffff0200943577000000001976a91419b09208c4677a5697cbf71624603d36a35b446388ac005ed0b2000000001976a914bd663ce8abefc9b49ef5bc23a1cfff462f401b4988ac00000000
+15:24:02 12 Wallet.updateForSpends: 0c94dbf1907bac4b8beed073d2a25a0c2c8592f32a10ba74cf67da942075b78f: 01000000010e214eca9b59f91ab28ee6fc411958874f7f19839bfd46ce25eace408565bb98000000006b483045022100811638688ce1f26b8f2656af75dedd793f0556d3a94a1f998b080c7989011fde0220674a2d8d1ac5572b6d7cfc364669d93d11c89d302b832ab12af289d3af4a815f012102990fa0c1d663cd8bdd58d65b74c79330ff72acc9d824bd4566d5dc5926c850a5ffffffff0200ca9a3b000000001976a9141f13d128ed68c0ac619a5128f089e9899ac0ee6d88ac00286bee000000001976a914bd663ce8abefc9b49ef5bc23a1cfff462f401b4988ac00000000
+15:24:02 12 Wallet.maybeCommitTx: -&gt;pending (IN_CONFLICT): 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6
+15:24:02 12 Wallet.maybeCommitTx: Estimated balance is now: 70.00 BTC
+15:24:02 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:02 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:02 12 AbstractBlockChain.handleNewBestChain: Old chain head: 4492323ace8abfc12aea077f428121906d435fdb6cf549efe68261d16526bb60
+15:24:02 12 AbstractBlockChain.handleNewBestChain: New chain head: 5b5e9ef782a3f98b3f28ab6ee8a0923b358929f4504ddd72e696732b8e364ce9
+15:24:02 12 AbstractBlockChain.handleNewBestChain: Split at block: 6c83aed79554c1054b3c80218d46db3ef17a08c137fa6b3979b9ea6c8bc2dacf
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   4492323ace8abfc12aea077f428121906d435fdb6cf549efe68261d16526bb60
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   5b5e9ef782a3f98b3f28ab6ee8a0923b358929f4504ddd72e696732b8e364ce9
+15:24:03 12 Wallet.reorganize:   65f24259519562adf1ebdbfc13d1f039ce9a5af71b28ab6fddbdbe65584e39ee
+15:24:03 12 Wallet.reorganize: depthToSubtract = 1
+15:24:03 12 Wallet.reorganize: Replaying block 65f24259519562adf1ebdbfc13d1f039ce9a5af71b28ab6fddbdbe65584e39ee
+15:24:03 12 Wallet.reorganize:   tx 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6
+15:24:03 12 Wallet.receive: Received tx for -20.00 BTC: 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6 [2] in block 65f24259519562adf1ebdbfc13d1f039ce9a5af71b28ab6fddbdbe65584e39ee
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6 -&gt;unspent
+15:24:03 12 Wallet.killTxns: TX 0c94dbf1907bac4b8beed073d2a25a0c2c8592f32a10ba74cf67da942075b78f killed by 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6
+15:24:03 12 Wallet.killTxns: Disconnecting each input and moving connected transactions.
+15:24:03 12 Wallet.killTxns: Added to UNSPENTS: TxOut of 50.00 BTC to n3TGMb7BMtuWnwMfMaRUGuwCunNYgCdUEp script:DUP HASH160 PUSHDATA(20)[f0a02e0ed8308b8ccda65317081741c1ea89ff5e] EQUALVERIFY CHECKSIG in 98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e
+15:24:03 12 Wallet.maybeMovePool:   98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e kill &lt;-spent -&gt;unspent
+15:24:03 12 Wallet.killTxns: XX Removed from UNSPENTS: TxOut of 40.00 BTC to mxnQUvdpMwfE1s7Bq6kffN6ZaYGy8Coozb script:DUP HASH160 PUSHDATA(20)[bd663ce8abefc9b49ef5bc23a1cfff462f401b49] EQUALVERIFY CHECKSIG
+15:24:03 12 Wallet.killTxns: Now attempting to connect the inputs of the overriding transaction.
+15:24:03 12 Wallet.maybeMovePool:   98bb658540ceea25ce46fd9b83197f4f87581941fce68eb21af9599bca4e210e kill &lt;-unspent -&gt;spent
+15:24:03 12 Wallet.killTxns: Removing from UNSPENTS: TxOut of 50.00 BTC to n3TGMb7BMtuWnwMfMaRUGuwCunNYgCdUEp script:DUP HASH160 PUSHDATA(20)[f0a02e0ed8308b8ccda65317081741c1ea89ff5e] EQUALVERIFY CHECKSIG
+15:24:03 12 Wallet.reorganize: Replaying block 5b5e9ef782a3f98b3f28ab6ee8a0923b358929f4504ddd72e696732b8e364ce9
+15:24:03 12 Wallet.reorganize: post-reorg balance is 30.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 6c83aed79554c1054b3c80218d46db3ef17a08c137fa6b3979b9ea6c8bc2dacf, but it did not cause a reorganize:
+44db7413897e922be798cef6445d8ce87cc92a932ada8e667a65a4c999c8599a
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 5b5e9ef782a3f98b3f28ab6ee8a0923b358929f4504ddd72e696732b8e364ce9
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 292d92b91c5c4099205a00104961108b3e088b4055cdde634aa914c4c837c257
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 6c83aed79554c1054b3c80218d46db3ef17a08c137fa6b3979b9ea6c8bc2dacf
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   5b5e9ef782a3f98b3f28ab6ee8a0923b358929f4504ddd72e696732b8e364ce9
+15:24:03 12 Wallet.reorganize:   65f24259519562adf1ebdbfc13d1f039ce9a5af71b28ab6fddbdbe65584e39ee
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   292d92b91c5c4099205a00104961108b3e088b4055cdde634aa914c4c837c257
+15:24:03 12 Wallet.reorganize:   44db7413897e922be798cef6445d8ce87cc92a932ada8e667a65a4c999c8599a
+15:24:03 12 Wallet.reorganize:   4492323ace8abfc12aea077f428121906d435fdb6cf549efe68261d16526bb60
+15:24:03 12 Wallet.reorganize:   -&gt;pending 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6
+15:24:03 12 Wallet.updateForSpends: Saw two pending transactions double spend each other
+15:24:03 12 Wallet.updateForSpends:   offending input is input 0
+15:24:03 12 Wallet.updateForSpends: 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6: 01000000010e214eca9b59f91ab28ee6fc411958874f7f19839bfd46ce25eace408565bb98000000006b483045022100c0304aaae04258e0dcbb2b8eb2aee201ef6e399fc635831c17976ad09571522f0220530056f2e66890a92f7686ded37971fa5848c07dfc23b8be9e3f3fc73d072e2b012102990fa0c1d663cd8bdd58d65b74c79330ff72acc9d824bd4566d5dc5926c850a5ffffffff0200943577000000001976a91419b09208c4677a5697cbf71624603d36a35b446388ac005ed0b2000000001976a914bd663ce8abefc9b49ef5bc23a1cfff462f401b4988ac00000000
+15:24:03 12 Wallet.updateForSpends: 7c8d25c00819eab3f886bce75e5c118d4c7e7a8285f6c3d822402d025262cca6: 01000000010e214eca9b59f91ab28ee6fc411958874f7f19839bfd46ce25eace408565bb98000000006b483045022100c0304aaae04258e0dcbb2b8eb2aee201ef6e399fc635831c17976ad09571522f0220530056f2e66890a92f7686ded37971fa5848c07dfc23b8be9e3f3fc73d072e2b012102990fa0c1d663cd8bdd58d65b74c79330ff72acc9d824bd4566d5dc5926c850a5ffffffff0200943577000000001976a91419b09208c4677a5697cbf71624603d36a35b446388ac005ed0b2000000001976a914bd663ce8abefc9b49ef5bc23a1cfff462f401b4988ac00000000
+15:24:03 12 Wallet.reorganize: depthToSubtract = 2
+15:24:03 12 Wallet.reorganize: Replaying block 4492323ace8abfc12aea077f428121906d435fdb6cf549efe68261d16526bb60
+15:24:03 12 Wallet.reorganize: Replaying block 44db7413897e922be798cef6445d8ce87cc92a932ada8e667a65a4c999c8599a
+15:24:03 12 Wallet.reorganize: Replaying block 292d92b91c5c4099205a00104961108b3e088b4055cdde634aa914c4c837c257
+15:24:03 12 Wallet.reorganize: post-reorg balance is 0.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 21.92 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 936.6 μs
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 562.7 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: cbc8229d01db0133ae3105ad292e3e24a6fb1b0efa9258dcff3ac5b7e1081f93 [1] in block 3617540f21d83ae96374b08bba9052ca9b1765f19533535d5252df29a4eb453e
+15:24:03 12 Wallet.processTxFromBestChain:   tx cbc8229d01db0133ae3105ad292e3e24a6fb1b0efa9258dcff3ac5b7e1081f93 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 50.00 BTC
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: a35594d5798ff061756953b71e0451592f9de24834042635c984743a2d94cb54 [1] in block 75a685780d3187e1d1d9f5f98d6b9e32d70ad1bb0d8c2321f73f36334ef394dd
+15:24:03 12 Wallet.processTxFromBestChain:   tx a35594d5798ff061756953b71e0451592f9de24834042635c984743a2d94cb54 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 100.00 BTC
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: dac18ffff47bdda1fa6c74019c71e72b1e8c9d5926907bd571c4f9095aea08e5 [1] in block 472aba456978899d2bbe35e19749a5af35a0b82bb8dbefcad777d9e874298ef2
+15:24:03 12 Wallet.processTxFromBestChain:   tx dac18ffff47bdda1fa6c74019c71e72b1e8c9d5926907bd571c4f9095aea08e5 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 150.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 3617540f21d83ae96374b08bba9052ca9b1765f19533535d5252df29a4eb453e, but it did not cause a reorganize:
+2157ddf9b73d820a41d27203077da5a38c5f106b86dc550fa809b01791408410
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 3617540f21d83ae96374b08bba9052ca9b1765f19533535d5252df29a4eb453e, but it did not cause a reorganize:
+77aa7f8782cdbd5870682a99643e3f83ab220b082623c9f07703bd81fe2402da
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 472aba456978899d2bbe35e19749a5af35a0b82bb8dbefcad777d9e874298ef2
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 2a7c13f11a63452a9ad86ac896a9c6ba78ac409711c3886484b39d7fdd218e21
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 3617540f21d83ae96374b08bba9052ca9b1765f19533535d5252df29a4eb453e
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   472aba456978899d2bbe35e19749a5af35a0b82bb8dbefcad777d9e874298ef2
+15:24:03 12 Wallet.reorganize:   75a685780d3187e1d1d9f5f98d6b9e32d70ad1bb0d8c2321f73f36334ef394dd
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   2a7c13f11a63452a9ad86ac896a9c6ba78ac409711c3886484b39d7fdd218e21
+15:24:03 12 Wallet.reorganize:   77aa7f8782cdbd5870682a99643e3f83ab220b082623c9f07703bd81fe2402da
+15:24:03 12 Wallet.reorganize:   2157ddf9b73d820a41d27203077da5a38c5f106b86dc550fa809b01791408410
+15:24:03 12 Wallet.reorganize:   -&gt;pending dac18ffff47bdda1fa6c74019c71e72b1e8c9d5926907bd571c4f9095aea08e5
+15:24:03 12 Wallet.reorganize:   -&gt;pending a35594d5798ff061756953b71e0451592f9de24834042635c984743a2d94cb54
+15:24:03 12 Wallet.reorganize: depthToSubtract = 2
+15:24:03 12 Wallet.reorganize: Replaying block 2157ddf9b73d820a41d27203077da5a38c5f106b86dc550fa809b01791408410
+15:24:03 12 Wallet.reorganize: Replaying block 77aa7f8782cdbd5870682a99643e3f83ab220b082623c9f07703bd81fe2402da
+15:24:03 12 Wallet.reorganize: Replaying block 2a7c13f11a63452a9ad86ac896a9c6ba78ac409711c3886484b39d7fdd218e21
+15:24:03 12 Wallet.reorganize: post-reorg balance is 50.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 3617540f21d83ae96374b08bba9052ca9b1765f19533535d5252df29a4eb453e, but it did not cause a reorganize:
+0e8b7cdbfd79b1b9447059bc11b432722e3066cfd835c3c1f0ee3b6916eb3021
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 2dcc695f44c831460d5729bdf5df0b68d4ae00aeccea1a4904e73f862475c511 [1] in block 0e8b7cdbfd79b1b9447059bc11b432722e3066cfd835c3c1f0ee3b6916eb3021
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 2dcc695f44c831460d5729bdf5df0b68d4ae00aeccea1a4904e73f862475c511
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 2dcc695f44c831460d5729bdf5df0b68d4ae00aeccea1a4904e73f862475c511
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 200.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 11ed177b0f7fad4accb5a0f645f59002a946cfee8b0297646446f2fa7772756b [1] in block 284dbae4ef04a51004d5f66a37a9ff6040d021603858ae805de6c30f180e77cb
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 11ed177b0f7fad4accb5a0f645f59002a946cfee8b0297646446f2fa7772756b
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 11ed177b0f7fad4accb5a0f645f59002a946cfee8b0297646446f2fa7772756b
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 250.00 BTC
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 2a7c13f11a63452a9ad86ac896a9c6ba78ac409711c3886484b39d7fdd218e21
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 284dbae4ef04a51004d5f66a37a9ff6040d021603858ae805de6c30f180e77cb
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 3617540f21d83ae96374b08bba9052ca9b1765f19533535d5252df29a4eb453e
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   2a7c13f11a63452a9ad86ac896a9c6ba78ac409711c3886484b39d7fdd218e21
+15:24:03 12 Wallet.reorganize:   77aa7f8782cdbd5870682a99643e3f83ab220b082623c9f07703bd81fe2402da
+15:24:03 12 Wallet.reorganize:   2157ddf9b73d820a41d27203077da5a38c5f106b86dc550fa809b01791408410
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   284dbae4ef04a51004d5f66a37a9ff6040d021603858ae805de6c30f180e77cb
+15:24:03 12 Wallet.reorganize:   0e8b7cdbfd79b1b9447059bc11b432722e3066cfd835c3c1f0ee3b6916eb3021
+15:24:03 12 Wallet.reorganize:   472aba456978899d2bbe35e19749a5af35a0b82bb8dbefcad777d9e874298ef2
+15:24:03 12 Wallet.reorganize:   75a685780d3187e1d1d9f5f98d6b9e32d70ad1bb0d8c2321f73f36334ef394dd
+15:24:03 12 Wallet.reorganize: depthToSubtract = 3
+15:24:03 12 Wallet.reorganize: Replaying block 75a685780d3187e1d1d9f5f98d6b9e32d70ad1bb0d8c2321f73f36334ef394dd
+15:24:03 12 Wallet.reorganize:   tx a35594d5798ff061756953b71e0451592f9de24834042635c984743a2d94cb54
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: a35594d5798ff061756953b71e0451592f9de24834042635c984743a2d94cb54 [1] in block 75a685780d3187e1d1d9f5f98d6b9e32d70ad1bb0d8c2321f73f36334ef394dd
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx a35594d5798ff061756953b71e0451592f9de24834042635c984743a2d94cb54 -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 472aba456978899d2bbe35e19749a5af35a0b82bb8dbefcad777d9e874298ef2
+15:24:03 12 Wallet.reorganize:   tx dac18ffff47bdda1fa6c74019c71e72b1e8c9d5926907bd571c4f9095aea08e5
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: dac18ffff47bdda1fa6c74019c71e72b1e8c9d5926907bd571c4f9095aea08e5 [1] in block 472aba456978899d2bbe35e19749a5af35a0b82bb8dbefcad777d9e874298ef2
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx dac18ffff47bdda1fa6c74019c71e72b1e8c9d5926907bd571c4f9095aea08e5 -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 0e8b7cdbfd79b1b9447059bc11b432722e3066cfd835c3c1f0ee3b6916eb3021
+15:24:03 12 Wallet.reorganize:   tx 2dcc695f44c831460d5729bdf5df0b68d4ae00aeccea1a4904e73f862475c511
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 2dcc695f44c831460d5729bdf5df0b68d4ae00aeccea1a4904e73f862475c511 [1] in block 0e8b7cdbfd79b1b9447059bc11b432722e3066cfd835c3c1f0ee3b6916eb3021
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 2dcc695f44c831460d5729bdf5df0b68d4ae00aeccea1a4904e73f862475c511 -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 284dbae4ef04a51004d5f66a37a9ff6040d021603858ae805de6c30f180e77cb
+15:24:03 12 Wallet.reorganize:   tx 11ed177b0f7fad4accb5a0f645f59002a946cfee8b0297646446f2fa7772756b
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 11ed177b0f7fad4accb5a0f645f59002a946cfee8b0297646446f2fa7772756b [1] in block 284dbae4ef04a51004d5f66a37a9ff6040d021603858ae805de6c30f180e77cb
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 11ed177b0f7fad4accb5a0f645f59002a946cfee8b0297646446f2fa7772756b -&gt;unspent
+15:24:03 12 Wallet.reorganize: post-reorg balance is 250.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 17.11 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 11.36 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 384.7 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 3 issued + 0 lookahead size + 0 lookahead threshold - 2 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 1.053 ms
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d [0] in block 12e8bdda03a7d8742f1c672d0ec1fa3154e21a4ce47e667078e30a3da5810bb9
+15:24:03 12 Wallet.processTxFromBestChain:   tx 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 0.00 BTC
+15:24:03 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 50.00 BTC and a fee of 0.00 BTC/kB
+15:24:03 12 Wallet.completeTx:   completed: Transaction{758d708a30092f111bf302fe0a154744d82c5bb21bf7af082656332c29314bd3
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100f69d3dfdb217cc97b863ecca18a3ca6b9ae85e7c13c667d0d8e5ad93e10923130220404144b6ca10cac5e89e626919be432cd5b44a21180f6dd930c29360cc3fbb6a01]  50.00 BTC
+        P2PK addr:[exception: Cannot cast this script to an address]
+   out  DUP HASH160 PUSHDATA(20)[b0ceb296fba820ed4a82902a61ffa0903bc1193f] EQUALVERIFY CHECKSIG  50.00 BTC
+        P2PKH addr:mwdpqRDXM4vsxXHpdL48Gq53VmQhBHMAtH
+   fee  0.00 BTC/kB, 0.00 BTC for 158 bytes
+}
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 758d708a30092f111bf302fe0a154744d82c5bb21bf7af082656332c29314bd3
+15:24:03 12 Wallet.updateForSpends:   marked 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d:0 as spent by 758d708a30092f111bf302fe0a154744d82c5bb21bf7af082656332c29314bd3
+15:24:03 12 Wallet.maybeMovePool:   383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d prevtx &lt;-unspent -&gt;spent
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 758d708a30092f111bf302fe0a154744d82c5bb21bf7af082656332c29314bd3
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 0.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8, but it did not cause a reorganize:
+4632480a6571b677d208ac7524f5f2d706b930e49ff6452b86ea7ff6df9f8072
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8, but it did not cause a reorganize:
+1884f53fa0afb937055c7ba9aa5effe8ac75e5a5868c329e53366b74d0e16425
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8, but it did not cause a reorganize:
+1b7277aa1f389b90cadd9b1286caf3fc51f57522224c271a1b717cbd78f3e9bb
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8, but it did not cause a reorganize:
+23722c5763b9a68b541a5ca25f04d91835318bfe367765de8e0dd3035d3959ec
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8, but it did not cause a reorganize:
+6d90602d5dd2c814624f9d3a4680d7e662a743be945e89725ad53862489641ec
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 78a6ca9377e7fa2e0f614edc4d30386c3bfbf9eb6edef678c02af332b3a09bcd
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 6b0fc91e6a841dd1244fa018b477642dd204028d118c76c2d70b7163826be544
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   78a6ca9377e7fa2e0f614edc4d30386c3bfbf9eb6edef678c02af332b3a09bcd
+15:24:03 12 Wallet.reorganize:   0ab039508d2e58b67be5645aa88b5c39f287144fc3c17b07e005623c17e36677
+15:24:03 12 Wallet.reorganize:   34d0f4cb38b1168dde9a0dd836083c2331f73992acebcdde5c695f40aca36375
+15:24:03 12 Wallet.reorganize:   3534d3cae10100a586da5aadb289e22375d2b4fac762c757f78385d141f34414
+15:24:03 12 Wallet.reorganize:   12e8bdda03a7d8742f1c672d0ec1fa3154e21a4ce47e667078e30a3da5810bb9
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   6b0fc91e6a841dd1244fa018b477642dd204028d118c76c2d70b7163826be544
+15:24:03 12 Wallet.reorganize:   6d90602d5dd2c814624f9d3a4680d7e662a743be945e89725ad53862489641ec
+15:24:03 12 Wallet.reorganize:   23722c5763b9a68b541a5ca25f04d91835318bfe367765de8e0dd3035d3959ec
+15:24:03 12 Wallet.reorganize:   1b7277aa1f389b90cadd9b1286caf3fc51f57522224c271a1b717cbd78f3e9bb
+15:24:03 12 Wallet.reorganize:   1884f53fa0afb937055c7ba9aa5effe8ac75e5a5868c329e53366b74d0e16425
+15:24:03 12 Wallet.reorganize:   4632480a6571b677d208ac7524f5f2d706b930e49ff6452b86ea7ff6df9f8072
+15:24:03 12 Wallet.reorganize: Coinbase killed by re-org: 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d
+15:24:03 12 Wallet.killTxns: TX 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d killed
+15:24:03 12 Wallet.killTxns: Disconnecting each input and moving connected transactions.
+15:24:03 12 Wallet.killTxns: This death invalidated dependent tx 758d708a30092f111bf302fe0a154744d82c5bb21bf7af082656332c29314bd3
+15:24:03 12 Wallet.killTxns: TX 758d708a30092f111bf302fe0a154744d82c5bb21bf7af082656332c29314bd3 killed
+15:24:03 12 Wallet.killTxns: Disconnecting each input and moving connected transactions.
+15:24:03 12 Wallet.reorganize: depthToSubtract = 5
+15:24:03 12 Wallet.reorganize: Replaying block 4632480a6571b677d208ac7524f5f2d706b930e49ff6452b86ea7ff6df9f8072
+15:24:03 12 Wallet.reorganize: Replaying block 1884f53fa0afb937055c7ba9aa5effe8ac75e5a5868c329e53366b74d0e16425
+15:24:03 12 Wallet.reorganize: Replaying block 1b7277aa1f389b90cadd9b1286caf3fc51f57522224c271a1b717cbd78f3e9bb
+15:24:03 12 Wallet.reorganize: Replaying block 23722c5763b9a68b541a5ca25f04d91835318bfe367765de8e0dd3035d3959ec
+15:24:03 12 Wallet.reorganize: Replaying block 6d90602d5dd2c814624f9d3a4680d7e662a743be945e89725ad53862489641ec
+15:24:03 12 Wallet.reorganize: Replaying block 6b0fc91e6a841dd1244fa018b477642dd204028d118c76c2d70b7163826be544
+15:24:03 12 Wallet.reorganize: post-reorg balance is 0.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8, but it did not cause a reorganize:
+4544909b9e19515e4e7a061e7e6c44e83f5aa32131fd860beb8c769ee0be8ef0
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 6b0fc91e6a841dd1244fa018b477642dd204028d118c76c2d70b7163826be544
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 69d5a618d1f4899002d77448533f722d8f365cc4a232ff35a60111eca7a4b61e
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   6b0fc91e6a841dd1244fa018b477642dd204028d118c76c2d70b7163826be544
+15:24:03 12 Wallet.reorganize:   6d90602d5dd2c814624f9d3a4680d7e662a743be945e89725ad53862489641ec
+15:24:03 12 Wallet.reorganize:   23722c5763b9a68b541a5ca25f04d91835318bfe367765de8e0dd3035d3959ec
+15:24:03 12 Wallet.reorganize:   1b7277aa1f389b90cadd9b1286caf3fc51f57522224c271a1b717cbd78f3e9bb
+15:24:03 12 Wallet.reorganize:   1884f53fa0afb937055c7ba9aa5effe8ac75e5a5868c329e53366b74d0e16425
+15:24:03 12 Wallet.reorganize:   4632480a6571b677d208ac7524f5f2d706b930e49ff6452b86ea7ff6df9f8072
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   69d5a618d1f4899002d77448533f722d8f365cc4a232ff35a60111eca7a4b61e
+15:24:03 12 Wallet.reorganize:   4544909b9e19515e4e7a061e7e6c44e83f5aa32131fd860beb8c769ee0be8ef0
+15:24:03 12 Wallet.reorganize:   78a6ca9377e7fa2e0f614edc4d30386c3bfbf9eb6edef678c02af332b3a09bcd
+15:24:03 12 Wallet.reorganize:   0ab039508d2e58b67be5645aa88b5c39f287144fc3c17b07e005623c17e36677
+15:24:03 12 Wallet.reorganize:   34d0f4cb38b1168dde9a0dd836083c2331f73992acebcdde5c695f40aca36375
+15:24:03 12 Wallet.reorganize:   3534d3cae10100a586da5aadb289e22375d2b4fac762c757f78385d141f34414
+15:24:03 12 Wallet.reorganize:   12e8bdda03a7d8742f1c672d0ec1fa3154e21a4ce47e667078e30a3da5810bb9
+15:24:03 12 Wallet.reorganize: depthToSubtract = 6
+15:24:03 12 Wallet.reorganize: Replaying block 12e8bdda03a7d8742f1c672d0ec1fa3154e21a4ce47e667078e30a3da5810bb9
+15:24:03 12 Wallet.reorganize:   tx 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d [0] in block 12e8bdda03a7d8742f1c672d0ec1fa3154e21a4ce47e667078e30a3da5810bb9
+15:24:03 12 Wallet.receive:   &lt;-dead
+15:24:03 12 Wallet.processTxFromBestChain:   tx 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 3534d3cae10100a586da5aadb289e22375d2b4fac762c757f78385d141f34414
+15:24:03 12 Wallet.reorganize: Replaying block 34d0f4cb38b1168dde9a0dd836083c2331f73992acebcdde5c695f40aca36375
+15:24:03 12 Wallet.reorganize: Replaying block 0ab039508d2e58b67be5645aa88b5c39f287144fc3c17b07e005623c17e36677
+15:24:03 12 Wallet.reorganize: Replaying block 78a6ca9377e7fa2e0f614edc4d30386c3bfbf9eb6edef678c02af332b3a09bcd
+15:24:03 12 Wallet.reorganize: Replaying block 4544909b9e19515e4e7a061e7e6c44e83f5aa32131fd860beb8c769ee0be8ef0
+15:24:03 12 Wallet.reorganize: Replaying block 69d5a618d1f4899002d77448533f722d8f365cc4a232ff35a60111eca7a4b61e
+15:24:03 12 Wallet.reorganize: post-reorg balance is 50.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8, but it did not cause a reorganize:
+73a81f335bdcd7bac7b11dcba5df67f3346099762128637453986d9e6555f089
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 69d5a618d1f4899002d77448533f722d8f365cc4a232ff35a60111eca7a4b61e
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 022df067ce9dba1b151576fe80c039fcec9ceb8ebbd1a3cf14214be808f938b6
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 20d03b47631207f6bc93b287d5181d20445da23b80014c2bf398a144e1372bb8
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   69d5a618d1f4899002d77448533f722d8f365cc4a232ff35a60111eca7a4b61e
+15:24:03 12 Wallet.reorganize:   4544909b9e19515e4e7a061e7e6c44e83f5aa32131fd860beb8c769ee0be8ef0
+15:24:03 12 Wallet.reorganize:   78a6ca9377e7fa2e0f614edc4d30386c3bfbf9eb6edef678c02af332b3a09bcd
+15:24:03 12 Wallet.reorganize:   0ab039508d2e58b67be5645aa88b5c39f287144fc3c17b07e005623c17e36677
+15:24:03 12 Wallet.reorganize:   34d0f4cb38b1168dde9a0dd836083c2331f73992acebcdde5c695f40aca36375
+15:24:03 12 Wallet.reorganize:   3534d3cae10100a586da5aadb289e22375d2b4fac762c757f78385d141f34414
+15:24:03 12 Wallet.reorganize:   12e8bdda03a7d8742f1c672d0ec1fa3154e21a4ce47e667078e30a3da5810bb9
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   022df067ce9dba1b151576fe80c039fcec9ceb8ebbd1a3cf14214be808f938b6
+15:24:03 12 Wallet.reorganize:   73a81f335bdcd7bac7b11dcba5df67f3346099762128637453986d9e6555f089
+15:24:03 12 Wallet.reorganize:   6b0fc91e6a841dd1244fa018b477642dd204028d118c76c2d70b7163826be544
+15:24:03 12 Wallet.reorganize:   6d90602d5dd2c814624f9d3a4680d7e662a743be945e89725ad53862489641ec
+15:24:03 12 Wallet.reorganize:   23722c5763b9a68b541a5ca25f04d91835318bfe367765de8e0dd3035d3959ec
+15:24:03 12 Wallet.reorganize:   1b7277aa1f389b90cadd9b1286caf3fc51f57522224c271a1b717cbd78f3e9bb
+15:24:03 12 Wallet.reorganize:   1884f53fa0afb937055c7ba9aa5effe8ac75e5a5868c329e53366b74d0e16425
+15:24:03 12 Wallet.reorganize:   4632480a6571b677d208ac7524f5f2d706b930e49ff6452b86ea7ff6df9f8072
+15:24:03 12 Wallet.reorganize: Coinbase killed by re-org: 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d
+15:24:03 12 Wallet.killTxns: TX 383d2b7285850e99a0e78db1d8cd42af14fd32896e5b4688804fd6143ddddc9d killed
+15:24:03 12 Wallet.killTxns: Disconnecting each input and moving connected transactions.
+15:24:03 12 Wallet.killTxns: XX Removed from UNSPENTS: TxOut of 50.00 BTC to pubkey 02e2fc01bc8497f28c0f236f377c441f6c82f067625c2b7a8cac72f946de713628 script:PUSHDATA(33)[02e2fc01bc8497f28c0f236f377c441f6c82f067625c2b7a8cac72f946de713628] CHECKSIG
+15:24:03 12 Wallet.reorganize: depthToSubtract = 7
+15:24:03 12 Wallet.reorganize: Replaying block 4632480a6571b677d208ac7524f5f2d706b930e49ff6452b86ea7ff6df9f8072
+15:24:03 12 Wallet.reorganize: Replaying block 1884f53fa0afb937055c7ba9aa5effe8ac75e5a5868c329e53366b74d0e16425
+15:24:03 12 Wallet.reorganize: Replaying block 1b7277aa1f389b90cadd9b1286caf3fc51f57522224c271a1b717cbd78f3e9bb
+15:24:03 12 Wallet.reorganize: Replaying block 23722c5763b9a68b541a5ca25f04d91835318bfe367765de8e0dd3035d3959ec
+15:24:03 12 Wallet.reorganize: Replaying block 6d90602d5dd2c814624f9d3a4680d7e662a743be945e89725ad53862489641ec
+15:24:03 12 Wallet.reorganize: Replaying block 6b0fc91e6a841dd1244fa018b477642dd204028d118c76c2d70b7163826be544
+15:24:03 12 Wallet.reorganize: Replaying block 73a81f335bdcd7bac7b11dcba5df67f3346099762128637453986d9e6555f089
+15:24:03 12 Wallet.reorganize: Replaying block 022df067ce9dba1b151576fe80c039fcec9ceb8ebbd1a3cf14214be808f938b6
+15:24:03 12 Wallet.reorganize: post-reorg balance is 0.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 27.55 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 2.578 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 342.8 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 80f22f7d13ced5acecab2b8eb016f352c5e3fde84fe1bcf72f7d82d734f84bcd [1] in block 001e6472b92b8736adbdcde27b83f9e651d6cfb737787f0dff12a4e713826884
+15:24:03 12 Wallet.processTxFromBestChain:   tx 80f22f7d13ced5acecab2b8eb016f352c5e3fde84fe1bcf72f7d82d734f84bcd -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 50.00 BTC
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: a471066510a080b315395c6361c04c858b36002738c90acf3bd39f6663814965 [1] in block 07a341073fdb0f2d580c7aa23aceb76af7954bcd0398455d4f01cc68c9dcb543
+15:24:03 12 Wallet.processTxFromBestChain:   tx a471066510a080b315395c6361c04c858b36002738c90acf3bd39f6663814965 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 100.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 001e6472b92b8736adbdcde27b83f9e651d6cfb737787f0dff12a4e713826884, but it did not cause a reorganize:
+138357b1117abcaf68a2fec3b3e1d3ccb9e41c1efc1323da29a87efe17b244a8
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 001e6472b92b8736adbdcde27b83f9e651d6cfb737787f0dff12a4e713826884, but it did not cause a reorganize:
+5e0f51cfef5f2443d190438970c689d049402a42dff9e8b55900c70237240d0a
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 30d9283f70035bf0efbbdaf7bea8d851cc8bcfd22acadd5cc3a6a420b77394a4 [1] in block 5e0f51cfef5f2443d190438970c689d049402a42dff9e8b55900c70237240d0a
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 30d9283f70035bf0efbbdaf7bea8d851cc8bcfd22acadd5cc3a6a420b77394a4
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 30d9283f70035bf0efbbdaf7bea8d851cc8bcfd22acadd5cc3a6a420b77394a4
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 150.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 001e6472b92b8736adbdcde27b83f9e651d6cfb737787f0dff12a4e713826884, but it did not cause a reorganize:
+28814bfcf7a7d2932552b3d3c7189034a456941612600c03bfaed7636e7337ac
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 7e2c39dbaba34dfb3f111f24f75372022ec4478deb002816b2585b446cbab08b [1] in block 28814bfcf7a7d2932552b3d3c7189034a456941612600c03bfaed7636e7337ac
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 7e2c39dbaba34dfb3f111f24f75372022ec4478deb002816b2585b446cbab08b
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 7e2c39dbaba34dfb3f111f24f75372022ec4478deb002816b2585b446cbab08b
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 200.00 BTC
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 30d9283f70035bf0efbbdaf7bea8d851cc8bcfd22acadd5cc3a6a420b77394a4 [2] in block 28814bfcf7a7d2932552b3d3c7189034a456941612600c03bfaed7636e7337ac
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.receive:   -&gt;pending
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 07a341073fdb0f2d580c7aa23aceb76af7954bcd0398455d4f01cc68c9dcb543
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 683c627367f5a358a68f125ac2a750eaf9d602a4c514ac541bf9a71adbc7bbfc
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 001e6472b92b8736adbdcde27b83f9e651d6cfb737787f0dff12a4e713826884
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   07a341073fdb0f2d580c7aa23aceb76af7954bcd0398455d4f01cc68c9dcb543
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   683c627367f5a358a68f125ac2a750eaf9d602a4c514ac541bf9a71adbc7bbfc
+15:24:03 12 Wallet.reorganize:   138357b1117abcaf68a2fec3b3e1d3ccb9e41c1efc1323da29a87efe17b244a8
+15:24:03 12 Wallet.reorganize:   -&gt;pending a471066510a080b315395c6361c04c858b36002738c90acf3bd39f6663814965
+15:24:03 12 Wallet.reorganize: depthToSubtract = 1
+15:24:03 12 Wallet.reorganize: Replaying block 138357b1117abcaf68a2fec3b3e1d3ccb9e41c1efc1323da29a87efe17b244a8
+15:24:03 12 Wallet.reorganize: Replaying block 683c627367f5a358a68f125ac2a750eaf9d602a4c514ac541bf9a71adbc7bbfc
+15:24:03 12 Wallet.reorganize: post-reorg balance is 50.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 001e6472b92b8736adbdcde27b83f9e651d6cfb737787f0dff12a4e713826884, but it did not cause a reorganize:
+56ae36bea99106270c3d9e521f5250371ea9db01670748c790c52c1fac0f54ff
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 2757ebc1d105375ee55bdc06369c6416efbdf061b7d90d5b96f47458ef564a60 [1] in block 56ae36bea99106270c3d9e521f5250371ea9db01670748c790c52c1fac0f54ff
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 2757ebc1d105375ee55bdc06369c6416efbdf061b7d90d5b96f47458ef564a60
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 2757ebc1d105375ee55bdc06369c6416efbdf061b7d90d5b96f47458ef564a60
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 250.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 78e07e0206344501f20dd482e66f624be99ce8d6f94381e5daf559da0d9ff65c [1] in block 23e52decc8c977632829cf1a21fb83da05e6edeed51ded8e1dbdd32d6e5521f1
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 78e07e0206344501f20dd482e66f624be99ce8d6f94381e5daf559da0d9ff65c
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 78e07e0206344501f20dd482e66f624be99ce8d6f94381e5daf559da0d9ff65c
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 300.00 BTC
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 683c627367f5a358a68f125ac2a750eaf9d602a4c514ac541bf9a71adbc7bbfc
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 23e52decc8c977632829cf1a21fb83da05e6edeed51ded8e1dbdd32d6e5521f1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 001e6472b92b8736adbdcde27b83f9e651d6cfb737787f0dff12a4e713826884
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   683c627367f5a358a68f125ac2a750eaf9d602a4c514ac541bf9a71adbc7bbfc
+15:24:03 12 Wallet.reorganize:   138357b1117abcaf68a2fec3b3e1d3ccb9e41c1efc1323da29a87efe17b244a8
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   23e52decc8c977632829cf1a21fb83da05e6edeed51ded8e1dbdd32d6e5521f1
+15:24:03 12 Wallet.reorganize:   56ae36bea99106270c3d9e521f5250371ea9db01670748c790c52c1fac0f54ff
+15:24:03 12 Wallet.reorganize:   07a341073fdb0f2d580c7aa23aceb76af7954bcd0398455d4f01cc68c9dcb543
+15:24:03 12 Wallet.reorganize: depthToSubtract = 2
+15:24:03 12 Wallet.reorganize: Replaying block 07a341073fdb0f2d580c7aa23aceb76af7954bcd0398455d4f01cc68c9dcb543
+15:24:03 12 Wallet.reorganize:   tx a471066510a080b315395c6361c04c858b36002738c90acf3bd39f6663814965
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: a471066510a080b315395c6361c04c858b36002738c90acf3bd39f6663814965 [1] in block 07a341073fdb0f2d580c7aa23aceb76af7954bcd0398455d4f01cc68c9dcb543
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx a471066510a080b315395c6361c04c858b36002738c90acf3bd39f6663814965 -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 56ae36bea99106270c3d9e521f5250371ea9db01670748c790c52c1fac0f54ff
+15:24:03 12 Wallet.reorganize:   tx 2757ebc1d105375ee55bdc06369c6416efbdf061b7d90d5b96f47458ef564a60
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 2757ebc1d105375ee55bdc06369c6416efbdf061b7d90d5b96f47458ef564a60 [1] in block 56ae36bea99106270c3d9e521f5250371ea9db01670748c790c52c1fac0f54ff
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 2757ebc1d105375ee55bdc06369c6416efbdf061b7d90d5b96f47458ef564a60 -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 23e52decc8c977632829cf1a21fb83da05e6edeed51ded8e1dbdd32d6e5521f1
+15:24:03 12 Wallet.reorganize:   tx 78e07e0206344501f20dd482e66f624be99ce8d6f94381e5daf559da0d9ff65c
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 78e07e0206344501f20dd482e66f624be99ce8d6f94381e5daf559da0d9ff65c [1] in block 23e52decc8c977632829cf1a21fb83da05e6edeed51ded8e1dbdd32d6e5521f1
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 78e07e0206344501f20dd482e66f624be99ce8d6f94381e5daf559da0d9ff65c -&gt;unspent
+15:24:03 12 Wallet.reorganize: post-reorg balance is 200.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 40.60 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 630.3 μs
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 555.2 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 569d0893e23bccd6e2b7221b0adc9aaa5cc3359664d0092535d24a7d78ff8a81, but it did not cause a reorganize:
+0fa10e21223b43422120b97c715fc92c260837c9f3a27241f4fa036199afa0ab
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 1d442a9228a495635b39f8f4228e9ff0ee90a517f6e558dd870571cc7ee94055 [1] in block 0fa10e21223b43422120b97c715fc92c260837c9f3a27241f4fa036199afa0ab
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 1d442a9228a495635b39f8f4228e9ff0ee90a517f6e558dd870571cc7ee94055
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 1d442a9228a495635b39f8f4228e9ff0ee90a517f6e558dd870571cc7ee94055
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 50.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 606ec6fb2831c8946c57dcb7e85610512a3261752ff0972ba72e13765bdc1909
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 1fc479db7349c8b5fa74f52d29d746220c215df9420125a487a5f46392d749fb
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 569d0893e23bccd6e2b7221b0adc9aaa5cc3359664d0092535d24a7d78ff8a81
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   606ec6fb2831c8946c57dcb7e85610512a3261752ff0972ba72e13765bdc1909
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   1fc479db7349c8b5fa74f52d29d746220c215df9420125a487a5f46392d749fb
+15:24:03 12 Wallet.reorganize:   0fa10e21223b43422120b97c715fc92c260837c9f3a27241f4fa036199afa0ab
+15:24:03 12 Wallet.reorganize: depthToSubtract = 1
+15:24:03 12 Wallet.reorganize: Replaying block 0fa10e21223b43422120b97c715fc92c260837c9f3a27241f4fa036199afa0ab
+15:24:03 12 Wallet.reorganize:   tx 1d442a9228a495635b39f8f4228e9ff0ee90a517f6e558dd870571cc7ee94055
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 1d442a9228a495635b39f8f4228e9ff0ee90a517f6e558dd870571cc7ee94055 [1] in block 0fa10e21223b43422120b97c715fc92c260837c9f3a27241f4fa036199afa0ab
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 1d442a9228a495635b39f8f4228e9ff0ee90a517f6e558dd870571cc7ee94055 -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 1fc479db7349c8b5fa74f52d29d746220c215df9420125a487a5f46392d749fb
+15:24:03 12 Wallet.reorganize: post-reorg balance is 50.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 13.61 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 372.4 μs
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 1.230 ms
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: b58f209a89f1c8ec14cb40f2f6362ac857c071ed67551a64466b236418ae802b [1] in block 613248a1128f7e2c74c69737eb52ab1285e69b63b1f0b746846cc002f5e7ce88
+15:24:03 12 Wallet.processTxFromBestChain:   tx b58f209a89f1c8ec14cb40f2f6362ac857c071ed67551a64466b236418ae802b -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 50.00 BTC
+15:24:03 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 10.00 BTC and a fee of 0.00 BTC/kB
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 251.4 μs
+15:24:03 12 Wallet.completeTx:   with 40.00 BTC change
+15:24:03 12 Wallet.completeTx:   completed: Transaction{e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100c79fcd53ad9d92446e52b20b19c58b6d4b3f95b46b488769cfb39baa7c79ea0802200ee88f669560ee9199ceca61d0f82e4d5e14e86ee6d135ba598a63eaa2ab292301] PUSHDATA(33)[03f5152b64b9b61e552e1ee7dd1fc2f44b3bcde536b4a4bd29fe641f3fbcbbff02]  50.00 BTC
+        P2PKH addr:mqjvrf66j1uzNgwQDYW6VgNAzNCW8jg9ab  outpoint:b58f209a89f1c8ec14cb40f2f6362ac857c071ed67551a64466b236418ae802b:0
+   out  DUP HASH160 PUSHDATA(20)[5496c31cac3b53cffb60f4bd7333888775ea7b07] EQUALVERIFY CHECKSIG  10.00 BTC
+        P2PKH addr:moEDfJhkjbTRTFnvbC83B1k1xcs1Rgpkn6
+   out  DUP HASH160 PUSHDATA(20)[8cc393b468b73af4e3d4f3a5bf74a899ec675ef0] EQUALVERIFY CHECKSIG  40.00 BTC
+        P2PKH addr:mtMFBqUDnwbgGwvuNqp7fWZAcwDCiURG7J
+   fee  0.00 BTC/kB, 0.00 BTC for 226 bytes
+}
+15:24:03 12 Wallet.maybeCommitTx: commitTx of e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4
+15:24:03 12 Wallet.updateForSpends:   marked b58f209a89f1c8ec14cb40f2f6362ac857c071ed67551a64466b236418ae802b:0 as spent by e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4
+15:24:03 12 Wallet.maybeMovePool:   b58f209a89f1c8ec14cb40f2f6362ac857c071ed67551a64466b236418ae802b prevtx &lt;-unspent -&gt;spent
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 40.00 BTC
+15:24:03 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=03871c6e5634965f77b34c5d9926a2f98fdd4606bcc3052a7a97e0cc23d24abcd6, chainCode=5d61ba8ef3f56078f94e30cbe6fd768b491fcf3c8912cb2abfbb50379c400abc, path=M/0H/1/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 381.1 μs
+15:24:03 12 Wallet.receive: Received tx for -10.00 BTC: e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4 [2] in block 7a6f946be1efca291c9794ece5308abc8fed514fdbda51fcd83096d01d83f823
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 40.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 613248a1128f7e2c74c69737eb52ab1285e69b63b1f0b746846cc002f5e7ce88, but it did not cause a reorganize:
+3bca732990c77dccd4d3b27daf2a743d447a27a0ecd86fbff1b47eb32fdcd780
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 7a6f946be1efca291c9794ece5308abc8fed514fdbda51fcd83096d01d83f823
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 4fd721e73f27c73afab9a20b8d88d1dc5ab8eebbf19fc8f3c45e69c50f3f677d
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 613248a1128f7e2c74c69737eb52ab1285e69b63b1f0b746846cc002f5e7ce88
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   7a6f946be1efca291c9794ece5308abc8fed514fdbda51fcd83096d01d83f823
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   4fd721e73f27c73afab9a20b8d88d1dc5ab8eebbf19fc8f3c45e69c50f3f677d
+15:24:03 12 Wallet.reorganize:   3bca732990c77dccd4d3b27daf2a743d447a27a0ecd86fbff1b47eb32fdcd780
+15:24:03 12 Wallet.reorganize:   -&gt;pending e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4
+15:24:03 12 Wallet.updateForSpends: Saw two pending transactions double spend each other
+15:24:03 12 Wallet.updateForSpends:   offending input is input 0
+15:24:03 12 Wallet.updateForSpends: e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4: 01000000012b80ae1864236b46641a5567ed71c057c82a36f6f240cb14ecc8f1899a208fb5000000006b483045022100c79fcd53ad9d92446e52b20b19c58b6d4b3f95b46b488769cfb39baa7c79ea0802200ee88f669560ee9199ceca61d0f82e4d5e14e86ee6d135ba598a63eaa2ab2923012103f5152b64b9b61e552e1ee7dd1fc2f44b3bcde536b4a4bd29fe641f3fbcbbff02ffffffff0200ca9a3b000000001976a9145496c31cac3b53cffb60f4bd7333888775ea7b0788ac00286bee000000001976a9148cc393b468b73af4e3d4f3a5bf74a899ec675ef088ac00000000
+15:24:03 12 Wallet.updateForSpends: e30ee3d68b8045249e3f70937513b004a3c428e84330467f4392097b4edec4e4: 01000000012b80ae1864236b46641a5567ed71c057c82a36f6f240cb14ecc8f1899a208fb5000000006b483045022100c79fcd53ad9d92446e52b20b19c58b6d4b3f95b46b488769cfb39baa7c79ea0802200ee88f669560ee9199ceca61d0f82e4d5e14e86ee6d135ba598a63eaa2ab2923012103f5152b64b9b61e552e1ee7dd1fc2f44b3bcde536b4a4bd29fe641f3fbcbbff02ffffffff0200ca9a3b000000001976a9145496c31cac3b53cffb60f4bd7333888775ea7b0788ac00286bee000000001976a9148cc393b468b73af4e3d4f3a5bf74a899ec675ef088ac00000000
+15:24:03 12 Wallet.reorganize: depthToSubtract = 1
+15:24:03 12 Wallet.reorganize: Replaying block 3bca732990c77dccd4d3b27daf2a743d447a27a0ecd86fbff1b47eb32fdcd780
+15:24:03 12 Wallet.reorganize: Replaying block 4fd721e73f27c73afab9a20b8d88d1dc5ab8eebbf19fc8f3c45e69c50f3f677d
+15:24:03 12 Wallet.reorganize: post-reorg balance is 0.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 14.23 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 253.0 μs
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 213.1 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 65e5b59bc7cfff5a9f1a2672c154f4ab49a2bc4e656d8584e301c00687e6fa1e [1] in block 05891e8109c36c21a9311f420d90b1858008eedaa015e73bcfa1743426b0a062
+15:24:03 12 Wallet.processTxFromBestChain:   tx 65e5b59bc7cfff5a9f1a2672c154f4ab49a2bc4e656d8584e301c00687e6fa1e -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 50.00 BTC
+15:24:03 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 50.00 BTC and a fee of 0.00 BTC/kB
+15:24:03 12 Wallet.completeTx:   completed: Transaction{0dcb6ecdfbfe3bfda4c86235d7a19ac017e4c8dc7ed5cb6daceb902fe102a0d8
+purpose: USER_PAYMENT
+   in   PUSHDATA(70)[304302205b4e9eb028740908c7c662791a28e4e995cec25d80fa0c45e7b80c915d8bbd5e021f1b3b11fe1f390cb95f6d8979fbf9de4a19ac29f2f42e2f61c9400b9ced69c501] PUSHDATA(33)[02bef178ab52576d7137319ed3d417149312caca4ae58170404dc143c3070da1fd]  50.00 BTC
+        P2PKH addr:mkGBDKKB5GxEQqdefSGspcMsUQ7sZEhCrN  outpoint:65e5b59bc7cfff5a9f1a2672c154f4ab49a2bc4e656d8584e301c00687e6fa1e:0
+   out  DUP HASH160 PUSHDATA(20)[03b7d9d1572471fbeba3857b40789c7244915577] EQUALVERIFY CHECKSIG  50.00 BTC
+        P2PKH addr:mfrcZoxxQ48ARC8RziPefMdtayNWqRXMKC
+   fee  0.00 BTC/kB, 0.00 BTC for 190 bytes
+}
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 05891e8109c36c21a9311f420d90b1858008eedaa015e73bcfa1743426b0a062, but it did not cause a reorganize:
+58d2bf16b236696fc14cfee57cb3c138f13f435e73b85b6a8e4a6aec48257c62
+15:24:03 12 Wallet.receive: Received tx on a side chain for -50.00 BTC: 0dcb6ecdfbfe3bfda4c86235d7a19ac017e4c8dc7ed5cb6daceb902fe102a0d8 [2] in block 58d2bf16b236696fc14cfee57cb3c138f13f435e73b85b6a8e4a6aec48257c62
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 0dcb6ecdfbfe3bfda4c86235d7a19ac017e4c8dc7ed5cb6daceb902fe102a0d8
+15:24:03 12 Wallet.updateForSpends:   marked 65e5b59bc7cfff5a9f1a2672c154f4ab49a2bc4e656d8584e301c00687e6fa1e:0 as spent by 0dcb6ecdfbfe3bfda4c86235d7a19ac017e4c8dc7ed5cb6daceb902fe102a0d8
+15:24:03 12 Wallet.maybeMovePool:   65e5b59bc7cfff5a9f1a2672c154f4ab49a2bc4e656d8584e301c00687e6fa1e prevtx &lt;-unspent -&gt;spent
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 0dcb6ecdfbfe3bfda4c86235d7a19ac017e4c8dc7ed5cb6daceb902fe102a0d8
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 0.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 08b1736b67a194e49e50c8b9b5f76f679721043947798518f51046c2cef74c75
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 07383547aebb8803572fff2aa4aa750176b43f07a019cdde9d0c1ab380a52102
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 05891e8109c36c21a9311f420d90b1858008eedaa015e73bcfa1743426b0a062
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   08b1736b67a194e49e50c8b9b5f76f679721043947798518f51046c2cef74c75
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   07383547aebb8803572fff2aa4aa750176b43f07a019cdde9d0c1ab380a52102
+15:24:03 12 Wallet.reorganize:   58d2bf16b236696fc14cfee57cb3c138f13f435e73b85b6a8e4a6aec48257c62
+15:24:03 12 Wallet.reorganize: depthToSubtract = 1
+15:24:03 12 Wallet.reorganize: Replaying block 58d2bf16b236696fc14cfee57cb3c138f13f435e73b85b6a8e4a6aec48257c62
+15:24:03 12 Wallet.reorganize:   tx 0dcb6ecdfbfe3bfda4c86235d7a19ac017e4c8dc7ed5cb6daceb902fe102a0d8
+15:24:03 12 Wallet.receive: Received tx for -50.00 BTC: 0dcb6ecdfbfe3bfda4c86235d7a19ac017e4c8dc7ed5cb6daceb902fe102a0d8 [2] in block 58d2bf16b236696fc14cfee57cb3c138f13f435e73b85b6a8e4a6aec48257c62
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 0dcb6ecdfbfe3bfda4c86235d7a19ac017e4c8dc7ed5cb6daceb902fe102a0d8 -&gt;spent
+15:24:03 12 Wallet.reorganize: Replaying block 07383547aebb8803572fff2aa4aa750176b43f07a019cdde9d0c1ab380a52102
+15:24:03 12 Wallet.reorganize: post-reorg balance is 0.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 13.10 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 1.289 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 293.7 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 2d14d0c42e00a726ec33b4fbe63317ffa9dd70a2fe4acc5cd8dca45092194d6a [1] in block 22cc22a8f93847454adefbd1a3cfbab369c2a95bd4d1c65025a26468342eaf82
+15:24:03 12 Wallet.processTxFromBestChain:   tx 2d14d0c42e00a726ec33b4fbe63317ffa9dd70a2fe4acc5cd8dca45092194d6a -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 50.00 BTC
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 0/block 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2, but it did not cause a reorganize:
+6fe78131197b961574e1df8fb2c14e5164a6946f2dca0a3ee447fbe2a98c8056
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 2d14d0c42e00a726ec33b4fbe63317ffa9dd70a2fe4acc5cd8dca45092194d6a [1] in block 6fe78131197b961574e1df8fb2c14e5164a6946f2dca0a3ee447fbe2a98c8056
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 0
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 22cc22a8f93847454adefbd1a3cfbab369c2a95bd4d1c65025a26468342eaf82
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 1b11b1b6b96ed778e1e5323cce5c81cc854fd958baa620f8bc040ca509b0eb01
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   22cc22a8f93847454adefbd1a3cfbab369c2a95bd4d1c65025a26468342eaf82
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   1b11b1b6b96ed778e1e5323cce5c81cc854fd958baa620f8bc040ca509b0eb01
+15:24:03 12 Wallet.reorganize:   6fe78131197b961574e1df8fb2c14e5164a6946f2dca0a3ee447fbe2a98c8056
+15:24:03 12 Wallet.reorganize:   -&gt;pending 2d14d0c42e00a726ec33b4fbe63317ffa9dd70a2fe4acc5cd8dca45092194d6a
+15:24:03 12 Wallet.reorganize: depthToSubtract = 1
+15:24:03 12 Wallet.reorganize: Replaying block 6fe78131197b961574e1df8fb2c14e5164a6946f2dca0a3ee447fbe2a98c8056
+15:24:03 12 Wallet.reorganize:   tx 2d14d0c42e00a726ec33b4fbe63317ffa9dd70a2fe4acc5cd8dca45092194d6a
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 2d14d0c42e00a726ec33b4fbe63317ffa9dd70a2fe4acc5cd8dca45092194d6a [1] in block 6fe78131197b961574e1df8fb2c14e5164a6946f2dca0a3ee447fbe2a98c8056
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 2d14d0c42e00a726ec33b4fbe63317ffa9dd70a2fe4acc5cd8dca45092194d6a -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 1b11b1b6b96ed778e1e5323cce5c81cc854fd958baa620f8bc040ca509b0eb01
+15:24:03 12 Wallet.reorganize: post-reorg balance is 50.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 21.55 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 393.7 μs
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 597.9 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 0/block 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2, but it did not cause a reorganize:
+00436713d7809b03e38955e05b7ecc30730cd15c8e54dc25c908581fdf6fae0d
+15:24:03 12 Wallet.receive: Received tx on a side chain for 50.00 BTC: 08b6a79ae104a4de96d65fdd29b1a146d9ce3109906dd0d0ff41bc9df9b8ae51 [1] in block 00436713d7809b03e38955e05b7ecc30730cd15c8e54dc25c908581fdf6fae0d
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 08b6a79ae104a4de96d65fdd29b1a146d9ce3109906dd0d0ff41bc9df9b8ae51
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 08b6a79ae104a4de96d65fdd29b1a146d9ce3109906dd0d0ff41bc9df9b8ae51
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 50.00 BTC
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 08b6a79ae104a4de96d65fdd29b1a146d9ce3109906dd0d0ff41bc9df9b8ae51 [2] in block 387a83120a30a52072ce5969681149266951e4c6dadf6c61cb4a9cef1ffe7807
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 08b6a79ae104a4de96d65fdd29b1a146d9ce3109906dd0d0ff41bc9df9b8ae51 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 50.00 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 13.21 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 434.0 μs
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 711.1 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 Wallet.receive: Received tx for 1.00 BTC: a46d513a075fea6e6149d67771d0ee7e2bcc82de9e7b4511109c481b40892d15 [2] in block 3679e36724302e2f02edbf1fb9f0effacd9bd8bc317a5863c80805b576090d1f
+15:24:03 12 Wallet.processTxFromBestChain:   tx a46d513a075fea6e6149d67771d0ee7e2bcc82de9e7b4511109c481b40892d15 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 1.00 BTC
+15:24:03 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 0.01 BTC and a fee of 0.00 BTC/kB
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 284.2 μs
+15:24:03 12 Wallet.completeTx:   with 0.99 BTC change
+15:24:03 12 Wallet.completeTx:   completed: Transaction{9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7
+purpose: USER_PAYMENT
+   in   PUSHDATA(71)[304402200519621aa1d70e02bfc22dfb2349d91ea6026c39fdb1dffd1aacb25f304402990220375b3c557aac14a54711b17dfe00052b4c575ba91650592d557ffa771fdf0dee01] PUSHDATA(33)[0374dd3ea3b341dbf24b7b08724ed8d0dca9f7231f084f1e23a0a42def887e2151]  1.00 BTC
+        P2PKH addr:mtfENfKGio1PhJYMTRbDgbSLMft1aFRG2G  outpoint:a46d513a075fea6e6149d67771d0ee7e2bcc82de9e7b4511109c481b40892d15:0
+   out  DUP HASH160 PUSHDATA(20)[d99b12c4cdf0bade4482f7b6681b37137d55ff16] EQUALVERIFY CHECKSIG  0.01 BTC
+        P2PKH addr:n1MYhN51CzaqhpsY9yjpywQUFbB21uvUvh
+   out  DUP HASH160 PUSHDATA(20)[168335d924b627579487227b5b0498c42eb07f07] EQUALVERIFY CHECKSIG  0.99 BTC
+        P2PKH addr:mhZzLvpw66Ja2czSriUBWV8Hbiyb7U1Mfi
+   fee  0.00 BTC/kB, 0.00 BTC for 225 bytes
+}
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7
+15:24:03 12 Wallet.updateForSpends:   marked a46d513a075fea6e6149d67771d0ee7e2bcc82de9e7b4511109c481b40892d15:0 as spent by 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7
+15:24:03 12 Wallet.maybeMovePool:   a46d513a075fea6e6149d67771d0ee7e2bcc82de9e7b4511109c481b40892d15 prevtx &lt;-unspent -&gt;spent
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 0.99 BTC
+15:24:03 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=02f710983d4ee31f0fa5fdb24dcc3aa1a19ad5453446b1585c6d56ad2113adf93c, chainCode=a8ce9d25c62a465c8d4e35961c344a28f2df27f79c68a358d5d1288e794f9df3, path=M/0H/1/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 1.137 ms
+15:24:03 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 0.01 BTC and a fee of 0.00 BTC/kB
+15:24:03 12 Wallet.completeTx:   with 0.98 BTC change
+15:24:03 12 Wallet.completeTx:   completed: Transaction{2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100b31c48ef265fc69420a96e9707d655ff32cc1bdf93cb8a8e9be311892939051502204bb8b0a7b99949dcf4ac905bf88bd908512771a6a1efe2ef6a1ecfa3ea05abce01] PUSHDATA(33)[02f710983d4ee31f0fa5fdb24dcc3aa1a19ad5453446b1585c6d56ad2113adf93c]  0.99 BTC
+        P2PKH addr:mhZzLvpw66Ja2czSriUBWV8Hbiyb7U1Mfi  outpoint:9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7:1
+   out  DUP HASH160 PUSHDATA(20)[6662f46561451ba01101816e946b04dfbe8e2497] EQUALVERIFY CHECKSIG  0.01 BTC
+        P2PKH addr:mprKm7SZwCDcvDPia37PfVfF7XsKTzDusf
+   out  DUP HASH160 PUSHDATA(20)[f0fea9e24d6e81d8809a174228e5b39c4a33f00f] EQUALVERIFY CHECKSIG  0.98 BTC
+        P2PKH addr:n3VDYRxUr8Ag1Zz8wvnsMPaY8csK1PL5WX
+   fee  0.00 BTC/kB, 0.00 BTC for 226 bytes
+}
+15:24:03 12 Wallet.maybeCommitTx: commitTx of 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964
+15:24:03 12 Wallet.updateForSpends:   marked 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7:1 as spent by 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964
+15:24:03 12 Wallet.maybeCommitTx: -&gt;pending: 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964
+15:24:03 12 Wallet.maybeCommitTx: Estimated balance is now: 0.98 BTC
+15:24:03 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=02d9abebb28b9dc694bfdf8741e02d146a65ea84556738aa29e255332bbb4ff9bd, chainCode=56c721e54329faaf961d2bbad862c99c7a0aa116c18643a3c52c382147e688a1, path=M/0H/1/1, isEncrypted=false, isPubKeyOnly=false}
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 3 issued + 0 lookahead size + 0 lookahead threshold - 2 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 454.9 μs
+15:24:03 12 Wallet.receive: Received tx for -0.01 BTC: 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7 [2] in block 2c86c18703726fbccdf88858ed6054d6fb2ff5ab0752b9dd0b30814743933d5b
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.updateForSpends: Connected pending tx input 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964:0
+15:24:03 12 Wallet.updateForSpends: Removed from UNSPENTS: TxOut of 0.99 BTC to mhZzLvpw66Ja2czSriUBWV8Hbiyb7U1Mfi script:DUP HASH160 PUSHDATA(20)[168335d924b627579487227b5b0498c42eb07f07] EQUALVERIFY CHECKSIG
+15:24:03 12 Wallet.processTxFromBestChain:   tx 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7 -&gt;spent (by pending)
+15:24:03 12 Wallet.receive: Balance is now: 0.98 BTC
+15:24:03 12 Wallet.receive: Received tx for -0.01 BTC: 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964 [3] in block 2c86c18703726fbccdf88858ed6054d6fb2ff5ab0752b9dd0b30814743933d5b
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 0.98 BTC
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 2 issued + 5 lookahead size + 0 lookahead threshold - 2 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 1.110 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 3 issued + 5 lookahead size + 0 lookahead threshold - 3 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 19.40 ms
+15:24:03 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 3679e36724302e2f02edbf1fb9f0effacd9bd8bc317a5863c80805b576090d1f, but it did not cause a reorganize:
+3c83593399af1fd87ae2d2ef712ab5a8a5087cf81e4c24e55367c1bc67542355
+15:24:03 12 Wallet.receive: Received tx on a side chain for -0.01 BTC: 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7 [2] in block 3c83593399af1fd87ae2d2ef712ab5a8a5087cf81e4c24e55367c1bc67542355
+15:24:03 12 Wallet.receive: Received tx on a side chain for -0.01 BTC: 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964 [3] in block 3c83593399af1fd87ae2d2ef712ab5a8a5087cf81e4c24e55367c1bc67542355
+15:24:03 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Old chain head: 2c86c18703726fbccdf88858ed6054d6fb2ff5ab0752b9dd0b30814743933d5b
+15:24:03 12 AbstractBlockChain.handleNewBestChain: New chain head: 07399121bb0597959f6d5289d98f294ea7b63fcef2b1593f3a9e7dfe494671ec
+15:24:03 12 AbstractBlockChain.handleNewBestChain: Split at block: 3679e36724302e2f02edbf1fb9f0effacd9bd8bc317a5863c80805b576090d1f
+15:24:03 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   2c86c18703726fbccdf88858ed6054d6fb2ff5ab0752b9dd0b30814743933d5b
+15:24:03 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:03 12 Wallet.reorganize:   07399121bb0597959f6d5289d98f294ea7b63fcef2b1593f3a9e7dfe494671ec
+15:24:03 12 Wallet.reorganize:   3c83593399af1fd87ae2d2ef712ab5a8a5087cf81e4c24e55367c1bc67542355
+15:24:03 12 Wallet.reorganize:   -&gt;pending 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7
+15:24:03 12 Wallet.updateForSpends: Saw two pending transactions double spend each other
+15:24:03 12 Wallet.updateForSpends:   offending input is input 0
+15:24:03 12 Wallet.updateForSpends: 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7: 0100000001152d89401b489c1011457b9ede82cc2b7eeed07177d649616eea5f073a516da4000000006a47304402200519621aa1d70e02bfc22dfb2349d91ea6026c39fdb1dffd1aacb25f304402990220375b3c557aac14a54711b17dfe00052b4c575ba91650592d557ffa771fdf0dee01210374dd3ea3b341dbf24b7b08724ed8d0dca9f7231f084f1e23a0a42def887e2151ffffffff0240420f00000000001976a914d99b12c4cdf0bade4482f7b6681b37137d55ff1688acc09ee605000000001976a914168335d924b627579487227b5b0498c42eb07f0788ac00000000
+15:24:03 12 Wallet.updateForSpends: 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7: 0100000001152d89401b489c1011457b9ede82cc2b7eeed07177d649616eea5f073a516da4000000006a47304402200519621aa1d70e02bfc22dfb2349d91ea6026c39fdb1dffd1aacb25f304402990220375b3c557aac14a54711b17dfe00052b4c575ba91650592d557ffa771fdf0dee01210374dd3ea3b341dbf24b7b08724ed8d0dca9f7231f084f1e23a0a42def887e2151ffffffff0240420f00000000001976a914d99b12c4cdf0bade4482f7b6681b37137d55ff1688acc09ee605000000001976a914168335d924b627579487227b5b0498c42eb07f0788ac00000000
+15:24:03 12 Wallet.reorganize:   -&gt;pending 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964
+15:24:03 12 Wallet.updateForSpends:   marked 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7:1 as spent by 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964
+15:24:03 12 Wallet.reorganize: depthToSubtract = 1
+15:24:03 12 Wallet.reorganize: Replaying block 3c83593399af1fd87ae2d2ef712ab5a8a5087cf81e4c24e55367c1bc67542355
+15:24:03 12 Wallet.reorganize:   tx 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7
+15:24:03 12 Wallet.receive: Received tx for -0.01 BTC: 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7 [2] in block 3c83593399af1fd87ae2d2ef712ab5a8a5087cf81e4c24e55367c1bc67542355
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.updateForSpends: Connected pending tx input 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964:0
+15:24:03 12 Wallet.updateForSpends: Removed from UNSPENTS: TxOut of 0.99 BTC to mhZzLvpw66Ja2czSriUBWV8Hbiyb7U1Mfi script:DUP HASH160 PUSHDATA(20)[168335d924b627579487227b5b0498c42eb07f07] EQUALVERIFY CHECKSIG
+15:24:03 12 Wallet.processTxFromBestChain:   tx 9fce0f70db7217da124d88fe5e4d48d35653abd87c2ee18e50ca7225872bbaf7 -&gt;spent (by pending)
+15:24:03 12 Wallet.reorganize:   tx 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964
+15:24:03 12 Wallet.receive: Received tx for -0.01 BTC: 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964 [3] in block 3c83593399af1fd87ae2d2ef712ab5a8a5087cf81e4c24e55367c1bc67542355
+15:24:03 12 Wallet.receive:   &lt;-pending
+15:24:03 12 Wallet.processTxFromBestChain:   tx 2bc582878484a222e4368aa04fad543509b219185a3ce37092929c9698de1964 -&gt;unspent
+15:24:03 12 Wallet.reorganize: Replaying block 07399121bb0597959f6d5289d98f294ea7b63fcef2b1593f3a9e7dfe494671ec
+15:24:03 12 Wallet.reorganize: post-reorg balance is 0.98 BTC
+15:24:03 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:03 12 MnemonicCode.toSeed: PBKDF2 took 21.14 ms
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 412.3 μs
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 605.2 μs
+15:24:03 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:03 12 Wallet.receive: Received tx for 50.00 BTC: 4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7 [1] in block 0ac4ef0fbc4921d550afb70026a63c814365c3efb52e1f518a6e5ee48dd570a9
+15:24:03 12 Wallet.processTxFromBestChain:   tx 4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7 -&gt;unspent
+15:24:03 12 Wallet.receive: Balance is now: 50.00 BTC
+15:24:03 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 10.00 BTC and a fee of 0.00 BTC/kB
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:03 12 DeterministicKeyChain.maybeLookAhead: Took 555.6 μs
+15:24:03 12 Wallet.completeTx:   with 40.00 BTC change
+15:24:04 12 Wallet.completeTx:   completed: Transaction{41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021
+purpose: USER_PAYMENT
+   in   PUSHDATA(71)[304402205aec17d4c9668154bc9b0daa8391e26888e198982fe0df855cc9ffdefc6b930102201b24de533f36a2edfb38d266d063c726ae7a997a33bf526a647f47890227652701] PUSHDATA(33)[03b5e69e58ef20e14420496d84eaf79bacc895d307f2500a4f4689624b3d3e7202]  50.00 BTC
+        P2PKH addr:miwLuj4PcwapTiFjwN1SUDmbfgVwqa9vyw  outpoint:4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7:0
+   out  DUP HASH160 PUSHDATA(20)[44d32f0e32704260f9b278cf8c724486e40aca00] EQUALVERIFY CHECKSIG  10.00 BTC
+        P2PKH addr:mmnsEQYysjJrUgCfTNAX1ZxQBxZV6BNDfJ
+   out  DUP HASH160 PUSHDATA(20)[ff9f9febe8aabae9bcf563332b26303d40764339] EQUALVERIFY CHECKSIG  40.00 BTC
+        P2PKH addr:n4pZptWZaLMkgCMWtFqPWNDX6RHjzQJQnX
+   fee  0.00 BTC/kB, 0.00 BTC for 225 bytes
+}
+15:24:04 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 20.00 BTC and a fee of 0.00 BTC/kB
+15:24:04 12 Wallet.completeTx:   with 30.00 BTC change
+15:24:04 12 Wallet.completeTx:   completed: Transaction{95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100dfb215ebe92bbdf5605beddfc5f2509eb3a482e7202cfb2301928e59b2a36fae02203fd5ca0913adc4f9377f1cccc29e127ee745cc7ea2088c055b7f8b9d41bb1eef01] PUSHDATA(33)[03b5e69e58ef20e14420496d84eaf79bacc895d307f2500a4f4689624b3d3e7202]  50.00 BTC
+        P2PKH addr:miwLuj4PcwapTiFjwN1SUDmbfgVwqa9vyw  outpoint:4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7:0
+   out  DUP HASH160 PUSHDATA(20)[18c42951df0f88f29cd8e0bfc4ce47d558a9819d] EQUALVERIFY CHECKSIG  20.00 BTC
+        P2PKH addr:mhmuWC3wrkKUkJa13TdVUhssMJTqqYMfFw
+   out  DUP HASH160 PUSHDATA(20)[ff9f9febe8aabae9bcf563332b26303d40764339] EQUALVERIFY CHECKSIG  30.00 BTC
+        P2PKH addr:n4pZptWZaLMkgCMWtFqPWNDX6RHjzQJQnX
+   fee  0.00 BTC/kB, 0.00 BTC for 226 bytes
+}
+15:24:04 12 Wallet.maybeCommitTx: commitTx of 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021
+15:24:04 12 Wallet.updateForSpends:   marked 4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7:0 as spent by 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021
+15:24:04 12 Wallet.maybeMovePool:   4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7 prevtx &lt;-unspent -&gt;spent
+15:24:04 12 Wallet.maybeCommitTx: -&gt;pending: 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021
+15:24:04 12 Wallet.maybeCommitTx: Estimated balance is now: 40.00 BTC
+15:24:04 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=024803cce19ab2327125b1eb2fab871f386f88f4f48800a57b243f602ba2bfa033, chainCode=8a9b48357ab1036990b548b540b2fe05a38f95f38da4f5da47a5a4caf815201b, path=M/0H/1/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:04 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:04 12 DeterministicKeyChain.maybeLookAhead: Took 652.5 μs
+15:24:04 12 Wallet.receive: Received tx for -10.00 BTC: 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021 [2] in block 7b6381b72cb79a57725ddf4854d65d6ae407a5c7e2e426eede6069d3c1dc7879
+15:24:04 12 Wallet.receive:   &lt;-pending
+15:24:04 12 Wallet.processTxFromBestChain:   tx 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021 -&gt;unspent
+15:24:04 12 Wallet.receive: Balance is now: 40.00 BTC
+15:24:04 12 AbstractBlockChain.connectBlock: Block forks the chain at height 1/block 0ac4ef0fbc4921d550afb70026a63c814365c3efb52e1f518a6e5ee48dd570a9, but it did not cause a reorganize:
+63c3c32c0838ba54cf0639227db7abd9abfba026f6b16faea424c73024d300a2
+15:24:04 12 Wallet.receive: Received tx on a side chain for -20.00 BTC: 95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481 [2] in block 63c3c32c0838ba54cf0639227db7abd9abfba026f6b16faea424c73024d300a2
+15:24:04 12 Wallet.maybeCommitTx: commitTx of 95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481
+15:24:04 12 Wallet.updateForSpends: Saw two pending transactions double spend each other
+15:24:04 12 Wallet.updateForSpends:   offending input is input 0
+15:24:04 12 Wallet.updateForSpends: 95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481: 0100000001c7d7cebce53f6f0c241f967d76c1717084eaef75ad96874830a47d335368354b000000006b483045022100dfb215ebe92bbdf5605beddfc5f2509eb3a482e7202cfb2301928e59b2a36fae02203fd5ca0913adc4f9377f1cccc29e127ee745cc7ea2088c055b7f8b9d41bb1eef012103b5e69e58ef20e14420496d84eaf79bacc895d307f2500a4f4689624b3d3e7202ffffffff0200943577000000001976a91418c42951df0f88f29cd8e0bfc4ce47d558a9819d88ac005ed0b2000000001976a914ff9f9febe8aabae9bcf563332b26303d4076433988ac00000000
+15:24:04 12 Wallet.updateForSpends: 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021: 0100000001c7d7cebce53f6f0c241f967d76c1717084eaef75ad96874830a47d335368354b000000006a47304402205aec17d4c9668154bc9b0daa8391e26888e198982fe0df855cc9ffdefc6b930102201b24de533f36a2edfb38d266d063c726ae7a997a33bf526a647f478902276527012103b5e69e58ef20e14420496d84eaf79bacc895d307f2500a4f4689624b3d3e7202ffffffff0200ca9a3b000000001976a91444d32f0e32704260f9b278cf8c724486e40aca0088ac00286bee000000001976a914ff9f9febe8aabae9bcf563332b26303d4076433988ac00000000
+15:24:04 12 Wallet.maybeCommitTx: -&gt;dead: 95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481
+15:24:04 12 Wallet.maybeCommitTx: Estimated balance is now: 40.00 BTC
+15:24:04 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:04 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 1
+15:24:04 12 AbstractBlockChain.handleNewBestChain: Old chain head: 7b6381b72cb79a57725ddf4854d65d6ae407a5c7e2e426eede6069d3c1dc7879
+15:24:04 12 AbstractBlockChain.handleNewBestChain: New chain head: 63c3b463c430376b688f9846594029587fdcbda2b8dfbc83b6dfb535e96a1505
+15:24:04 12 AbstractBlockChain.handleNewBestChain: Split at block: 0ac4ef0fbc4921d550afb70026a63c814365c3efb52e1f518a6e5ee48dd570a9
+15:24:04 12 Wallet.reorganize: Old part of chain (top to bottom):
+15:24:04 12 Wallet.reorganize:   7b6381b72cb79a57725ddf4854d65d6ae407a5c7e2e426eede6069d3c1dc7879
+15:24:04 12 Wallet.reorganize: New part of chain (top to bottom):
+15:24:04 12 Wallet.reorganize:   63c3b463c430376b688f9846594029587fdcbda2b8dfbc83b6dfb535e96a1505
+15:24:04 12 Wallet.reorganize:   63c3c32c0838ba54cf0639227db7abd9abfba026f6b16faea424c73024d300a2
+15:24:04 12 Wallet.reorganize:   -&gt;pending 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021
+15:24:04 12 Wallet.updateForSpends: Saw two pending transactions double spend each other
+15:24:04 12 Wallet.updateForSpends:   offending input is input 0
+15:24:04 12 Wallet.updateForSpends: 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021: 0100000001c7d7cebce53f6f0c241f967d76c1717084eaef75ad96874830a47d335368354b000000006a47304402205aec17d4c9668154bc9b0daa8391e26888e198982fe0df855cc9ffdefc6b930102201b24de533f36a2edfb38d266d063c726ae7a997a33bf526a647f478902276527012103b5e69e58ef20e14420496d84eaf79bacc895d307f2500a4f4689624b3d3e7202ffffffff0200ca9a3b000000001976a91444d32f0e32704260f9b278cf8c724486e40aca0088ac00286bee000000001976a914ff9f9febe8aabae9bcf563332b26303d4076433988ac00000000
+15:24:04 12 Wallet.updateForSpends: 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021: 0100000001c7d7cebce53f6f0c241f967d76c1717084eaef75ad96874830a47d335368354b000000006a47304402205aec17d4c9668154bc9b0daa8391e26888e198982fe0df855cc9ffdefc6b930102201b24de533f36a2edfb38d266d063c726ae7a997a33bf526a647f478902276527012103b5e69e58ef20e14420496d84eaf79bacc895d307f2500a4f4689624b3d3e7202ffffffff0200ca9a3b000000001976a91444d32f0e32704260f9b278cf8c724486e40aca0088ac00286bee000000001976a914ff9f9febe8aabae9bcf563332b26303d4076433988ac00000000
+15:24:04 12 Wallet.reorganize: depthToSubtract = 1
+15:24:04 12 Wallet.reorganize: Replaying block 63c3c32c0838ba54cf0639227db7abd9abfba026f6b16faea424c73024d300a2
+15:24:04 12 Wallet.reorganize:   tx 95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481
+15:24:04 12 Wallet.receive: Received tx for -20.00 BTC: 95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481 [2] in block 63c3c32c0838ba54cf0639227db7abd9abfba026f6b16faea424c73024d300a2
+15:24:04 12 Wallet.receive:   &lt;-dead
+15:24:04 12 Wallet.processTxFromBestChain:   tx 95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481 -&gt;unspent
+15:24:04 12 Wallet.killTxns: TX 41062a414838e74813d87bf62389a5865d7498652abce5c20440b7d695746021 killed by 95ba461fb0a6e3eeefa48a6fe95d69409b72be4e29d5c06f696cf54b7611a481
+15:24:04 12 Wallet.killTxns: Disconnecting each input and moving connected transactions.
+15:24:04 12 Wallet.killTxns: Added to UNSPENTS: TxOut of 50.00 BTC to miwLuj4PcwapTiFjwN1SUDmbfgVwqa9vyw script:DUP HASH160 PUSHDATA(20)[25853d0f38e55f38abaec24b4c353a14ba092689] EQUALVERIFY CHECKSIG in 4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7
+15:24:04 12 Wallet.maybeMovePool:   4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7 kill &lt;-spent -&gt;unspent
+15:24:04 12 Wallet.killTxns: XX Removed from UNSPENTS: TxOut of 40.00 BTC to n4pZptWZaLMkgCMWtFqPWNDX6RHjzQJQnX script:DUP HASH160 PUSHDATA(20)[ff9f9febe8aabae9bcf563332b26303d40764339] EQUALVERIFY CHECKSIG
+15:24:04 12 Wallet.killTxns: Now attempting to connect the inputs of the overriding transaction.
+15:24:04 12 Wallet.maybeMovePool:   4b356853337da430488796ad75efea847071c1767d961f240c6f3fe5bcced7c7 kill &lt;-unspent -&gt;spent
+15:24:04 12 Wallet.killTxns: Removing from UNSPENTS: TxOut of 50.00 BTC to miwLuj4PcwapTiFjwN1SUDmbfgVwqa9vyw script:DUP HASH160 PUSHDATA(20)[25853d0f38e55f38abaec24b4c353a14ba092689] EQUALVERIFY CHECKSIG
+15:24:04 12 Wallet.reorganize: Replaying block 63c3b463c430376b688f9846594029587fdcbda2b8dfbc83b6dfb535e96a1505
+15:24:04 12 Wallet.reorganize: post-reorg balance is 30.00 BTC
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.3</a> at Mar 25, 2019, 3:25:05 PM</p>
+</div>
+</div>
+</body>
+</html>

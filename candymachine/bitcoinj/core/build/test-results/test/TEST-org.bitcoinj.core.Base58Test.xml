@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.Base58Test" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:09" hostname="IO-2.local" time="0.001">
+  <properties/>
+  <testcase name="testDecodeChecked" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <testcase name="testEncodeChecked_privateKey" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <testcase name="testDecodeChecked_shortInput" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <testcase name="testDecodeChecked_invalidChecksum" classname="org.bitcoinj.core.Base58Test" time="0.001"/>
+  <testcase name="testEncodeChecked_address" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <testcase name="decode_invalidCharacter_notInAlphabet" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <testcase name="testDecodeToBigInteger" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <testcase name="testDecode_invalidBase58" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <testcase name="testDecode" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <testcase name="testEncode" classname="org.bitcoinj.core.Base58Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

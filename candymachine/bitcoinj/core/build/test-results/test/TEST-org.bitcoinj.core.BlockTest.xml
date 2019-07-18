@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.BlockTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:31" hostname="IO-2.local" time="0.142">
+  <properties/>
+  <testcase name="parseBlockWithHugeDeclaredTransactionsSize" classname="org.bitcoinj.core.BlockTest" time="0.004"/>
+  <testcase name="testBadTransactions" classname="org.bitcoinj.core.BlockTest" time="0.001"/>
+  <testcase name="testBlock481829_witnessTransactions" classname="org.bitcoinj.core.BlockTest" time="0.035"/>
+  <testcase name="testBlock481815_witnessCommitmentInCoinbase" classname="org.bitcoinj.core.BlockTest" time="0.018"/>
+  <testcase name="testReceiveCoinbaseTransaction" classname="org.bitcoinj.core.BlockTest" time="0.028"/>
+  <testcase name="isBIPs" classname="org.bitcoinj.core.BlockTest" time="0.047"/>
+  <testcase name="testProofOfWork" classname="org.bitcoinj.core.BlockTest" time="0.001"/>
+  <testcase name="testDate" classname="org.bitcoinj.core.BlockTest" time="0.001"/>
+  <testcase name="testWork" classname="org.bitcoinj.core.BlockTest" time="0.001"/>
+  <testcase name="testCoinbaseHeightTestnet" classname="org.bitcoinj.core.BlockTest" time="0.002"/>
+  <testcase name="testUpdateLength" classname="org.bitcoinj.core.BlockTest" time="0.001"/>
+  <testcase name="testBitcoinSerialization" classname="org.bitcoinj.core.BlockTest" time="0.0"/>
+  <testcase name="testHeaderParse" classname="org.bitcoinj.core.BlockTest" time="0.0"/>
+  <testcase name="testBlockVerification" classname="org.bitcoinj.core.BlockTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 16.92 ms
+15:24:31 12 Wallet.receive: Received tx for 0.22223642 BTC: 5baacd3ce43b29a17f7934c03a6dc0f90d898dbafee1e7dcc50366315369ef7a [0] in block 0000000000000756935f1ee9d5987857b604046f846d3df56d024cdb5f368665
+15:24:31 12 Wallet.processTxFromBestChain:   tx 5baacd3ce43b29a17f7934c03a6dc0f90d898dbafee1e7dcc50366315369ef7a ->unspent
+15:24:31 12 Wallet.receive: Balance is now: 0.00 BTC
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+]]></system-err>
+</testsuite>

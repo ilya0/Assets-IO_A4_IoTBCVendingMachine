@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.PrefixedChecksummedBytesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:27" hostname="IO-2.local" time="0.0">
+  <properties/>
+  <testcase name="stringification" classname="org.bitcoinj.core.PrefixedChecksummedBytesTest" time="0.0"/>
+  <testcase name="cloning" classname="org.bitcoinj.core.PrefixedChecksummedBytesTest" time="0.0"/>
+  <testcase name="comparisonCloneEqualTo" classname="org.bitcoinj.core.PrefixedChecksummedBytesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

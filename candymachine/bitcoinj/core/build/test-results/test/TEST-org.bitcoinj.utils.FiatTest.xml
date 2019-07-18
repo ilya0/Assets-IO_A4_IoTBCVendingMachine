@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.utils.FiatTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:31" hostname="IO-2.local" time="0.003">
+  <properties/>
+  <testcase name="testToPlainString" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testParseFiat" classname="org.bitcoinj.utils.FiatTest" time="0.001"/>
+  <testcase name="testSign" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testComparing" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testOperations" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testParseFiatOverprecise" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testParseAndValueOf" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testToFriendlyString" classname="org.bitcoinj.utils.FiatTest" time="0.001"/>
+  <testcase name="testParseFiatInexact" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testParseFiatInexactInvalidAmount" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testValueFetching" classname="org.bitcoinj.utils.FiatTest" time="0.0"/>
+  <testcase name="testCurrencyCode" classname="org.bitcoinj.utils.FiatTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

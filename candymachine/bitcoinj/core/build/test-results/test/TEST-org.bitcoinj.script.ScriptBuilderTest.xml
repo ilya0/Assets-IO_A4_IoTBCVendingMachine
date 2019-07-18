@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.script.ScriptBuilderTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:49" hostname="IO-2.local" time="0.001">
+  <properties/>
+  <testcase name="testOpFalse" classname="org.bitcoinj.script.ScriptBuilderTest" time="0.001"/>
+  <testcase name="numberBuilderNegative" classname="org.bitcoinj.script.ScriptBuilderTest" time="0.0"/>
+  <testcase name="numberBuilderPositiveOpCode" classname="org.bitcoinj.script.ScriptBuilderTest" time="0.0"/>
+  <testcase name="numberBuilderBigNum" classname="org.bitcoinj.script.ScriptBuilderTest" time="0.0"/>
+  <testcase name="numberBuilder16" classname="org.bitcoinj.script.ScriptBuilderTest" time="0.0"/>
+  <testcase name="numberBuilderZero" classname="org.bitcoinj.script.ScriptBuilderTest" time="0.0"/>
+  <testcase name="testNumber" classname="org.bitcoinj.script.ScriptBuilderTest" time="0.0"/>
+  <testcase name="testOpTrue" classname="org.bitcoinj.script.ScriptBuilderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

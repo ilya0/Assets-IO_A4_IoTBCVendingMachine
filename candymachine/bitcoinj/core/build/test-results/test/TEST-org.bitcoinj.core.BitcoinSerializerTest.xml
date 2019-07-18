@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.BitcoinSerializerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:04" hostname="IO-2.local" time="0.554">
+  <properties/>
+  <testcase name="testSerializeUnknownMessage" classname="org.bitcoinj.core.BitcoinSerializerTest" time="0.001"/>
+  <testcase name="testCachedParsing" classname="org.bitcoinj.core.BitcoinSerializerTest" time="0.001"/>
+  <testcase name="testBitcoinPacketHeaderTooShort" classname="org.bitcoinj.core.BitcoinSerializerTest" time="0.0"/>
+  <testcase name="testAddr" classname="org.bitcoinj.core.BitcoinSerializerTest" time="0.55"/>
+  <testcase name="testHeaders1" classname="org.bitcoinj.core.BitcoinSerializerTest" time="0.0"/>
+  <testcase name="testHeaders2" classname="org.bitcoinj.core.BitcoinSerializerTest" time="0.001"/>
+  <testcase name="testSeekPastMagicBytes" classname="org.bitcoinj.core.BitcoinSerializerTest" time="0.0"/>
+  <testcase name="testBitcoinPacketHeaderTooLong" classname="org.bitcoinj.core.BitcoinSerializerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:04 12 Transaction.setLockTime: You are setting the lock time on a transaction but none of the inputs have non-default sequence numbers. This will not do what you expect!
+]]></system-err>
+</testsuite>

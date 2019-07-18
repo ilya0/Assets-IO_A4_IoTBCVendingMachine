@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.CoinTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:27" hostname="IO-2.local" time="0.003">
+  <properties/>
+  <testcase name="testToPlainString" classname="org.bitcoinj.core.CoinTest" time="0.001"/>
+  <testcase name="testOperators" classname="org.bitcoinj.core.CoinTest" time="0.0"/>
+  <testcase name="testMultiplicationUnderflow" classname="org.bitcoinj.core.CoinTest" time="0.001"/>
+  <testcase name="testAdditionOverflow" classname="org.bitcoinj.core.CoinTest" time="0.0"/>
+  <testcase name="testParseCoin" classname="org.bitcoinj.core.CoinTest" time="0.0"/>
+  <testcase name="testMultiplicationOverflow" classname="org.bitcoinj.core.CoinTest" time="0.0"/>
+  <testcase name="testValueOf" classname="org.bitcoinj.core.CoinTest" time="0.001"/>
+  <testcase name="testSubstractionUnderflow" classname="org.bitcoinj.core.CoinTest" time="0.0"/>
+  <testcase name="testToFriendlyString" classname="org.bitcoinj.core.CoinTest" time="0.0"/>
+  <testcase name="testParseCoinInexact" classname="org.bitcoinj.core.CoinTest" time="0.0"/>
+  <testcase name="testParseCoinOverprecise" classname="org.bitcoinj.core.CoinTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

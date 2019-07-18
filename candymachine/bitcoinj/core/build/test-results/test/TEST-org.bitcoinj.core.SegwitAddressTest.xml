@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.SegwitAddressTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:02" hostname="IO-2.local" time="0.024">
+  <properties/>
+  <testcase name="fromBech32_wrongNetwork" classname="org.bitcoinj.core.SegwitAddressTest" time="0.002"/>
+  <testcase name="example_p2wsh_mainnet" classname="org.bitcoinj.core.SegwitAddressTest" time="0.004"/>
+  <testcase name="testJavaSerialization" classname="org.bitcoinj.core.SegwitAddressTest" time="0.006"/>
+  <testcase name="example_p2wpkh_mainnet" classname="org.bitcoinj.core.SegwitAddressTest" time="0.0"/>
+  <testcase name="validAddresses" classname="org.bitcoinj.core.SegwitAddressTest" time="0.001"/>
+  <testcase name="fromBech32_tooLong" classname="org.bitcoinj.core.SegwitAddressTest" time="0.0"/>
+  <testcase name="invalidAddresses" classname="org.bitcoinj.core.SegwitAddressTest" time="0.001"/>
+  <testcase name="example_p2wsh_testnet" classname="org.bitcoinj.core.SegwitAddressTest" time="0.0"/>
+  <testcase name="fromBech32_invalidHrp" classname="org.bitcoinj.core.SegwitAddressTest" time="0.0"/>
+  <testcase name="fromBech32_version0_invalidLength" classname="org.bitcoinj.core.SegwitAddressTest" time="0.0"/>
+  <testcase name="fromBech32_tooShort" classname="org.bitcoinj.core.SegwitAddressTest" time="0.0"/>
+  <testcase name="example_p2wpkh_testnet" classname="org.bitcoinj.core.SegwitAddressTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.store.WalletProtobufSerializerTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:25:04" hostname="IO-2.local" time="0.957">
+  <properties/>
+  <testcase name="versions" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.015"/>
+  <testcase name="extensions" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.039"/>
+  <testcase name="doubleSpend" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.019"/>
+  <testcase name="testLastBlockSeenHash" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.034"/>
+  <testcase name="storeWitnessTransactions" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.028"/>
+  <testcase name="testKeys" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.402"/>
+  <testcase name="testRoundTripMarriedWallet" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.092"/>
+  <testcase name="tags" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.028"/>
+  <testcase name="testRoundTripWatchingWallet" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.027"/>
+  <testcase name="empty" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.023"/>
+  <testcase name="raiseFeeTx" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.03"/>
+  <testcase name="oneTx" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.027"/>
+  <testcase name="coinbaseTxns" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.028"/>
+  <testcase name="testAppearedAtChainHeightDepthAndWorkDone" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.027"/>
+  <testcase name="testRoundTripNormalWallet" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.024"/>
+  <testcase name="roundtripVersionTwoTransaction" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.024"/>
+  <testcase name="testSequenceNumber" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.053"/>
+  <testcase name="extensionsWithError" classname="org.bitcoinj.store.WalletProtobufSerializerTest" time="0.036"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 10.14 ms
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 11.90 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 786.7 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 672.3 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 783.4 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 588.5 μs
+15:25:04 12 WalletProtobufSerializer.loadExtensions: Loading wallet extension com.whatever.required
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 9.179 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 596.6 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 674.5 μs
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 10.22 ms
+15:25:04 12 Wallet.receivePending: Received a pending transaction 4a03ca9d9c99c863df4a3f7149f8ed142ca0541bb6fcc617291017910a72ecf5 that spends 0.00 BTC from our own wallet, and sends us 1.00 BTC
+15:25:04 12 Wallet.receivePending: Wallet received transaction with an unknown source. Consider tagging it!
+15:25:04 12 Wallet.maybeCommitTx: commitTx of 4a03ca9d9c99c863df4a3f7149f8ed142ca0541bb6fcc617291017910a72ecf5
+15:25:04 12 Wallet.maybeCommitTx: ->pending: 4a03ca9d9c99c863df4a3f7149f8ed142ca0541bb6fcc617291017910a72ecf5
+15:25:04 12 Wallet.maybeCommitTx: Estimated balance is now: 1.00 BTC
+15:25:04 12 Wallet.receive: Received tx for 0.00 BTC: ce3740d32fe423259dd25e23bf88b5c8181f442ad8898136a4d1cf6f74e5b092 [0] in block (unit test)
+15:25:04 12 Wallet.killTxns: TX 4a03ca9d9c99c863df4a3f7149f8ed142ca0541bb6fcc617291017910a72ecf5 killed by ce3740d32fe423259dd25e23bf88b5c8181f442ad8898136a4d1cf6f74e5b092
+15:25:04 12 Wallet.killTxns: Disconnecting each input and moving connected transactions.
+15:25:04 12 Wallet.killTxns: XX Removed from UNSPENTS: TxOut of 1.00 BTC to mtWfJYhC9FyYH7R9jRHEL6G6GqYLQ2Fbyk script:DUP HASH160 PUSHDATA(20)[8e8b738f1c78b49b2537756ed3b65a12ce2a241b] EQUALVERIFY CHECKSIG
+15:25:04 12 Wallet.killTxns: Now attempting to connect the inputs of the overriding transaction.
+15:25:04 12 Wallet.receive: Balance is now: 0.00 BTC
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 610.6 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 574.1 μs
+15:25:04 12 WalletProtobufSerializer.readConfidence: Have overridingTransaction that is not in wallet for tx 4a03ca9d9c99c863df4a3f7149f8ed142ca0541bb6fcc617291017910a72ecf5
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 9.719 ms
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 9.653 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 987.3 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.046 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.097 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 941.3 μs
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 14.97 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.091 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.153 ms
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 15.33 ms
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 15.11 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 679.0 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.266 ms
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 10.87 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 590.0 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 570.5 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 10.50 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 620.7 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 886.5 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 10.44 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 798.2 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 671.1 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 19.82 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.194 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.718 ms
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 12.11 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 628.4 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 621.6 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 11.32 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 637.5 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 659.2 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 14.38 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 693.7 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 895.8 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 14.93 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 637.9 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 843.8 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 11.43 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 779.1 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 590.0 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 9.346 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 707.7 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 765.3 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 10.28 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 709.6 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 594.7 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 9.634 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 590.6 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 567.9 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 9.973 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 843.4 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 661.3 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 9.574 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 730.9 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 825.5 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 11.51 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 604.8 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 674.7 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 10.52 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 768.1 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.155 ms
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 11.01 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 654.2 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 587.8 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 9.976 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 983.9 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 789.6 μs
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 19.79 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 688.7 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.275 ms
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 13.67 ms
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 13.15 ms
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 14.62 ms
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 13.26 ms
+15:25:04 12 KeyChainGroup.addAndActivateHDChain: Activating a new HD chain: MarriedKeyChain{P2PKH, accountPath=[0H], lookaheadSize=100, lookaheadThreshold=33}
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 259.3 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 307.1 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.935 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.224 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 691.3 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.155 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 910.0 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 600.0 μs
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 16.79 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 681.9 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 832.0 μs
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 13.36 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.396 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 811.9 μs
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 15.29 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 944.7 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.025 ms
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 14.75 ms
+15:25:04 12 Wallet.receivePending: Received a pending transaction 82e560a186bb4b5c8d41be5cc7ebb2eac12b9e4bd161de0d373fd2ce0ee0055a that spends 0.00 BTC from our own wallet, and sends us 1.00 BTC
+15:25:04 12 Wallet.receivePending: Wallet received transaction with an unknown source. Consider tagging it!
+15:25:04 12 Wallet.maybeCommitTx: commitTx of 82e560a186bb4b5c8d41be5cc7ebb2eac12b9e4bd161de0d373fd2ce0ee0055a
+15:25:04 12 Wallet.maybeCommitTx: ->pending: 82e560a186bb4b5c8d41be5cc7ebb2eac12b9e4bd161de0d373fd2ce0ee0055a
+15:25:04 12 Wallet.maybeCommitTx: Estimated balance is now: 1.00 BTC
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.010 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.622 ms
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 13.01 ms
+15:25:04 12 Wallet.receivePending: Received a pending transaction f9b885395a44374a418c379cb8ef79b13053a79e697fbf5185996ebf6ffc92de that spends 0.00 BTC from our own wallet, and sends us 1.00 BTC
+15:25:04 12 Wallet.maybeCommitTx: commitTx of f9b885395a44374a418c379cb8ef79b13053a79e697fbf5185996ebf6ffc92de
+15:25:04 12 Wallet.maybeCommitTx: ->pending: f9b885395a44374a418c379cb8ef79b13053a79e697fbf5185996ebf6ffc92de
+15:25:04 12 Wallet.maybeCommitTx: Estimated balance is now: 1.00 BTC
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.161 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.159 ms
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 15.07 ms
+15:25:04 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:25:04 12 Wallet.receive: Received tx for 50.00 BTC: e4caf030b29fe42d74dad072d4e71ae506144601aeec09307e8667d9416e18dc [0] in block 33b518899e1cad7ea86f3178e214c2b661f651acd7d7098333b14b36ff2d18d7
+15:25:04 12 Wallet.processTxFromBestChain:   tx e4caf030b29fe42d74dad072d4e71ae506144601aeec09307e8667d9416e18dc ->unspent
+15:25:04 12 Wallet.receive: Balance is now: 0.00 BTC
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 921.1 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.189 ms
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 14.63 ms
+15:25:04 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:25:04 12 Wallet.receive: Received tx for 50.00 BTC: e555bcb122cdc9781aa739bce902bddb1cdbfb1c1531bb8e45cfdefd90e8e292 [1] in block 0b78fe2b22ae06ad066dfcae986dc2a530625da796d755d9728d82112e695eb5
+15:25:04 12 Wallet.processTxFromBestChain:   tx e555bcb122cdc9781aa739bce902bddb1cdbfb1c1531bb8e45cfdefd90e8e292 ->unspent
+15:25:04 12 Wallet.receive: Balance is now: 50.00 BTC
+15:25:04 12 Wallet.receive: Received tx for 50.00 BTC: 5f6dfb02e8dc236ecdb467acc7f1293e50947ff6fabce3f8199bf6dc506ebf80 [1] in block 5e58ad629e8c0c61d97a9ccdcdc75518e89d565d39ae770dfb36dd42093ee408
+15:25:04 12 Wallet.processTxFromBestChain:   tx 5f6dfb02e8dc236ecdb467acc7f1293e50947ff6fabce3f8199bf6dc506ebf80 ->unspent
+15:25:04 12 Wallet.receive: Balance is now: 100.00 BTC
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 644.0 μs
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 571.4 μs
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 15.71 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.075 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 838.8 μs
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 12.11 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 1.058 ms
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:04 12 DeterministicKeyChain.maybeLookAhead: Took 589.0 μs
+15:25:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:04 12 MnemonicCode.toSeed: PBKDF2 took 15.63 ms
+15:25:05 12 MnemonicCode.toSeed: PBKDF2 took 14.99 ms
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: Took 143.1 μs
+15:25:05 12 Wallet.receivePending: Received a pending transaction 6fa23c8720975573481ddec88f55cde9941b92c4919443dae271e7fd402b61c1 that spends 0.00 BTC from our own wallet, and sends us 1.00 BTC
+15:25:05 12 Wallet.receivePending: Wallet received transaction with an unknown source. Consider tagging it!
+15:25:05 12 Wallet.maybeCommitTx: commitTx of 6fa23c8720975573481ddec88f55cde9941b92c4919443dae271e7fd402b61c1
+15:25:05 12 Wallet.maybeCommitTx: ->pending: 6fa23c8720975573481ddec88f55cde9941b92c4919443dae271e7fd402b61c1
+15:25:05 12 Wallet.maybeCommitTx: Estimated balance is now: 1.00 BTC
+15:25:05 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=030ac4837d7f813bb536325a5b6955dbfc291d7ef7242fa3129fe724fe5fc16684, chainCode=a4afba66614d492af8340c35bcba69c83393c8723a85a2783a9c351a92eaa6fd, path=M/0H/0/0, isEncrypted=false, isPubKeyOnly=false}
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: Took 265.0 μs
+15:25:05 12 Wallet.receivePending: Received a pending transaction 4c530cf247a789daa8ae3addd909a49cd3c5cff54be17bddbfad4276e39658dd that spends 0.00 BTC from our own wallet, and sends us 1.00 BTC
+15:25:05 12 Wallet.receivePending: Wallet received transaction with an unknown source. Consider tagging it!
+15:25:05 12 Wallet.maybeCommitTx: commitTx of 4c530cf247a789daa8ae3addd909a49cd3c5cff54be17bddbfad4276e39658dd
+15:25:05 12 Wallet.maybeCommitTx: ->pending: 4c530cf247a789daa8ae3addd909a49cd3c5cff54be17bddbfad4276e39658dd
+15:25:05 12 Wallet.maybeCommitTx: Estimated balance is now: 2.00 BTC
+15:25:05 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=035e2165a6308e057bf38cb18fa8954073b4c0bbe4359fa4ec5b69b8e9ab5bb9eb, chainCode=b579273b68dc6679baebc4d8f347eb2420eb5e28944cbe04527102b1d8de7cb4, path=M/0H/0/1, isEncrypted=false, isPubKeyOnly=false}
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 3 issued + 0 lookahead size + 0 lookahead threshold - 2 num children
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: Took 206.9 μs
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 3 issued + 5 lookahead size + 0 lookahead threshold - 3 num children
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: Took 872.3 μs
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: Took 989.5 μs
+15:25:05 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:05 12 MnemonicCode.toSeed: PBKDF2 took 15.30 ms
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: Took 945.4 μs
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:25:05 12 DeterministicKeyChain.maybeLookAhead: Took 1.144 ms
+15:25:05 12 WalletProtobufSerializer.loadExtensions: Loading wallet extension test
+15:25:05 12 Wallet.deserializeExtension: Error during extension deserialization
+java.lang.NullPointerException
+	at org.bitcoinj.store.WalletProtobufSerializerTest$2.deserializeWalletExtension(WalletProtobufSerializerTest.java:459)
+	at org.bitcoinj.wallet.Wallet.deserializeExtension(Wallet.java:4977)
+	at org.bitcoinj.wallet.WalletProtobufSerializer.loadExtensions(WalletProtobufSerializer.java:598)
+	at org.bitcoinj.wallet.WalletProtobufSerializer.readWallet(WalletProtobufSerializer.java:560)
+	at org.bitcoinj.wallet.WalletProtobufSerializer.readWallet(WalletProtobufSerializer.java:469)
+	at org.bitcoinj.store.WalletProtobufSerializerTest.extensionsWithError(WalletProtobufSerializerTest.java:464)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:25:05 12 WalletProtobufSerializer.loadExtensions: Error whilst reading extension test, ignoring extension
+java.lang.NullPointerException
+	at org.bitcoinj.store.WalletProtobufSerializerTest$2.deserializeWalletExtension(WalletProtobufSerializerTest.java:459)
+	at org.bitcoinj.wallet.Wallet.deserializeExtension(Wallet.java:4977)
+	at org.bitcoinj.wallet.WalletProtobufSerializer.loadExtensions(WalletProtobufSerializer.java:598)
+	at org.bitcoinj.wallet.WalletProtobufSerializer.readWallet(WalletProtobufSerializer.java:560)
+	at org.bitcoinj.wallet.WalletProtobufSerializer.readWallet(WalletProtobufSerializer.java:469)
+	at org.bitcoinj.store.WalletProtobufSerializerTest.extensionsWithError(WalletProtobufSerializerTest.java:464)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+]]></system-err>
+</testsuite>

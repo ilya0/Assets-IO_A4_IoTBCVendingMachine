@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.protocols.payments.PaymentSessionTest" tests="5" skipped="1" failures="0" errors="0" timestamp="2019-03-25T22:25:02" hostname="IO-2.local" time="0.022">
+  <properties/>
+  <testcase name="testSimplePayment" classname="org.bitcoinj.protocols.payments.PaymentSessionTest" time="0.015"/>
+  <testcase name="testExpiredPaymentRequest" classname="org.bitcoinj.protocols.payments.PaymentSessionTest" time="0.002"/>
+  <testcase name="testPkiVerification" classname="org.bitcoinj.protocols.payments.PaymentSessionTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testDefaults" classname="org.bitcoinj.protocols.payments.PaymentSessionTest" time="0.002"/>
+  <testcase name="testWrongNetwork" classname="org.bitcoinj.protocols.payments.PaymentSessionTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:25:02 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:02 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:02 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:25:02 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+]]></system-err>
+</testsuite>

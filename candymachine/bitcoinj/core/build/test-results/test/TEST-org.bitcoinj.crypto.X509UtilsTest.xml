@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.crypto.X509UtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:02" hostname="IO-2.local" time="0.049">
+  <properties/>
+  <testcase name="testDisplayName" classname="org.bitcoinj.crypto.X509UtilsTest" time="0.049"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

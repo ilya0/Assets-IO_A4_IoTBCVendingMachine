@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.crypto.BIP38PrivateKeyTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:23:52" hostname="IO-2.local" time="3.423">
+  <properties/>
+  <testcase name="bip38testvector_noCompression_noEcMultiply_test1" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.422"/>
+  <testcase name="bip38testvector_noCompression_noEcMultiply_test2" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.299"/>
+  <testcase name="bip38testvector_noCompression_noEcMultiply_test3" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.381"/>
+  <testcase name="bitaddress_testnet" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.262"/>
+  <testcase name="testJavaSerialization" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.007"/>
+  <testcase name="fromBase58_invalidLength" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.001"/>
+  <testcase name="bitcoinpaperwallet_testnet" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.244"/>
+  <testcase name="bip38testvector_compression_noEcMultiply_test1" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.377"/>
+  <testcase name="bip38testvector_compression_noEcMultiply_test2" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.255"/>
+  <testcase name="badPassphrase" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.265"/>
+  <testcase name="bip38testvector_ecMultiply_noCompression_noLotAndSequence_test1" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.226"/>
+  <testcase name="bip38testvector_ecMultiply_noCompression_noLotAndSequence_test2" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.214"/>
+  <testcase name="cloning" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.0"/>
+  <testcase name="bip38testvector_ecMultiply_noCompression_lotAndSequence_test1" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.228"/>
+  <testcase name="bip38testvector_ecMultiply_noCompression_lotAndSequence_test2" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.232"/>
+  <testcase name="roundtripBase58" classname="org.bitcoinj.crypto.BIP38PrivateKeyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

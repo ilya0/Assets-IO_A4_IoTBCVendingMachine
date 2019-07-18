@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.wallet.KeyChainGroupTest" tests="33" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:52" hostname="IO-2.local" time="0.836">
+  <properties/>
+  <testcase name="isWatchingNoKeys" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.013"/>
+  <testcase name="isWatchingMixedKeys" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.011"/>
+  <testcase name="serializeWatching" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.018"/>
+  <testcase name="freshAddress" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.033"/>
+  <testcase name="events" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.014"/>
+  <testcase name="segwitKeyChainGroup" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.03"/>
+  <testcase name="encryptionWithoutImported" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.016"/>
+  <testcase name="freshCurrentKeys" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.014"/>
+  <testcase name="findKey" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.012"/>
+  <testcase name="earliestKeyTime" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.012"/>
+  <testcase name="encryptionWithImported" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.016"/>
+  <testcase name="isNotWatching" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.025"/>
+  <testcase name="isWatching" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.013"/>
+  <testcase name="deterministicUpgradeUnencrypted" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.038"/>
+  <testcase name="constructFromSeed" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.015"/>
+  <testcase name="markAsUsed" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.016"/>
+  <testcase name="bloom" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.02"/>
+  <testcase name="findRedeemScriptFromPubHash" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.063"/>
+  <testcase name="deterministicUpgradeEncrypted" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.066"/>
+  <testcase name="currentP2SHAddress" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.035"/>
+  <testcase name="bloomFilterForMarriedChains" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.043"/>
+  <testcase name="addFollowingAccounts" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.024"/>
+  <testcase name="deterministicUpgradeRequired" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.012"/>
+  <testcase name="addAndActivateHDChain_freshCurrentAddress" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.038"/>
+  <testcase name="findRedeemData" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.034"/>
+  <testcase name="serialization" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.032"/>
+  <testcase name="freshCurrentKeysForMarriedKeychain" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.023"/>
+  <testcase name="deterministicUpgradeRotating" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.022"/>
+  <testcase name="createDeterministic_P2WPKH" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.026"/>
+  <testcase name="serializeMarried" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.037"/>
+  <testcase name="createDeterministic_P2PKH" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.024"/>
+  <testcase name="imports" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.014"/>
+  <testcase name="encryptionWhilstEmpty" classname="org.bitcoinj.wallet.KeyChainGroupTest" time="0.027"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.13 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.20 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.11 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 184.9 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 139.2 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 646.0 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 726.1 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.899 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.706 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 250.6 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 216.0 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 802.8 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 775.6 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 1.010 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 973.5 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.970 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 297.9 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.441 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.351 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/1H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 151.4 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/1H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 151.3 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/1H/0 = 1 issued + 5 lookahead size + 0 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 617.0 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/1H/1 = 1 issued + 5 lookahead size + 0 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 620.9 μs
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 63.77 μs for 2 scrypt iterations.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.78 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 208.0 μs
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 57.06 μs for 2 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 116.8 μs for 2 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 56.13 μs for 2 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 49.72 μs for 2 scrypt iterations.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.921 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 669.3 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 661.9 μs
+15:24:52 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=033941c0f28f6035e802d174934832975c70932a206e4222bd4c4bf5a5099bc877, chainCode=1db6f026058f401c93dc84d552bc9c223cc2acb6a726bf34d67b343839ec743e, path=M/0H/0/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.373 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 159.9 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 146.4 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.483 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 121.7 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 140.7 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.96 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 144.1 μs
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 64.48 μs for 2 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 49.29 μs for 2 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 47.39 μs for 2 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 50.58 μs for 2 scrypt iterations.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.837 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 12.23 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.40 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.49 ms
+15:24:52 12 KeyChainGroup.upgradeToDeterministic: Upgrading from basic keychain to P2PKH deterministic keychain. Using oldest non-rotating private key (address: 1DoSR6NE3Q2m6Cx8yvLoyv8ZTbCy5v8w77)
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.26 ms
+15:24:52 12 KeyChainGroup.addAndActivateHDChain: Activating a new HD chain: DeterministicKeyChain{P2PKH, accountPath=[0H], lookaheadSize=100, lookaheadThreshold=33}
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 162.0 μs
+15:24:52 12 KeyChainGroup.upgradeToDeterministic: Upgrading from basic keychain to P2PKH deterministic keychain. Using oldest non-rotating private key (address: 1DoSR6NE3Q2m6Cx8yvLoyv8ZTbCy5v8w77)
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.25 ms
+15:24:52 12 KeyChainGroup.addAndActivateHDChain: Activating a new HD chain: DeterministicKeyChain{P2PKH, accountPath=[0H], lookaheadSize=100, lookaheadThreshold=33}
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 191.7 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.80 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 319.6 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 194.9 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.62 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 196.9 μs
+15:24:52 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=023ffaca6e2d9317819c2e02112fd6364a2c2e73abc14492d9d6b48132a0f12608, chainCode=a63ab363e5f9ca93dd4f6dbecd88d02221406719b9cdee65192bbc2c47107297, path=M/0H/0/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 251.6 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.77 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 123.4 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 671.5 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 946.3 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 8 issued + 0 lookahead size + 0 lookahead threshold - 7 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 245.8 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 8 issued + 5 lookahead size + 1 lookahead threshold - 8 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 1.034 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.78 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.22 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 161.2 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 236.0 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 1.129 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 705.1 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 1.149 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 1.172 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.13 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 148.9 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 226.7 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 703.9 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 742.8 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 655.0 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 778.2 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 8 issued + 0 lookahead size + 0 lookahead threshold - 7 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 230.9 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 8 issued + 0 lookahead size + 0 lookahead threshold - 7 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 270.1 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 8 issued + 5 lookahead size + 1 lookahead threshold - 8 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 1.041 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 8 issued + 5 lookahead size + 1 lookahead threshold - 8 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 799.4 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 12.10 ms
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 39.17 ms for 16384 scrypt iterations.
+15:24:52 12 KeyChainGroup.upgradeToDeterministic: Upgrading from basic keychain to P2PKH deterministic keychain. Using oldest non-rotating private key (address: 174xfrmGBASNkxMDMrM9krv9zzk4txDFtU)
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.10 ms
+15:24:52 12 KeyChainGroup.addAndActivateHDChain: Activating a new HD chain: DeterministicKeyChain{P2PKH, accountPath=[0H], lookaheadSize=100, lookaheadThreshold=33}
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.63 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.57 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 148.7 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 230.5 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 1.481 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 973.7 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 729.4 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 773.1 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 12.90 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.33 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 697.2 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 1.056 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 145.1 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 682.9 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 886.5 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 7 issued + 0 lookahead size + 0 lookahead threshold - 6 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 168.5 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 7 issued + 5 lookahead size + 1 lookahead threshold - 7 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 763.0 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 7 issued + 5 lookahead size + 1 lookahead threshold - 7 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 655.4 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.67 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.16 ms
+15:24:52 12 KeyChainGroup.addAndActivateHDChain: Activating a new HD chain: MarriedKeyChain{P2PKH, accountPath=[0H], lookaheadSize=100, lookaheadThreshold=33}
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.77 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 16.88 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.16 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 226.1 μs
+15:24:52 12 KeyChainGroup.addAndActivateHDChain: Activating a new HD chain: DeterministicKeyChain{P2PKH, accountPath=[1H], lookaheadSize=100, lookaheadThreshold=33}
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/1H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 237.0 μs
+15:24:52 12 KeyChainGroup.addAndActivateHDChain: Activating a new HD chain: DeterministicKeyChain{P2WPKH, accountPath=[44H, 0H, 0H], lookaheadSize=100, lookaheadThreshold=33}
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/44H/0H/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 214.1 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 11.21 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.66 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 153.2 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 155.2 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 746.9 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 790.4 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 666.2 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 681.9 μs
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.32 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 657.6 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 5 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 613.3 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 2 keys needed for M/0H/0 = 2 issued + 5 lookahead size + 0 lookahead threshold - 5 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 252.7 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 5 lookahead size + 0 lookahead threshold - 5 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 137.5 μs
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 60.93 μs for 2 scrypt iterations.
+15:24:52 12 KeyCrypterScrypt.deriveKey: Deriving key took 59.57 μs for 2 scrypt iterations.
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.842 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.08 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.733 ms
+15:24:52 12 KeyChainGroup.upgradeToDeterministic: Upgrading from basic keychain to P2PKH deterministic keychain. Using oldest non-rotating private key (address: 1LvduDTP4yfdyXHbNY9mFBvVNVZAGekszi)
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 9.718 ms
+15:24:52 12 KeyChainGroup.addAndActivateHDChain: Activating a new HD chain: DeterministicKeyChain{P2PKH, accountPath=[0H], lookaheadSize=100, lookaheadThreshold=33}
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.70 ms
+15:24:52 12 MnemonicCode.toSeed: PBKDF2 took 10.61 ms
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/1H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 163.4 μs
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:52 12 DeterministicKeyChain.maybeLookAhead: Took 175.8 μs
+15:24:53 12 MnemonicCode.toSeed: PBKDF2 took 10.63 ms
+15:24:53 12 MnemonicCode.toSeed: PBKDF2 took 10.20 ms
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 223.5 μs
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 262.7 μs
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 1.070 ms
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 820.8 μs
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 1 issued + 5 lookahead size + 1 lookahead threshold - 1 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 676.4 μs
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 697.4 μs
+15:24:53 12 MnemonicCode.toSeed: PBKDF2 took 10.13 ms
+15:24:53 12 MnemonicCode.toSeed: PBKDF2 took 11.16 ms
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 149.0 μs
+15:24:53 12 MnemonicCode.toSeed: PBKDF2 took 10.22 ms
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/0 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 693.1 μs
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 6 keys needed for M/0H/1 = 0 issued + 5 lookahead size + 1 lookahead threshold - 0 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 731.2 μs
+15:24:53 12 MnemonicCode.toSeed: PBKDF2 took 10.57 ms
+15:24:53 12 MnemonicCode.toSeed: PBKDF2 took 10.51 ms
+15:24:53 12 KeyCrypterScrypt.deriveKey: Deriving key took 64.20 μs for 2 scrypt iterations.
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 135.2 μs
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:53 12 DeterministicKeyChain.maybeLookAhead: Took 192.2 μs
+]]></system-err>
+</testsuite>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.utils.MonetaryFormatTest" tests="29" skipped="1" failures="0" errors="0" timestamp="2019-03-25T22:24:31" hostname="IO-2.local" time="0.022">
+  <properties/>
+  <testcase name="testDecimalMark" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="standardCodes" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="standardSymbol" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="withLocaleDevanagari" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="customCode" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="mBtcRounding" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.001"/>
+  <testcase name="testSigns" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="noCode" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidMultipleDecimalMarks" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidPositiveSign" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidNegativeSign" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="codeOrientation" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.001"/>
+  <testcase name="uBtcRounding" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="codeSeparator" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="fiat" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidWhitespaceSign" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parse" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.01"/>
+  <testcase name="btcRounding" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="repeatOptionalDecimals" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidHugeNegativeNumber" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidDecimalMark" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidWhitespaceAfter" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidHugeNumber" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="testGrouping" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="testDigits" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="missingCode" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.001"/>
+  <testcase name="withLocale" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.002"/>
+  <testcase name="parseInvalidEmpty" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.0"/>
+  <testcase name="parseInvalidWhitespaceBefore" classname="org.bitcoinj.utils.MonetaryFormatTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

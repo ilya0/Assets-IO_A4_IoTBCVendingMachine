@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.CheckpointManagerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:17" hostname="IO-2.local" time="0.066">
+  <properties/>
+  <testcase name="shouldThrowNullPointerExceptionWhenCheckpointsInUnknownFormat" classname="org.bitcoinj.core.CheckpointManagerTest" time="0.05"/>
+  <testcase name="shouldThrowIllegalStateExceptionWithNoCheckpoints" classname="org.bitcoinj.core.CheckpointManagerTest" time="0.008"/>
+  <testcase name="canReadTextualStream" classname="org.bitcoinj.core.CheckpointManagerTest" time="0.006"/>
+  <testcase name="shouldThrowNullPointerExceptionWhenCheckpointsNotFound" classname="org.bitcoinj.core.CheckpointManagerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:17 12 CheckpointManager.readTextual: Read 1 checkpoints, hash is 6a1f0016a444d586c764ea0fa71322db184d6747241aa6a8ce8ccfb0e214dfcf
+]]></system-err>
+</testsuite>

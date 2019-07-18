@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.crypto.HDUtilsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:23:56" hostname="IO-2.local" time="0.006">
+  <properties/>
+  <testcase name="testParsePath" classname="org.bitcoinj.crypto.HDUtilsTest" time="0.001"/>
+  <testcase name="testHmac" classname="org.bitcoinj.crypto.HDUtilsTest" time="0.002"/>
+  <testcase name="testFormatPath" classname="org.bitcoinj.crypto.HDUtilsTest" time="0.002"/>
+  <testcase name="testLongToByteArray" classname="org.bitcoinj.crypto.HDUtilsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

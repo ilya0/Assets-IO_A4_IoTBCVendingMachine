@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.bitcoinj.core.TransactionInputTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.bitcoinj.core.TransactionInputTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.bitcoinj.core.html">org.bitcoinj.core</a> &gt; TransactionInputTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.059s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testStandardWalletDisconnect</td>
+<td class="success">0.032s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUTXOWalletDisconnect</td>
+<td class="success">0.027s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>15:24:30 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:30 12 MnemonicCode.toSeed: PBKDF2 took 16.95 ms
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: Took 288.0 μs
+15:24:30 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 0.99 BTC and a fee of 0.001 BTC/kB
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: Took 620.3 μs
+15:24:30 12 Wallet.completeTx:   with 0.009763 BTC change
+15:24:30 12 Wallet.completeTx:   completed: Transaction{a0d287fee06a20636f67e09bf90a0e891b8b4565b323d443f1a69004b3987793
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100d5cb525b492a48550d1c7a6d99aab820a59c42812bb9b7ad176a5ab1549021a902206637ef7956d38c99a7ea3a45110e70478a20e831fc52a370577e64e7a0da4cd401] PUSHDATA(33)[02aa0d7b8c85e0909ffe8a2ecce5400243167f6474dffd781cd0bc009f41c4241c]  1.00 BTC
+        P2PKH addr:mpXqih531BW7pUcKWQSRpmPCKUhBnFGnm9  outpoint:039058c6f2c0cb492c533b0a4d14ef77cc0f78abccced5287d84a1a2011cfb81:1
+   out  DUP HASH160 PUSHDATA(20)[e2d6debc244e6c9bd4e5527bf8e448cc9ff87995] EQUALVERIFY CHECKSIG  0.009763 BTC
+        P2PKH addr:n2CNQqje7mYAJFFZsRWTuCEhbTLHHU22kC
+   out  PUSHDATA(33)[03d20df7b19a57b57c5f1cc78a7997b36ba47f4bed19bef71da22297f7a37f57bb] CHECKSIG  0.99 BTC
+        P2PK addr:[exception: Cannot cast this script to an address]
+   fee  0.00100423 BTC/kB, 0.000237 BTC for 236 bytes
+}
+15:24:30 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:30 12 MnemonicCode.toSeed: PBKDF2 took 18.00 ms
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: Took 239.2 μs
+15:24:30 12 Wallet.receivePending: Received a pending transaction d0632f670d4a0f54463f0b591ccf1251ba982e44d76ea195497bd4216e6c93c1 that spends 0.00 BTC from our own wallet, and sends us 1.00 BTC
+15:24:30 12 Wallet.receivePending: Wallet received transaction with an unknown source. Consider tagging it!
+15:24:30 12 Wallet.maybeCommitTx: commitTx of d0632f670d4a0f54463f0b591ccf1251ba982e44d76ea195497bd4216e6c93c1
+15:24:30 12 Wallet.maybeCommitTx: -&gt;pending: d0632f670d4a0f54463f0b591ccf1251ba982e44d76ea195497bd4216e6c93c1
+15:24:30 12 Wallet.maybeCommitTx: Estimated balance is now: 1.00 BTC
+15:24:31 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=024d9ae4dbd22af3e33d20ed760139fea5f54a31aeb9515ab1fc1cb6a111ea38a5, chainCode=57bce07f46aeacf6b9504aac7ad244c4d307b6ea4019f65c04471c41e9e44893, path=M/0H/0/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 307.4 μs
+15:24:31 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 0.99 BTC and a fee of 0.001 BTC/kB
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 295.4 μs
+15:24:31 12 Wallet.completeTx:   with 0.009763 BTC change
+15:24:31 12 Wallet.completeTx:   completed: Transaction{ce5318793d60d1626317133731fcf97f12243fb80e1e496d573d9c46f108f288
+purpose: USER_PAYMENT
+   in   PUSHDATA(71)[304402203ef54df1de43142e348f1c48cd65817b3b90131074b4f1b15dc6b0d0360e108102201e7d44d31a5049589805b25705f14fe2aaa4852aad69ff3083163315d413135901] PUSHDATA(33)[024d9ae4dbd22af3e33d20ed760139fea5f54a31aeb9515ab1fc1cb6a111ea38a5]  1.00 BTC
+        P2PKH addr:mwArt9BNxAabuEL7guNVCHKWksXHuemiSF  outpoint:d0632f670d4a0f54463f0b591ccf1251ba982e44d76ea195497bd4216e6c93c1:0
+   out  DUP HASH160 PUSHDATA(20)[77390c04bc517de8f6ce057d0047a5ef714eec50] EQUALVERIFY CHECKSIG  0.009763 BTC
+        P2PKH addr:mrPM3aCaguf4S5AywX9DqgedRfRWZUijXK
+   out  PUSHDATA(33)[0252c7b38203a2e38159282bc85bdfdd0eb735471ff08e5b8222481e5f39130396] CHECKSIG  0.99 BTC
+        P2PK addr:[exception: Cannot cast this script to an address]
+   fee  0.00100851 BTC/kB, 0.000237 BTC for 235 bytes
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.3</a> at Mar 25, 2019, 3:25:06 PM</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.ECKeyTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:26" hostname="IO-2.local" time="0.525">
+  <properties/>
+  <testcase name="roundTripDumpedPrivKey" classname="org.bitcoinj.core.ECKeyTest" time="0.002"/>
+  <testcase name="keyRecovery" classname="org.bitcoinj.core.ECKeyTest" time="0.003"/>
+  <testcase name="keyRecoveryWithEncryptedKey" classname="org.bitcoinj.core.ECKeyTest" time="0.044"/>
+  <testcase name="testSignatures" classname="org.bitcoinj.core.ECKeyTest" time="0.001"/>
+  <testcase name="testGetPublicKeyAsHex" classname="org.bitcoinj.core.ECKeyTest" time="0.001"/>
+  <testcase name="testEncryptedCreate" classname="org.bitcoinj.core.ECKeyTest" time="0.083"/>
+  <testcase name="signTextMessage" classname="org.bitcoinj.core.ECKeyTest" time="0.005"/>
+  <testcase name="testEncryptionIsReversible" classname="org.bitcoinj.core.ECKeyTest" time="0.179"/>
+  <testcase name="base58Encoding_stress" classname="org.bitcoinj.core.ECKeyTest" time="0.009"/>
+  <testcase name="keyRecoveryTestVector" classname="org.bitcoinj.core.ECKeyTest" time="0.002"/>
+  <testcase name="testToString" classname="org.bitcoinj.core.ECKeyTest" time="0.0"/>
+  <testcase name="sValue" classname="org.bitcoinj.core.ECKeyTest" time="0.004"/>
+  <testcase name="testASN1Roundtrip" classname="org.bitcoinj.core.ECKeyTest" time="0.026"/>
+  <testcase name="fromPrivate_exceedsSize" classname="org.bitcoinj.core.ECKeyTest" time="0.001"/>
+  <testcase name="base58Encoding_leadingZero" classname="org.bitcoinj.core.ECKeyTest" time="0.001"/>
+  <testcase name="testCanonicalSigs" classname="org.bitcoinj.core.ECKeyTest" time="0.004"/>
+  <testcase name="findRecoveryId" classname="org.bitcoinj.core.ECKeyTest" time="0.002"/>
+  <testcase name="testUnencryptedCreate" classname="org.bitcoinj.core.ECKeyTest" time="0.084"/>
+  <testcase name="testKeyPairRoundtrip" classname="org.bitcoinj.core.ECKeyTest" time="0.006"/>
+  <testcase name="clear" classname="org.bitcoinj.core.ECKeyTest" time="0.044"/>
+  <testcase name="verifyMessage" classname="org.bitcoinj.core.ECKeyTest" time="0.001"/>
+  <testcase name="testCreatedSigAndPubkeyAreCanonical" classname="org.bitcoinj.core.ECKeyTest" time="0.001"/>
+  <testcase name="testPublicKeysAreEqual" classname="org.bitcoinj.core.ECKeyTest" time="0.0"/>
+  <testcase name="testNonCanonicalSigs" classname="org.bitcoinj.core.ECKeyTest" time="0.013"/>
+  <testcase name="keyRecoveryWithFindRecoveryId" classname="org.bitcoinj.core.ECKeyTest" time="0.003"/>
+  <testcase name="base58Encoding" classname="org.bitcoinj.core.ECKeyTest" time="0.0"/>
+  <testcase name="testGetPrivateKeyAsHex" classname="org.bitcoinj.core.ECKeyTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:26 12 KeyCrypterScrypt.deriveKey: Deriving key took 42.43 ms for 16384 scrypt iterations.
+15:24:26 12 ECKeyTest.testEncryptedCreate: Original private key = 01e3e74eee8facbf784c0b817ecbddb50300af855ab143058e97b0e85b5ae78c
+15:24:26 12 KeyCrypterScrypt.deriveKey: Deriving key took 41.22 ms for 16384 scrypt iterations.
+15:24:26 12 KeyCrypterScrypt.deriveKey: Deriving key took 40.35 ms for 16384 scrypt iterations.
+15:24:26 12 ECKeyTest.signTextMessage: Message signed with 1B9CbF4XbtjJH1DHfqacYmMVgHjFpQEHYa: HxEFfx8xPIf7imIkk1bRZQumMjQA2z9AJQ0Q9iq+ErvpLAiivjloP0kwR+v++77C+0PEhxoOxlpTV9kvEjGtovA=
+15:24:27 12 KeyCrypterScrypt.deriveKey: Deriving key took 42.37 ms for 16384 scrypt iterations.
+15:24:27 12 KeyCrypterScrypt.deriveKey: Deriving key took 43.19 ms for 16384 scrypt iterations.
+15:24:27 12 KeyCrypterScrypt.deriveKey: Deriving key took 44.37 ms for 16384 scrypt iterations.
+15:24:27 12 ECKey.encryptionIsReversible: Could not decrypt bytes
+15:24:27 12 KeyCrypterScrypt.deriveKey: Deriving key took 43.75 ms for 16384 scrypt iterations.
+15:24:27 12 ECKey.encryptionIsReversible: Could not decrypt bytes
+15:24:27 12 KeyCrypterScrypt.deriveKey: Deriving key took 40.29 ms for 16384 scrypt iterations.
+15:24:27 12 KeyCrypterScrypt.deriveKey: Deriving key took 41.99 ms for 16384 scrypt iterations.
+15:24:27 12 KeyCrypterScrypt.deriveKey: Deriving key took 43.10 ms for 16384 scrypt iterations.
+]]></system-err>
+</testsuite>

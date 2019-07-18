@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.TransactionOutputTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:31" hostname="IO-2.local" time="0.106">
+  <properties/>
+  <testcase name="getMinNonDustValue" classname="org.bitcoinj.core.TransactionOutputTest" time="0.021"/>
+  <testcase name="testMultiSigOutputToString" classname="org.bitcoinj.core.TransactionOutputTest" time="0.036"/>
+  <testcase name="testP2SHOutputScript" classname="org.bitcoinj.core.TransactionOutputTest" time="0.026"/>
+  <testcase name="getAddressTests" classname="org.bitcoinj.core.TransactionOutputTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:31 789 PeerGroup$9.run: Stopping ...
+15:24:31 789 PeerGroup$9.run: Stopped, took 254.9 μs.
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 16.17 ms
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 271.3 μs
+15:24:31 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 19.51 ms
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 250.2 μs
+15:24:31 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:31 12 Wallet.receive: Received tx for 1.00 BTC: 8c09b0f749553647dc8f813a9221904eb0546756c9a961c4cc96a60cc888833d [0] in block 32451358b4324c2ff508f10c58fe53fcd9d335cefad09fe3c73dda4788ac3296
+15:24:31 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=03973adeeda7e31a4f2a7abd68d3ab47134ff03d2db4a844356b921773da9c38cc, chainCode=bff53cc9dd3e096dcb232a145f1602cc8b6d7238313b9ca949dab4e74d551be4, path=M/0H/0/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 254.3 μs
+15:24:31 12 Wallet.processTxFromBestChain:   tx 8c09b0f749553647dc8f813a9221904eb0546756c9a961c4cc96a60cc888833d ->unspent
+15:24:31 12 Wallet.receive: Balance is now: 1.00 BTC
+15:24:31 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 1.00 BTC and a fee of 0.00 BTC/kB
+15:24:31 12 Wallet.completeTx:   completed: Transaction{bef5af4a69352fd7fc68a3fcbafe25b7f6219fae1a6ec8582b3aee2733a1ab94
+purpose: USER_PAYMENT
+   in   PUSHDATA(71)[30440220553cb4e7f3d2523ba07e3ab2a94b730619294d4f4d68ed46e4cef88fa82d93d30220649fac5f3d8c8bd0cac8454e44294aea143c6a96353cd7dabc93aa36625fb57201] PUSHDATA(33)[03973adeeda7e31a4f2a7abd68d3ab47134ff03d2db4a844356b921773da9c38cc]  1.00 BTC
+        P2PKH addr:mmFATtyFJfZVHq8zYUiYsd1pCSFWnuGX7f  outpoint:8c09b0f749553647dc8f813a9221904eb0546756c9a961c4cc96a60cc888833d:0
+   out  2 PUSHDATA(33)[0236b93cea05d36038b1f3285ff82ba0bd7c51abf6a29adda43dfd64204b577011] PUSHDATA(33)[03340e6a7ba0f0f56455ba5fc419a1e298d3a09951d4b54427e1cbdac8ddd5137e] 2 CHECKMULTISIG  1.00 BTC
+        unknown script type   fee  0.00 BTC/kB, 0.00 BTC for 237 bytes
+}
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 20.41 ms
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 335.4 μs
+15:24:31 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:31 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:31 12 MnemonicCode.toSeed: PBKDF2 took 17.52 ms
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:31 12 DeterministicKeyChain.maybeLookAhead: Took 339.1 μs
+15:24:31 12 AbstractBlockChain.<init>: chain head is at height 0:
+ block: 
+   hash: 0d1ddf2b9caed3fea7662b6faff88009463418c34e09c69da6527d64daf617c2
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552642 (2019-03-25T22:24:02Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+]]></system-err>
+</testsuite>

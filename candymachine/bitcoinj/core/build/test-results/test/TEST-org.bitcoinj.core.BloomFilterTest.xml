@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.BloomFilterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:30" hostname="IO-2.local" time="0.004">
+  <properties/>
+  <testcase name="walletTest" classname="org.bitcoinj.core.BloomFilterTest" time="0.004"/>
+  <testcase name="insertSerializeTest" classname="org.bitcoinj.core.BloomFilterTest" time="0.0"/>
+  <testcase name="insertSerializeTestWithTweak" classname="org.bitcoinj.core.BloomFilterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:30 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:30 12 Wallet.maybeCommitTx: commitTx of 3ce8339eb44fd3b502713efaa2b25ccce56e8822b0563b609b961a4763cc0864
+15:24:30 12 Wallet.maybeCommitTx: ->pending: 3ce8339eb44fd3b502713efaa2b25ccce56e8822b0563b609b961a4763cc0864
+15:24:30 12 Wallet.maybeCommitTx: Estimated balance is now: 25.054 BTC
+]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.utils.BtcFixedFormatTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:49" hostname="IO-2.local" time="0.004">
+  <properties/>
+  <testcase name="testPrefixLabel[0]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.002"/>
+  <testcase name="testPrefixLabel[1]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <testcase name="testPrefixLabel[2]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <testcase name="testPrefixLabel[3]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <testcase name="testPrefixLabel[4]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <testcase name="testPrefixLabel[5]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <testcase name="testPrefixLabel[6]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <testcase name="testPrefixLabel[7]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <testcase name="testPrefixLabel[8]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <testcase name="testPrefixLabel[9]" classname="org.bitcoinj.utils.BtcFixedFormatTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

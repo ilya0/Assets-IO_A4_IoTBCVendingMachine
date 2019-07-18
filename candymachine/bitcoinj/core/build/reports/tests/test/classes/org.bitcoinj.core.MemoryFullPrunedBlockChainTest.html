@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.bitcoinj.core.MemoryFullPrunedBlockChainTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.bitcoinj.core.MemoryFullPrunedBlockChainTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.bitcoinj.core.html">org.bitcoinj.core</a> &gt; MemoryFullPrunedBlockChainTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">7</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.714s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">missingHeightFromCoinbase</td>
+<td class="success">0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">skipScripts</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFinalizedBlocks</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFirst100KBlocks</td>
+<td class="success">0.046s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGeneratedChain</td>
+<td class="success">2.578s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGetOpenTransactionOutputs</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUTXOProviderWithWallet</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>15:24:27 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:27 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:27 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1231006505 (2009-01-03T18:15:05Z)
+   difficulty target (nBits): 486604799
+   nonce: 2083236893
+
+15:24:27 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:27 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 427ac05456fb6fe44aacfc0d38687d236eb10b4f94d4873fd61db2680725b557
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552649 (2019-03-25T22:24:09Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:27 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:27 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 427ac05456fb6fe44aacfc0d38687d236eb10b4f94d4873fd61db2680725b557
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552649 (2019-03-25T22:24:09Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:27 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException$CoinbaseHeightMismatch: Block height mismatch in coinbase.
+	at org.bitcoinj.core.Transaction.checkCoinBaseHeight(Transaction.java:1589)
+	at org.bitcoinj.core.Block.checkTransactions(Block.java:692)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:737)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.missingHeightFromCoinbase(AbstractFullPrunedBlockChainTest.java:394)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:27 12 AbstractBlockChain.add: 1ce830acb9709c2c09f05ab2cf98a1c67c96beb4b7f83175a35691f7d66cb4c0
+15:24:27 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:27 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 427ac05456fb6fe44aacfc0d38687d236eb10b4f94d4873fd61db2680725b557
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552649 (2019-03-25T22:24:09Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:27 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:27 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 427ac05456fb6fe44aacfc0d38687d236eb10b4f94d4873fd61db2680725b557
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552649 (2019-03-25T22:24:09Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:27 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:27 12 Transaction.setLockTime: You are setting the lock time on a transaction but none of the inputs have non-default sequence numbers. This will not do what you expect!
+15:24:27 12 Transaction.setLockTime: You are setting the lock time on a transaction but none of the inputs have non-default sequence numbers. This will not do what you expect!
+15:24:27 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 427ac05456fb6fe44aacfc0d38687d236eb10b4f94d4873fd61db2680725b557
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552649 (2019-03-25T22:24:09Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule Initial Block with block hash 299cd8a8688925b6fe9fe3edb9a8c93d22f6b9c7b82dc53778f848d6559c67bb
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule Initial Block chain output generation with block hash 6dabaab8001865dca241de69eeeda842c2e6d8197c2f13809460403d5b53e82d
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule Initial Block chain output generation with block hash 1fac15b4b35a73668aaeb9cb7cf96d9bd9b96274c7a8ad2372590c5f2d963dbf
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule Initial Block chain output generation with block hash 0e3e07c1d9a33f76f74f206db489360e4c861867eefaa2be7b8a365012ad498a
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule Initial Block chain output generation with block hash 4adb68e7829c70c338d149fc38876b75246bb492b80137055ca1fb06d131909b
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b1 with block hash 1d4bce714fa993109bd28b66584a320114fb55cceb102cd2b7066d1ad6f5d5c7
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b2 with block hash 3451436a430fe83eb946da82ee0f75ea774107eb96d9889905dc31517bf37602
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b2 with block hash 3451436a430fe83eb946da82ee0f75ea774107eb96d9889905dc31517bf37602
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b3 with block hash 558efebf2f7e13804e8f79005b25dd8f42fafa59c24ca89c8f74b9b7b0f5bb7d
+15:24:27 12 AbstractBlockChain.connectBlock: Block forks the chain at height 6/block 1d4bce714fa993109bd28b66584a320114fb55cceb102cd2b7066d1ad6f5d5c7, but it did not cause a reorganize:
+558efebf2f7e13804e8f79005b25dd8f42fafa59c24ca89c8f74b9b7b0f5bb7d
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b3 with block hash 558efebf2f7e13804e8f79005b25dd8f42fafa59c24ca89c8f74b9b7b0f5bb7d
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b4 with block hash 25fefa6d16428f48d5c9d46d435717dc7622c2be836d0607840f35481fa3d2f2
+15:24:27 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 6
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Old chain head: 3451436a430fe83eb946da82ee0f75ea774107eb96d9889905dc31517bf37602
+15:24:27 12 AbstractBlockChain.handleNewBestChain: New chain head: 25fefa6d16428f48d5c9d46d435717dc7622c2be836d0607840f35481fa3d2f2
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Split at block: 1d4bce714fa993109bd28b66584a320114fb55cceb102cd2b7066d1ad6f5d5c7
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b5 with block hash 40e6194712365bacd2f995dec759095db6f08473dcc81ba63712abe629dab7d1
+15:24:27 12 AbstractBlockChain.connectBlock: Block forks the chain at height 6/block 1d4bce714fa993109bd28b66584a320114fb55cceb102cd2b7066d1ad6f5d5c7, but it did not cause a reorganize:
+40e6194712365bacd2f995dec759095db6f08473dcc81ba63712abe629dab7d1
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b6 with block hash 065fb6053ec7a3d7fb1115218fc9efd0e06119100ebc8ce37637c7a731796104
+15:24:27 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 6
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Old chain head: 25fefa6d16428f48d5c9d46d435717dc7622c2be836d0607840f35481fa3d2f2
+15:24:27 12 AbstractBlockChain.handleNewBestChain: New chain head: 065fb6053ec7a3d7fb1115218fc9efd0e06119100ebc8ce37637c7a731796104
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Split at block: 1d4bce714fa993109bd28b66584a320114fb55cceb102cd2b7066d1ad6f5d5c7
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b7 with block hash 3d2c909f93b33ef9b272dd78891a391921c241064c9a9f4ef321f463e87effe6
+15:24:27 12 AbstractBlockChain.connectBlock: Block forks the chain at height 8/block 40e6194712365bacd2f995dec759095db6f08473dcc81ba63712abe629dab7d1, but it did not cause a reorganize:
+3d2c909f93b33ef9b272dd78891a391921c241064c9a9f4ef321f463e87effe6
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b8 with block hash 306c8541e23680f721a6989829e24ca608b9c9e73d0bd229d0a7b59217a14744
+15:24:27 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 8
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Old chain head: 065fb6053ec7a3d7fb1115218fc9efd0e06119100ebc8ce37637c7a731796104
+15:24:27 12 AbstractBlockChain.handleNewBestChain: New chain head: 306c8541e23680f721a6989829e24ca608b9c9e73d0bd229d0a7b59217a14744
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Split at block: 40e6194712365bacd2f995dec759095db6f08473dcc81ba63712abe629dab7d1
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b9 with block hash 3844e53a465efb796b91ae98556a56ee05b6c210acbbcf34b08326da78985757
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b10 with block hash 69e23505abe2b67afc9a5524a2613d7cfa405f1696ddf8eec05debb83dec4581
+15:24:27 12 AbstractBlockChain.connectBlock: Block forks the chain at height 8/block 40e6194712365bacd2f995dec759095db6f08473dcc81ba63712abe629dab7d1, but it did not cause a reorganize:
+69e23505abe2b67afc9a5524a2613d7cfa405f1696ddf8eec05debb83dec4581
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b11 with block hash 2201b4d6bb514a0742f9ea11a7bfed61a9b10c757274c46d1353a1d4a7b8fbf1
+15:24:27 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 8
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Old chain head: 065fb6053ec7a3d7fb1115218fc9efd0e06119100ebc8ce37637c7a731796104
+15:24:27 12 AbstractBlockChain.handleNewBestChain: New chain head: 2201b4d6bb514a0742f9ea11a7bfed61a9b10c757274c46d1353a1d4a7b8fbf1
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Split at block: 40e6194712365bacd2f995dec759095db6f08473dcc81ba63712abe629dab7d1
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b13 with block hash 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2
+15:24:27 12 AbstractBlockChain.add: Block does not connect: 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2 prev 76cdcd40fdcebcebe96a548fca8a0d42ac9ae8c9b6ad0d3a50532a0998df252b
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b13 with block hash 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b14 with block hash 1f9e9ec21020fbc2abc67a152ab33e60a5e11e6ffe24d074619cd04bf292bc00
+15:24:27 12 AbstractBlockChain.add: Block does not connect: 1f9e9ec21020fbc2abc67a152ab33e60a5e11e6ffe24d074619cd04bf292bc00 prev 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b14 with block hash 1f9e9ec21020fbc2abc67a152ab33e60a5e11e6ffe24d074619cd04bf292bc00
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b12 with block hash 76cdcd40fdcebcebe96a548fca8a0d42ac9ae8c9b6ad0d3a50532a0998df252b
+15:24:27 12 AbstractBlockChain.connectBlock: Block forks the chain at height 8/block 40e6194712365bacd2f995dec759095db6f08473dcc81ba63712abe629dab7d1, but it did not cause a reorganize:
+76cdcd40fdcebcebe96a548fca8a0d42ac9ae8c9b6ad0d3a50532a0998df252b
+15:24:27 12 AbstractBlockChain.tryConnectingOrphans: Connected orphan 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2
+15:24:27 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 8
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Old chain head: 065fb6053ec7a3d7fb1115218fc9efd0e06119100ebc8ce37637c7a731796104
+15:24:27 12 AbstractBlockChain.handleNewBestChain: New chain head: 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Split at block: 40e6194712365bacd2f995dec759095db6f08473dcc81ba63712abe629dab7d1
+15:24:27 12 AbstractBlockChain.tryConnectingOrphans: Connected orphan 1f9e9ec21020fbc2abc67a152ab33e60a5e11e6ffe24d074619cd04bf292bc00
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b15 with block hash 7dc451469ceeda3a2c7db1d1b70bbb6c24b35e5d872c72870e9a6fb76af3c652
+15:24:27 12 AbstractBlockChain.tryConnectingOrphans: Connected orphan 1f9e9ec21020fbc2abc67a152ab33e60a5e11e6ffe24d074619cd04bf292bc00
+15:24:27 12 AbstractBlockChain.connectBlock: Block forks the chain at height 10/block 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2, but it did not cause a reorganize:
+1f9e9ec21020fbc2abc67a152ab33e60a5e11e6ffe24d074619cd04bf292bc00
+15:24:27 12 AbstractBlockChain.tryConnectingOrphans: Connected 1 orphan blocks.
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b16 with block hash 3556569638883d595fe0fea46077b12a6c2cc95d213f05e4522de49fddc6ef19
+15:24:27 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block had too many Signature Operations
+	at org.bitcoinj.core.Block.checkSigOps(Block.java:573)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:739)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:27 12 AbstractBlockChain.add: 3556569638883d595fe0fea46077b12a6c2cc95d213f05e4522de49fddc6ef19
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b17 with block hash 133aef1195530c49feccab260c0ccc153fa9c72c672959b46fda2ec1d248a5d9
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b17 with block hash 468303e4eef7a0417c5741b41a83ba92341bdf602dc15cb4c0432d54cb2b299c
+15:24:27 12 AbstractBlockChain.connectBlock: Block forks the chain at height 10/block 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2, but it did not cause a reorganize:
+468303e4eef7a0417c5741b41a83ba92341bdf602dc15cb4c0432d54cb2b299c
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b19 with block hash 18f1d95d10bb133bb7c0dbfdf0119faedae28456eafd3d661edc377a27566f8f
+15:24:27 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 10
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Old chain head: 7dc451469ceeda3a2c7db1d1b70bbb6c24b35e5d872c72870e9a6fb76af3c652
+15:24:27 12 AbstractBlockChain.handleNewBestChain: New chain head: 18f1d95d10bb133bb7c0dbfdf0119faedae28456eafd3d661edc377a27566f8f
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Split at block: 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b20 with block hash 5fb86390755860047952204ed1bf140dcc0cc7c3acf8fd2fd0c5db76b3403d48
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b21 with block hash 498d2ac6ee4655aef1858d664d8de3c0e7baaac281ed7429eb816e6d489c47bc
+15:24:27 12 AbstractBlockChain.connectBlock: Block forks the chain at height 10/block 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2, but it did not cause a reorganize:
+498d2ac6ee4655aef1858d664d8de3c0e7baaac281ed7429eb816e6d489c47bc
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b22 with block hash 6920744df76f75d4d0206b7b08bf8e2d13781faad829097a1837aa738d0f631d
+15:24:27 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 10
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Old chain head: 7dc451469ceeda3a2c7db1d1b70bbb6c24b35e5d872c72870e9a6fb76af3c652
+15:24:27 12 AbstractBlockChain.handleNewBestChain: New chain head: 6920744df76f75d4d0206b7b08bf8e2d13781faad829097a1837aa738d0f631d
+15:24:27 12 AbstractBlockChain.handleNewBestChain: Split at block: 47b1a25762d47da266ae01b3257b0923a86a5b4f59d759922fec722e0aaed4c2
+15:24:27 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b23 with block hash 34aade8bcec5a778fc0ff32049cdd88457e4b38d0e75c26d2da050aefa811c5b
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b24 with block hash 66409e91bda10c514b840de677d7aa80b4c1a2a8276f2d34185dcac01d9027f5
+15:24:28 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block larger than MAX_BLOCK_SIZE
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:736)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:28 12 AbstractBlockChain.add: 66409e91bda10c514b840de677d7aa80b4c1a2a8276f2d34185dcac01d9027f5
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b25 with block hash 009c9ce848fa851e26359ce1e5df7171462e8d166757daa0172592016d236310
+15:24:28 12 AbstractBlockChain.add: Block does not connect: 009c9ce848fa851e26359ce1e5df7171462e8d166757daa0172592016d236310 prev 66409e91bda10c514b840de677d7aa80b4c1a2a8276f2d34185dcac01d9027f5
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b26 with block hash 6287671c23aeaa1dfc204aacd829a0e158e202f198f60a10748282fe48eef9a6
+15:24:28 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException$CoinbaseScriptSizeOutOfRange: Coinbase script size out of range
+	at org.bitcoinj.core.Transaction.verify(Transaction.java:1650)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:741)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:28 12 AbstractBlockChain.add: 6287671c23aeaa1dfc204aacd829a0e158e202f198f60a10748282fe48eef9a6
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b27 with block hash 156d13b2487f8aec6cc73d672aae05221e043f1c9e32584455839dbfa4a89353
+15:24:28 12 AbstractBlockChain.add: Block does not connect: 156d13b2487f8aec6cc73d672aae05221e043f1c9e32584455839dbfa4a89353 prev 6287671c23aeaa1dfc204aacd829a0e158e202f198f60a10748282fe48eef9a6
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b28 with block hash 39f52c2582e73044e2b69c54bf483b7c25da4c48908f20f8c78991bb9acd8d0f
+15:24:28 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException$CoinbaseScriptSizeOutOfRange: Coinbase script size out of range
+	at org.bitcoinj.core.Transaction.verify(Transaction.java:1650)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:741)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:28 12 AbstractBlockChain.add: 39f52c2582e73044e2b69c54bf483b7c25da4c48908f20f8c78991bb9acd8d0f
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b29 with block hash 0e001512bcfc142e6b05a55d7668d0b2742c18d2b013ecf5ed3391beb6615663
+15:24:28 12 AbstractBlockChain.add: Block does not connect: 0e001512bcfc142e6b05a55d7668d0b2742c18d2b013ecf5ed3391beb6615663 prev 39f52c2582e73044e2b69c54bf483b7c25da4c48908f20f8c78991bb9acd8d0f
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b30 with block hash 2b32a4d1355c3291fa88c31046404998e0dab215feb8c628d983ab078e7fdd25
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b31 with block hash 438bce43c0cf24d280340d116ac50c5c50fb0d7db7bbc0077f71dd3b09345ec9
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b32 with block hash 6ed954b2b71e2c96c733cba64ae0e858f5bc9e32a68de98786f118ec0c90c98a
+15:24:28 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block had too many Signature Operations
+	at org.bitcoinj.core.Block.checkSigOps(Block.java:573)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:739)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:28 12 AbstractBlockChain.add: 6ed954b2b71e2c96c733cba64ae0e858f5bc9e32a68de98786f118ec0c90c98a
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b33 with block hash 78c71592efc64b99d7fbde5450013e67d35e865fe485c599256ad4399cf86a75
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b34 with block hash 2db9ec653edf54c302fe56d0f535470b61006c12c75dc6833427b19899e1e8dd
+15:24:28 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block had too many Signature Operations
+	at org.bitcoinj.core.Block.checkSigOps(Block.java:573)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:739)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:28 12 AbstractBlockChain.add: 2db9ec653edf54c302fe56d0f535470b61006c12c75dc6833427b19899e1e8dd
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b35 with block hash 6ba116c578346616be42a65896fdf42fe32e2ef011041d58e29ba5ee760dd7fb
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b36 with block hash 0af558bd39c3a1a11501edab3c7f6c5648c8068ad21d5512f6062cfeaa6465a0
+15:24:28 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block had too many Signature Operations
+	at org.bitcoinj.core.Block.checkSigOps(Block.java:573)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:739)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:28 12 AbstractBlockChain.add: 0af558bd39c3a1a11501edab3c7f6c5648c8068ad21d5512f6062cfeaa6465a0
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b37 with block hash 2467ee6eadc78701911105015fe8d2b87f8421de5ed4616efc9432f0a54aa51b
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b38 with block hash 09edd3101feaa515433302637eb6990c682e4c63db42961da451c29d7379afe1
+15:24:28 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b39 with block hash 344ec557ee8c17f33852871989cf1638fd9ea46e0954653c12e72a979d489f8c
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b40 with block hash 5d4531cd6299c272a471348fcc99cbe8be572eb1c2d472959a2e3361906a3601
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b42 with block hash 2065418eeb67e0635e874cd41ec3159a07d1105ff48224c2a341c4476023a285
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b43 with block hash 7042b706a9dfa60a73147160944b790ac8d24b6e1dc14becfb9b1d544fe1a59f
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b44 with block hash 7ee2a81322ea991165901539436f2a74e82347f8871a93e437599db459f3d06a
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b45 with block hash 33ada4385f4c57cb8c75fff68446fb42fdcafcc412828766721722f24a9377ff
+15:24:29 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: First tx is not coinbase
+	at org.bitcoinj.core.Block.checkTransactions(Block.java:690)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:737)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:29 12 AbstractBlockChain.add: 33ada4385f4c57cb8c75fff68446fb42fdcafcc412828766721722f24a9377ff
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b46 with block hash 27466c97e505cb52e6afe056d400c25dec4a31f7cdcb266be20081c60bc8b572
+15:24:29 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block had no transactions
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:734)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:29 12 AbstractBlockChain.add: 27466c97e505cb52e6afe056d400c25dec4a31f7cdcb266be20081c60bc8b572
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b47 with block hash ae660d348e5f4b172fc26f8f08f04dfb6c8232a0017f3a58f2ad9f2c49c56dd1
+15:24:29 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Hash is higher than target: ae660d348e5f4b172fc26f8f08f04dfb6c8232a0017f3a58f2ad9f2c49c56dd1 vs 7fffff0000000000000000000000000000000000000000000000000000000000
+	at org.bitcoinj.core.Block.checkProofOfWork(Block.java:550)
+	at org.bitcoinj.core.Block.verifyHeader(Block.java:715)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:439)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:29 12 AbstractBlockChain.add: ae660d348e5f4b172fc26f8f08f04dfb6c8232a0017f3a58f2ad9f2c49c56dd1
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b48 with block hash 55103c4636f45bb8776c526746feb5542ba85f35059946ec182bb1e889102a8b
+15:24:29 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block too far in future: 2019-03-26T01:24:27Z (1553563467) vs allowed 2019-03-26T00:24:27Z (1553559867)
+	at org.bitcoinj.core.Block.checkTimestamp(Block.java:560)
+	at org.bitcoinj.core.Block.verifyHeader(Block.java:716)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:439)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:29 12 AbstractBlockChain.add: 55103c4636f45bb8776c526746feb5542ba85f35059946ec182bb1e889102a8b
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b49 with block hash 63e0249286f15fe7d9cd58422ed5579440493cd702eb052b1940330926a57f7e
+15:24:29 12 Block.checkMerkleRoot: Merkle tree did not verify
+15:24:29 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Merkle hashes do not match: 186b248d8de48e0b2e898f0cc3fb2dbd576b2efdfe96da8905f0ea22a4c4014b vs 5a3cef1e627ddb1a329f2838e7520876c7c57721d77930d54f7fde14890cd8ef
+	at org.bitcoinj.core.Block.checkMerkleRoot(Block.java:580)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:738)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:29 12 AbstractBlockChain.add: 63e0249286f15fe7d9cd58422ed5579440493cd702eb052b1940330926a57f7e
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b50 with block hash 32f7ed1512757f65cdb637aa452d8cc95df2c9a56b892619f864e181094b865a
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b51 with block hash 23827acd7ba94ee8d253bc197c19130c4117148686674da5a7459524f6532f22
+15:24:29 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: TX 2 is coinbase when it should not be.
+	at org.bitcoinj.core.Block.checkTransactions(Block.java:697)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:737)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:29 12 AbstractBlockChain.add: 23827acd7ba94ee8d253bc197c19130c4117148686674da5a7459524f6532f22
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b52 with block hash 574bbf213017fd6ea303d3ce839d94c82adb8e8f2df3c75be16c92118efcdee1
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b53 with block hash 630d737dd698db506e1b32d660825123aee271c3fdaad896d2331fa6786d39c6
+15:24:29 12 AbstractBlockChain.connectBlock: Block forks the chain at height 19/block 7042b706a9dfa60a73147160944b790ac8d24b6e1dc14becfb9b1d544fe1a59f, but it did not cause a reorganize:
+630d737dd698db506e1b32d660825123aee271c3fdaad896d2331fa6786d39c6
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b54 with block hash 37dac49483f46319511e15d760a49409f1061ca6babdb2610a78928fd73c7b5c
+15:24:29 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 19
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Old chain head: 7ee2a81322ea991165901539436f2a74e82347f8871a93e437599db459f3d06a
+15:24:29 12 AbstractBlockChain.handleNewBestChain: New chain head: 37dac49483f46319511e15d760a49409f1061ca6babdb2610a78928fd73c7b5c
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Split at block: 7042b706a9dfa60a73147160944b790ac8d24b6e1dc14becfb9b1d544fe1a59f
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b55 with block hash 0348c713d9b774dd6ad28527f2465baa614b79bb335a92f822fa917b4d773413
+15:24:29 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 19
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Old chain head: 7ee2a81322ea991165901539436f2a74e82347f8871a93e437599db459f3d06a
+15:24:29 12 AbstractBlockChain.handleNewBestChain: New chain head: 0348c713d9b774dd6ad28527f2465baa614b79bb335a92f822fa917b4d773413
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Split at block: 7042b706a9dfa60a73147160944b790ac8d24b6e1dc14becfb9b1d544fe1a59f
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b56 with block hash 5f77757f6e72600dbcfb5f6a654cce1fa3381d189e1fa07671c663b4c1687e28
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b56p2 with block hash 52924e8d470a36adbc3e1ae38e5fd424cf20367d5069f20e7826a295625fc428
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b57p2 with block hash 52924e8d470a36adbc3e1ae38e5fd424cf20367d5069f20e7826a295625fc428
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b57 with block hash 5f77757f6e72600dbcfb5f6a654cce1fa3381d189e1fa07671c663b4c1687e28
+15:24:29 12 AbstractBlockChain.connectBlock: Block forks the chain at height 21/block 0348c713d9b774dd6ad28527f2465baa614b79bb335a92f822fa917b4d773413, but it did not cause a reorganize:
+5f77757f6e72600dbcfb5f6a654cce1fa3381d189e1fa07671c663b4c1687e28
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b58 with block hash 61832fbe2a6a54fc213345f9619609141d50bc5d641c0a16818b99b25cbcd62d
+15:24:29 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 21
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Old chain head: 52924e8d470a36adbc3e1ae38e5fd424cf20367d5069f20e7826a295625fc428
+15:24:29 12 AbstractBlockChain.handleNewBestChain: New chain head: 61832fbe2a6a54fc213345f9619609141d50bc5d641c0a16818b99b25cbcd62d
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Split at block: 0348c713d9b774dd6ad28527f2465baa614b79bb335a92f822fa917b4d773413
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b59 with block hash 298dcab85f29d769025fd125744d4d3c624b71c4fa4522187aacbaea1c2a3ddc
+15:24:29 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 21
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Old chain head: 52924e8d470a36adbc3e1ae38e5fd424cf20367d5069f20e7826a295625fc428
+15:24:29 12 AbstractBlockChain.handleNewBestChain: New chain head: 298dcab85f29d769025fd125744d4d3c624b71c4fa4522187aacbaea1c2a3ddc
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Split at block: 0348c713d9b774dd6ad28527f2465baa614b79bb335a92f822fa917b4d773413
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b60 with block hash 4c9ab3873c84684a03802a8253eaef855ca514a675c95070b3ae172a3bf4edf4
+15:24:29 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 21
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Old chain head: 52924e8d470a36adbc3e1ae38e5fd424cf20367d5069f20e7826a295625fc428
+15:24:29 12 AbstractBlockChain.handleNewBestChain: New chain head: 4c9ab3873c84684a03802a8253eaef855ca514a675c95070b3ae172a3bf4edf4
+15:24:29 12 AbstractBlockChain.handleNewBestChain: Split at block: 0348c713d9b774dd6ad28527f2465baa614b79bb335a92f822fa917b4d773413
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b61 with block hash 052f31bcaa263b967aa446cef9452d69ad14d8d9725f26289a613bd70ca0c3bc
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b62 with block hash 208af59f05591134a2f2cc24bf72d1942e10c4d8687e0af2db2120fd2b428239
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b63 with block hash 7c3633aa467ec6ac409dde14f369067c6545c03ce8a0390309b10e627e9995ec
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b64 with block hash 7c7d9c282ba26dbc0cee290699e5bebabbf5ccadca26c0651d27eea0881976f6
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b65 with block hash 44c689165ffc3f2a8252b4ff4234b6c36f11bcd722225cb5ed3fecad7631d8a9
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b66 with block hash 73e1cf4652f13811b712356d4b9edd0244a2c871b7093f09b284bbf950c98b0d
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b67 with block hash 72c1f2e3a173dc47759c2f7344664a9c2a1af816c1f245265d06431cdf0b05a5
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b68 with block hash 62bbee64519ebff8fdb8b45db974e5f297663e5d5857f74fd06de78cd03c5f5c
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b69 with block hash 0b3c3f8f0aed1c87e8c28fbe952911417ba9cbea0d2ac8d2998aa70eb28b0f66
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b70 with block hash 7fc5ca36f4daadb7ba223ebc92ec1dcad9d8cd192b3b6f2057d8cf15329c9e94
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b71 with block hash 380ed96d08943cf0a0b6b7a123cfffea87edb2809f4f9abbf1f10623dce8880a
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b72 with block hash 380ed96d08943cf0a0b6b7a123cfffea87edb2809f4f9abbf1f10623dce8880a
+15:24:29 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b73 with block hash 6c39a001f77e13f43536d84c0ac75ac2c985285a491c08ef276d245b1413a9a8
+15:24:29 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block had too many Signature Operations
+	at org.bitcoinj.core.Block.checkSigOps(Block.java:573)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:739)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:29 12 AbstractBlockChain.add: 6c39a001f77e13f43536d84c0ac75ac2c985285a491c08ef276d245b1413a9a8
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b74 with block hash 0ac30e3574bb0be0c24d02f53aa41e41764806712b61e429f61f747cca3ba729
+15:24:30 12 AbstractBlockChain.add: Failed to verify block: 
+org.bitcoinj.core.VerificationException: Block had too many Signature Operations
+	at org.bitcoinj.core.Block.checkSigOps(Block.java:573)
+	at org.bitcoinj.core.Block.verifyTransactions(Block.java:739)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:448)
+	at org.bitcoinj.core.AbstractBlockChain.add(AbstractBlockChain.java:332)
+	at org.bitcoinj.core.AbstractFullPrunedBlockChainTest.testGeneratedChain(AbstractFullPrunedBlockChainTest.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at jdk.internal.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at jdk.internal.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+15:24:30 12 AbstractBlockChain.add: 0ac30e3574bb0be0c24d02f53aa41e41764806712b61e429f61f747cca3ba729
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b75 with block hash 514eb75d590edaed972809e54040ef92d1b8484fe5d64c882a6d1ef91c6438b3
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b76 with block hash 57a8b9c1513f36184aa44ba75d03c357d716ca98d349a8f881b068803606522c
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b77 with block hash 2c95e243e71abaeeaeee394c743352bc312c329232958856fc5611b53121521e
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b78 with block hash 5fcba38042ad41657ef81684169a554ed638b44d6a44b8b569bfa6f289fc36d9
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b79 with block hash 3bd0dcb239ac74dfdcdf250185ba5668e55fb7aa3c7ebd700ae074ea1879b085
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b80 with block hash 6d9a54e76a549dc1f090d22b7ae81c7d3042e4a420367f59bb3e3297ae0217fa
+15:24:30 12 AbstractBlockChain.connectBlock: Block forks the chain at height 30/block 2c95e243e71abaeeaeee394c743352bc312c329232958856fc5611b53121521e, but it did not cause a reorganize:
+6d9a54e76a549dc1f090d22b7ae81c7d3042e4a420367f59bb3e3297ae0217fa
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b81 with block hash 1dc38746a69fb62d249cf6cc7871ac9d6ca9aec448dc8bf68d8cc45202a90ba0
+15:24:30 12 AbstractBlockChain.connectBlock: Block forks the chain at height 30/block 2c95e243e71abaeeaeee394c743352bc312c329232958856fc5611b53121521e, but it did not cause a reorganize:
+1dc38746a69fb62d249cf6cc7871ac9d6ca9aec448dc8bf68d8cc45202a90ba0
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b82 with block hash 4fc6a6af2efc6048f8f345816e64321d0a8b5ac0fd4248f67b15d054a3c412bc
+15:24:30 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 30
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Old chain head: 3bd0dcb239ac74dfdcdf250185ba5668e55fb7aa3c7ebd700ae074ea1879b085
+15:24:30 12 AbstractBlockChain.handleNewBestChain: New chain head: 4fc6a6af2efc6048f8f345816e64321d0a8b5ac0fd4248f67b15d054a3c412bc
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Split at block: 2c95e243e71abaeeaeee394c743352bc312c329232958856fc5611b53121521e
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b83 with block hash 055fc8cf6536335f0ba58977dfcd8425d9beb65a604612400ca07d55352b9962
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b84 with block hash 60625b16d8211d8485fa4130357f4bdb9e17e668d459cf436dc0a86fbe76d7bf
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b85 with block hash 38e7588fb78c16abfbd0503a14f6f5e5b51943a9247f6e3b61fb85856fbe7221
+15:24:30 12 AbstractBlockChain.connectBlock: Block forks the chain at height 34/block 055fc8cf6536335f0ba58977dfcd8425d9beb65a604612400ca07d55352b9962, but it did not cause a reorganize:
+38e7588fb78c16abfbd0503a14f6f5e5b51943a9247f6e3b61fb85856fbe7221
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b86 with block hash 2f298769b5f6b7b846e4da246f104c5968a1439fdd54b4b6729743c794efcad1
+15:24:30 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 34
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Old chain head: 60625b16d8211d8485fa4130357f4bdb9e17e668d459cf436dc0a86fbe76d7bf
+15:24:30 12 AbstractBlockChain.handleNewBestChain: New chain head: 2f298769b5f6b7b846e4da246f104c5968a1439fdd54b4b6729743c794efcad1
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Split at block: 055fc8cf6536335f0ba58977dfcd8425d9beb65a604612400ca07d55352b9962
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b87 with block hash 010ec8612dbf1ce6612fd248e8bbdd78f0d34dc461c9e5fd16703de9bb8a8f23
+15:24:30 12 AbstractBlockChain.connectBlock: Block forks the chain at height 34/block 055fc8cf6536335f0ba58977dfcd8425d9beb65a604612400ca07d55352b9962, but it did not cause a reorganize:
+010ec8612dbf1ce6612fd248e8bbdd78f0d34dc461c9e5fd16703de9bb8a8f23
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b88 with block hash 1a0230d1a549df11c3fa65928e8e178f1a3d16dbe6a4134e53ead0490280ea6d
+15:24:30 12 AbstractBlockChain.connectBlock: Block is causing a re-organize
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Re-organize after split at height 34
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Old chain head: 2f298769b5f6b7b846e4da246f104c5968a1439fdd54b4b6729743c794efcad1
+15:24:30 12 AbstractBlockChain.handleNewBestChain: New chain head: 1a0230d1a549df11c3fa65928e8e178f1a3d16dbe6a4134e53ead0490280ea6d
+15:24:30 12 AbstractBlockChain.handleNewBestChain: Split at block: 055fc8cf6536335f0ba58977dfcd8425d9beb65a604612400ca07d55352b9962
+15:24:30 12 AbstractFullPrunedBlockChainTest.testGeneratedChain: Testing rule b89 with block hash 1a0c9cb35804bd85bcfbcea14fb78f0842b44b6b319638939c44f5dcc1253c7a
+15:24:30 12 Context.&lt;init&gt;: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:30 12 AbstractBlockChain.&lt;init&gt;: chain head is at height 0:
+ block: 
+   hash: 427ac05456fb6fe44aacfc0d38687d236eb10b4f94d4873fd61db2680725b557
+   version: 1
+   previous block: 0000000000000000000000000000000000000000000000000000000000000000
+   time: 1553552649 (2019-03-25T22:24:09Z)
+   difficulty target (nBits): 545259519
+   nonce: 0
+
+15:24:30 12 MnemonicCode.toSeed: PBKDF2 took 21.15 ms
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/0 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: Took 355.9 μs
+15:24:30 12 Wallet.completeTx: Completing send tx with 1 outputs totalling 0.50 BTC and a fee of 0.00 BTC/kB
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 1 issued + 0 lookahead size + 0 lookahead threshold - 0 num children
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: Took 334.8 μs
+15:24:30 12 Wallet.completeTx:   with 0.50 BTC change
+15:24:30 12 Wallet.completeTx:   completed: Transaction{e644eb0f0d41cc64b0705c0ce14d23dbebbbd4f0a325f76bfd47f7f05258b0a1
+purpose: USER_PAYMENT
+   in   PUSHDATA(72)[3045022100b56d8be3b17558cfe453e3de6cb30531f4b7aac57f55f713fb904559dde97e34022009463c023fa5aff62a573476aadf5903848826022c4a10fe46a5ac05ab27d99401]  1.00 BTC
+        P2PK addr:[exception: Cannot cast this script to an address]
+   out  DUP HASH160 PUSHDATA(20)[8f87cb03f08166d5c7aa0b9b4c3fee8976ae2a6f] EQUALVERIFY CHECKSIG  0.50 BTC
+        P2PKH addr:mtbsbYuE4UinY499Jwz5MVBuLZ1VD78iXx
+   out  DUP HASH160 PUSHDATA(20)[822361f4dc1947cbba7c624a5f980fd7a52e76f4] EQUALVERIFY CHECKSIG  0.50 BTC
+        P2PKH addr:msP4XRNkkckvcaGxG6g8wvp1qjV8syHkjG
+   fee  0.00 BTC/kB, 0.00 BTC for 192 bytes
+}
+15:24:30 12 Wallet.maybeCommitTx: commitTx of e644eb0f0d41cc64b0705c0ce14d23dbebbbd4f0a325f76bfd47f7f05258b0a1
+15:24:30 12 Wallet.maybeCommitTx: -&gt;pending: e644eb0f0d41cc64b0705c0ce14d23dbebbbd4f0a325f76bfd47f7f05258b0a1
+15:24:30 12 Wallet.maybeCommitTx: Estimated balance is now: 0.50 BTC
+15:24:30 12 KeyChainGroup.maybeMarkCurrentKeyAsUsed: Marking key as used: DeterministicKey{pub=02e19fac65b035fbf8625272e113635ce635e3f3c5e926397d42bf3bc9a6b06e0f, chainCode=7c854250c948fc66fec1776aaeec75b977d712e4b55893d5609d8ba51abbbc72, path=M/0H/1/0, isEncrypted=false, isPubKeyOnly=false}
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: 1 keys needed for M/0H/1 = 2 issued + 0 lookahead size + 0 lookahead threshold - 1 num children
+15:24:30 12 DeterministicKeyChain.maybeLookAhead: Took 373.0 μs
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 5.3</a> at Mar 25, 2019, 3:25:06 PM</p>
+</div>
+</div>
+</body>
+</html>

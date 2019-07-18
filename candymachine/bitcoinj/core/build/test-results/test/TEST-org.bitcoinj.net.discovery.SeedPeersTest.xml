@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.net.discovery.SeedPeersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:02" hostname="IO-2.local" time="0.013">
+  <properties/>
+  <testcase name="getPeer_one" classname="org.bitcoinj.net.discovery.SeedPeersTest" time="0.009"/>
+  <testcase name="getPeers_length" classname="org.bitcoinj.net.discovery.SeedPeersTest" time="0.002"/>
+  <testcase name="getPeer_all" classname="org.bitcoinj.net.discovery.SeedPeersTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

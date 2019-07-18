@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.bitcoinj.core.TransactionTest" tests="30" skipped="0" failures="0" errors="0" timestamp="2019-03-25T22:24:04" hostname="IO-2.local" time="0.213">
+  <properties/>
+  <testcase name="testPrioSizeCalc" classname="org.bitcoinj.core.TransactionTest" time="0.002"/>
+  <testcase name="testIsMatureReturnsFalseIfTransactionIsCoinbaseAndConfidenceTypeIsNotEqualToBuilding" classname="org.bitcoinj.core.TransactionTest" time="0.002"/>
+  <testcase name="duplicateOutPoint" classname="org.bitcoinj.core.TransactionTest" time="0.003"/>
+  <testcase name="testHashForSignatureThreadSafety" classname="org.bitcoinj.core.TransactionTest" time="0.003"/>
+  <testcase name="testCoinbaseHeightCheck" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="testCLTVPaymentChannelTransactionSpending" classname="org.bitcoinj.core.TransactionTest" time="0.028"/>
+  <testcase name="emptyOutputs" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="tooHuge" classname="org.bitcoinj.core.TransactionTest" time="0.006"/>
+  <testcase name="testWitnessSignatureP2WPKH" classname="org.bitcoinj.core.TransactionTest" time="0.005"/>
+  <testcase name="testWitnessSignatureP2SH_P2WPKH" classname="org.bitcoinj.core.TransactionTest" time="0.002"/>
+  <testcase name="exceedsMaxMoney2" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="parseTransactionWithHugeDeclaredOutputsSize" classname="org.bitcoinj.core.TransactionTest" time="0.002"/>
+  <testcase name="testCLTVPaymentChannelTransactionRefund" classname="org.bitcoinj.core.TransactionTest" time="0.004"/>
+  <testcase name="witnessTransaction" classname="org.bitcoinj.core.TransactionTest" time="0.003"/>
+  <testcase name="coinbaseInputInNonCoinbaseTX" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="coinbaseScriptSigTooLarge" classname="org.bitcoinj.core.TransactionTest" time="0.004"/>
+  <testcase name="coinbaseScriptSigTooSmall" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="testOptimalEncodingMessageSize" classname="org.bitcoinj.core.TransactionTest" time="0.004"/>
+  <testcase name="testAddSignedInputThrowsExceptionWhenScriptIsNotToRawPubKeyAndIsNotToAddress" classname="org.bitcoinj.core.TransactionTest" time="0.002"/>
+  <testcase name="parseTransactionWithHugeDeclaredInputsSize" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="testTheTXByHeightComparator" classname="org.bitcoinj.core.TransactionTest" time="0.003"/>
+  <testcase name="testToStringWhenThereAreZeroInputs" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="parseTransactionWithHugeDeclaredWitnessPushCountSize" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="testEstimatedLockTime_WhenParameterSignifiesBlockHeight" classname="org.bitcoinj.core.TransactionTest" time="0.114"/>
+  <testcase name="emptyInputs" classname="org.bitcoinj.core.TransactionTest" time="0.002"/>
+  <testcase name="testToStringWhenIteratingOverAnInputCatchesAnException" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="optInFullRBF" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <testcase name="testToStringWhenLockTimeIsSpecifiedInBlockHeight" classname="org.bitcoinj.core.TransactionTest" time="0.003"/>
+  <testcase name="testCoinbaseHeightCheckWithDamagedScript" classname="org.bitcoinj.core.TransactionTest" time="0.0"/>
+  <testcase name="negativeOutput" classname="org.bitcoinj.core.TransactionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Transaction.setLockTime: You are setting the lock time on a transaction but none of the inputs have non-default sequence numbers. This will not do what you expect!
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+15:24:04 12 Context.<init>: Creating bitcoinj 0.16-SNAPSHOT context.
+]]></system-err>
+</testsuite>
